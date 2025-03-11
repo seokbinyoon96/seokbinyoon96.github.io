@@ -116,7 +116,9 @@ awards:
       Winner of the <b>Bagmati Province</b> round and nominee for the <b>Global Award</b> in the <b>NASA International Space Apps Challenge 2020</b>, recognizing exceptional innovation and problem-solving in one of the largest global hackathons dedicated to space science and technology.
       </small>
   - title: <small> Brain Korea 21 Plus (BK21+) Research Scholarship </small>
-    date: '2022-03-11'
+    date_start: 2022-03-01
+    date_end: 2023-08-01
+    
     awarder: Korean Goverment
     summary: |
       <small>
