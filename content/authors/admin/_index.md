@@ -102,4 +102,4 @@ education:
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 
 ## About Me
-Seokbin Yoon received the B.S and M.S degrees in Air Transportation, Transportation, and Logistics from Korea Aerospace University. He is currently a research assistant at Air Transportation Modeling and Control Laboratory, Korea Aerospace University. His research interest include air traffic management, trajectory modeling, and deep learning.
+  - Seokbin Yoon received the B.S and M.S degrees in Air Transportation, Transportation, and Logistics from Korea Aerospace University. He is currently a research assistant at Air Transportation Modeling and Control Laboratory, Korea Aerospace University. His research interest include air traffic management, trajectory modeling, and deep learning.
