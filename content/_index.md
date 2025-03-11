@@ -30,18 +30,6 @@ sections:
           size: cover
           position: center
           parallax: false
-  - block: markdown
-    content:
-      title: '📚 My Research'
-      subtitle: ''
-      text: |-
-        I'm a researcher specializing in air traffic management and deep learning, with a strong focus on trajectory modeling, and multi-agent learning. I blog about AI applications for safer and more efficient air traffic systems.
-
-        I apply a mix of machine learning and deep learning to solve complex problems in avitaion. My research explores how AI can enhance decision-making, improve air traffic operations, and drive the future of autonomous air traffic systems.
-
-        If you're interested in collaborating or discussing AI in aviation, feel free to reach out! 😃
-    design:
-      columns: '1'
   - block: collection
     id: papers
     content:
