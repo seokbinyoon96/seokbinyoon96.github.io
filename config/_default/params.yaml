@@ -38,12 +38,12 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Dipesh Kunwar"
+      text: "Seokbin Yoon"
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Dipesh Kunwar. This work is licensed under {license}'
+    notice: '© {year} Seokbin Yoon. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false

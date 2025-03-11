@@ -60,6 +60,8 @@ education:
     summary: |
       <small>
       Grade: 3.97/4.0
+
+      [Relevant Coursework:]() Air Traffic Management, Air Traffic Control, Probability & Statistics, Aviation Policy, Aviation Meteorology, Flight Operation Planning & Control
       </small>
     
 
