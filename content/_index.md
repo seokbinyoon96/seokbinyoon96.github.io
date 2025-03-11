@@ -31,7 +31,7 @@ sections:
     id: publications
     content:
       title: Recent Publications
-      text: "You can visit my [<u>Google Scholar profile here</u>](https://scholar.google.com/citations?hl=en&user=lRZCtLMAAAAJ) to see my publicly available publications. Details on previous research and academic projects can be found in the [<u>projects tab.</u>](/projects/research)"
+      text: "Visit my [<u>Google Scholar profile here</u>](https://scholar.google.com/citations?user=tcjmyp4AAAAJ&hl=ko) to see my publicly available publications. Details on previous research and academic projects can be found in the [<u>projects tab.</u>](/projects/research)"
       filters:
         folders:
           - publication

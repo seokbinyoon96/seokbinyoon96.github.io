@@ -94,7 +94,7 @@ awards:
       <small>
       Awarded the prestigious <b>Silver Medal by Tribhuvan University</b> for securing 2<sup>nd</sup> position among all 2023 engineering graduates, ranking 2<sup>nd</sup> out of 48 in Aerospace Engineering and 2<sup>nd</sup> out of approximately 3,500 engineering graduates across all disciplines.
       </small>
-  - title: <small> President’s Awa </small>
+  - title: <small> President’s Award </small>
     url: 
     date: '2024-08-01'
     awarder: Korea Aerospace University
