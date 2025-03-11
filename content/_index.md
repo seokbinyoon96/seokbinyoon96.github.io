@@ -35,11 +35,11 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        I'm a researcher specializing in air traffic management and deep learning, with a strong focus on trajectory modeling, and multi-agent learning. I blog about AI applications for safer and more efficient air traffic systems.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-        
-        Please reach out to collaborate 😃
+        I apply a mix of machine learning and deep learning to solve complex problems in avitaion. My research explores how AI can enhance decision-making, improve air traffic operations, and drive the future of autonomous air traffic systems.
+
+        If you're interested in collaborating or discussing AI in aviation, feel free to reach out! 😃
     design:
       columns: '1'
   - block: collection
