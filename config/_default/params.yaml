@@ -16,8 +16,8 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
+    description: 'Dipesh Kunwar is an Aerospace Engineering Graduate, with research focus on flight operations and propulsion systems.'
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -33,16 +33,17 @@ header:
   navbar:
     enable: true
     blox: "navbar"
+    align: "left"
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Seokbin Yoon"
+      text: "Dipesh Kunwar"
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Seokbin Yoon. This work is licensed under {license}'
+    notice: '© {year} Dipesh Kunwar. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
