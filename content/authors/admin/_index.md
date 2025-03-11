@@ -39,8 +39,8 @@ profiles:
 education:
   - area: M.S. Air Transportation & Smart Air Mobility
     institution: Korea Aerospace University
-    date_start: 2024-02-15
-    date_end: 2022-03-11
+    date_start: 2022-03-15
+    date_end: 2024-02-11
     summary: |
       <small>
       Grade: 3.98/4.5
@@ -59,7 +59,7 @@ education:
     date_end: 2022-02-15
     summary: |
       <small>
-      Grade: 3.97/4.0
+      Grade: 3.97/4.5
 
       [Relevant Coursework:]() Air Traffic Management, Air Traffic Control, Probability & Statistics, Aviation Policy, Aviation Meteorology, Flight Operation Planning & Control
       
@@ -78,9 +78,11 @@ work:
     summary: |
       <small>
 
-      - Working on systems design and integration of a fuel cell-battery hybrid propulsion system for maritime and aviation applications.
+      - Developing multi-agent trajectory model for flight trajectory prediction in terminal airpsace.
 
-      - Developing optimization frameworks for sizing and control of conceptual integrated fuel cell-battery powertrains in regional commercial airliners.
+      - Developing automatic air traffic control speech recognition model.
+
+      - Working on air traffic complexity inference with computer vision method.
 
       </small>
 
