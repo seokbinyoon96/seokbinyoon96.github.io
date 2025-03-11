@@ -198,3 +198,55 @@ awards:
 Dipesh Kunwar is an Aerospace Engineer with a Bachelor’s degree with honors from Tribhuvan University, Institute of Engineering, Pulchowk Campus. With previous experience in UAV systems, aircraft performance, and flight operations, his research work spans aerospace systems design, design optimization, and sustainable propulsion powertrains. While still in the early stages of his academic career, his passion lies in sustainability and environmental responsibility in commercial aviation through explorations in design, performance, and operations.
 
 <b>Dipesh is actively seeking to contribute his expertise to innovative engineering and research teams.</b>
+
+# Skills
+# Add your own SVG icons to `assets/media/icons/`
+# skills:
+#   - name: Technical Skills
+#     items:
+#       - name: Python
+#         description: ''
+#         percent: 80
+#         icon: code-bracket
+#       - name: Data Science
+#         description: ''
+#         percent: 100
+#         icon: chart-bar
+#       - name: SQL
+#         description: ''
+#         percent: 40
+#         icon: circle-stack
+#   - name: Hobbies
+#     color: '#eeac02'
+#     color_border: '#f0bf23'
+#     items:
+#       - name: Hiking
+#         description: ''
+#         percent: 60
+#         icon: person-simple-walk
+#       - name: Cats
+#         description: ''
+#         percent: 100
+#         icon: cat
+#       - name: Photography
+#         description: ''
+#         percent: 80
+#         icon: camera
+
+# languages:
+#   - name: English
+#     percent: 100
+#   - name: Chinese
+#     percent: 75
+#   - name: Portuguese
+#     percent: 25
+
+# Awards.
+#   Add/remove as many awards below as you like.
+#   Only `title`, `awarder`, and `date` are required.
+#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
+---
+
+## About Me
+
+Seokbin Yoon received the B.S and M.S degrees in Air Transportation, Transportation, and Logistics from Korea Aerospace University. He is currently a research assistant at Air Transportation Modeling and Control Laboratory, Korea Aerospace University. His research interest include air traffic management, trajectory modeling, and deep learning.
