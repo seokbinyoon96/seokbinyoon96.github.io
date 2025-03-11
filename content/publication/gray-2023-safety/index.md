@@ -21,7 +21,7 @@ abstract: This paper investigates a method for the safe integration of urban air
 summary:
 
 tags:
-  - Air Traffic Situation Explanation
-  - Multi-Agent Trajectory Model
+  - Urban Air Mobility
+  - Safety & Capacity
 ---
 

@@ -18,6 +18,6 @@ abstract: Rebalancing idle aircraft on the ground to other vertiports is essenti
 summary:
 
 tags:
-  - Air Traffic Situation Explanation
-  - Multi-Agent Trajectory Model
+  - Urban Air Mobility
+  - Rebalancing
 ---

@@ -15,6 +15,6 @@ abstract: Trajectory prediction plays a critical role in air traffic management,
 summary:
 
 tags:
-  - Air Traffic Situation Explanation
-  - Multi-Agent Trajectory Model
+  - Aircraft Trajectory Dataset Augmentation
+  - Long Short-Term Memory
 ---

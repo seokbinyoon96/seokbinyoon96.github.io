@@ -15,6 +15,6 @@ abstract: Aircraft trajectory prediction plays a crucial role in air traffic man
 summary:
 
 tags:
-  - Air Traffic Situation Explanation
-  - Multi-Agent Trajectory Model
+  - Inverted Transformer
+  - Aircraft Trajectory Prediction
 ---
