@@ -1,5 +1,5 @@
 ---
-title: MAIFormer: Multi-Agent Inverted Transformer for Flight Trajectory Prediction
+title: MAIFormer- Multi-Agent Inverted Transformer for Flight Trajectory Prediction
 authors:
 - Seokbin Yoon
 - Keumjin Lee
