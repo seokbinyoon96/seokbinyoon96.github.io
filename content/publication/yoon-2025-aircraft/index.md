@@ -4,6 +4,7 @@ authors:
 - Seokbin Yoon
 - Keumjin Lee
 date: '2025-01-01'
+doi: '10.1109/ACCESS.2025.3539742'
 publishDate: '2025-03-11T12:40:45.528350Z'
 publication_types:
 - article-journal

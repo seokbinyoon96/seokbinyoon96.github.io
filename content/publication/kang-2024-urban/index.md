@@ -7,6 +7,8 @@ authors:
 - Keumjin Lee
 - Sang Hyun Kim
 date: '2024-01-01'
+doi: '10.1109/DASC62030.2024.10748919'
+
 publishDate: '2025-03-11T12:40:45.548967Z'
 publication_types:
 - paper-conference

@@ -10,6 +10,8 @@ authors:
 - Han-Joong Kim
 - Se-Yeon Jung
 date: '2023-01-01'
+doi: '10.1109/DASC58513.2023.10311230'
+
 publishDate: '2025-03-11T12:40:45.554948Z'
 publication_types:
 - paper-conference

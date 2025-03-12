@@ -97,7 +97,7 @@ awards:
     awarder: AIAA/IEEE Digital Avionics System Conference 2024
     summary: |
       <small>
-      Awarded the prestigious <b>Silver Medal by Tribhuvan University</b> for securing 2<sup>nd</sup> position among all 2023 engineering graduates, ranking 2<sup>nd</sup> out of 48 in Aerospace Engineering and 2<sup>nd</sup> out of approximately 3,500 engineering graduates across all disciplines.
+      As a coauthor, I contributed the paper titled <em>"Urban Air Mobility Fleet Rebalancing with Real-Time Updates on Estimated Time of Arrival"</em>, and we were horored with Best of the Session award at the <b>43<sup>rd</sup> IEEE/AIAA Digital Avionics Systems Conference (DASC 2024)</b> in San Diego, CA, USA.
       </small>
   - title: <small> President’s Award </small>
     url: 
@@ -105,7 +105,7 @@ awards:
     awarder: Korea Aerospace University
     summary: |
       <small> 
-      Recipient of the Springer Nature Best Poster Award at the <b>17<sup>th</sup> International Conference on Vibration Engineering and Technology of Machinery (VETOMAC 2022)</b> for the presentation titled <em>"Study on Effects of Spring and Damping Elements on UAV Landing Gear System"</em>. 
+      At the graduate research competition at Korea Aerospace University, I was hornored with the President's Award for my research on developing a long short-term trajectory prediction model for urban air mobility. 
       </small>
   - title: <small> Best Paper of the Session </small>
     url:
@@ -113,14 +113,15 @@ awards:
     awarder: AIAA/IEEE Digital Avionics System Conference 2023
     summary: |
       <small>
-      Winner of the <b>Bagmati Province</b> round and nominee for the <b>Global Award</b> in the <b>NASA International Space Apps Challenge 2020</b>, recognizing exceptional innovation and problem-solving in one of the largest global hackathons dedicated to space science and technology.
+      As a coauthor, I contributed the paper titled <em>"Safety and Capacity Analysis Framework for Integrated UAM Operation in Airports"</em>, and we were horored with Best of the Session award at the <b>42<sup>nd</sup> IEEE/AIAA Digital Avionics Systems Conference (DASC 2023)</b> in Barcelona, Spain.   
+
       </small>
   - title: <small> Brain Korea 21 Plus (BK21+) Research Scholarship </small>
     date: 2022-03-01 
     awarder: Korean Goverment
     summary: |
       <small>
-      Recipient of the <b>Nepal Government's merit-based full scholarship</b> for a Bachelor of Engineering in Aerospace Engineering, awarded for achieving a <b>national rank of 73<sup>rd</sup></b> and ranking <b>3<sup>rd</sup> among Aerospace Engineering majors</b>. 
+      Recipient of the <b>Korean Government's merit-based full scholarship</b>.
       </small>
 ---
 
