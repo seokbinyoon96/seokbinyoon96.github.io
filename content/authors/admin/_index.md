@@ -43,7 +43,7 @@ education:
     date_end: 2024-02-11
     summary: |
       <small>
-      Grade: 3.98/4.5
+      Grade: 4.0/4.5
       
       - Thesis on _Trajectory Reconstruction and Prediction for Vectored Area Navigation Arrivals_. Supervised by Dr. Keumjin Lee. 
 
@@ -59,7 +59,7 @@ education:
     date_end: 2022-02-15
     summary: |
       <small>
-      Grade: 3.97/4.5
+      Grade: 3.98/4.5
 
       [Relevant Coursework:]() Air Traffic Management, Air Traffic Control, Probability & Statistics, Aviation Policy, Aviation Meteorology, Flight Operation Planning & Control
       
