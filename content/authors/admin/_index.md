@@ -97,7 +97,7 @@ awards:
     awarder: AIAA/IEEE Digital Avionics System Conference 2024
     summary: |
       <small>
-      As a coauthor, I contributed the paper titled <em>"Urban Air Mobility Fleet Rebalancing with Real-Time Updates on Estimated Time of Arrival"</em>, and we were horored with Best of the Session award at the <b>43<sup>rd</sup> IEEE/AIAA Digital Avionics Systems Conference (DASC 2024)</b> in San Diego, CA, USA.
+      As a coauthor, I contributed to the paper titled <em>"Urban Air Mobility Fleet Rebalancing with Real-Time Updates on Estimated Time of Arrival"</em>, and we were horored with Best of the Session award at the <b>43<sup>rd</sup> IEEE/AIAA Digital Avionics Systems Conference (DASC 2024)</b> in San Diego, CA, USA.
       </small>
   - title: <small> President’s Award </small>
     url: 
@@ -113,7 +113,7 @@ awards:
     awarder: AIAA/IEEE Digital Avionics System Conference 2023
     summary: |
       <small>
-      As a coauthor, I contributed the paper titled <em>"Safety and Capacity Analysis Framework for Integrated UAM Operation in Airports"</em>, and we were horored with Best of the Session award at the <b>42<sup>nd</sup> IEEE/AIAA Digital Avionics Systems Conference (DASC 2023)</b> in Barcelona, Spain.   
+      As a coauthor, I contributed to the paper titled <em>"Safety and Capacity Analysis Framework for Integrated UAM Operation in Airports"</em>, and we were horored with Best of the Session award at the <b>42<sup>nd</sup> IEEE/AIAA Digital Avionics Systems Conference (DASC 2023)</b> in Barcelona, Spain.   
 
       </small>
   - title: <small> Brain Korea 21 Plus (BK21+) Research Scholarship </small>
