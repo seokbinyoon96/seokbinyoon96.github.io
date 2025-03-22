@@ -52,7 +52,7 @@ education:
 
     button:
       text: 'Read Thesis'
-      url: 'https://kau.dcollection.net/public_resource/pdf/200000745665_20250312001456.pdf'
+      url: /uploads/seokbinyoon_master_thesis.pdf
   - area: B.S. Air Transportation
     institution: Korea Aerospace University
     date_start: 2020-03-01
