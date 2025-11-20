@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://seokbinyoon96.github.io/sitemap.xml
