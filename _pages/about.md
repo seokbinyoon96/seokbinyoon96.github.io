@@ -26,9 +26,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a researcher at [Korea Aerospace University](https://kau.ac.kr/english/index/main.php) working in the intersection of air traffic control and machine learning. My work aims to model the structure and dynamics of modern air transportation systems and to explore how data driven methods can support decision making in complex and uncertain environments.
+I am a researcher at [Korea Aerospace University](https://kau.ac.kr/english/index/main.php) working in the intersection of air traffic control and machine learning. 
 
-I received both my B.S. and M.S. in Air Transportation from [Korea Aerospace University](https://kau.ac.kr/english/index/main.php). As an undergraduate, I studied air traffic control and earned an air traffic controller license. During my master’s studies, advised by Prof. [Keumjin Lee](https://scholar.google.com/citations?user=GO7fwgEAAAAJ&hl=ko), I worked on multi agent trajectory modeling, generative models for flight trajectories, and automatic speech recognition systems tailored for air traffic control communication.
+I received both my B.S. and M.S. in Air Transportation from [Korea Aerospace University](https://kau.ac.kr/english/index/main.php). As an undergraduate, I studied air traffic control and earned an air traffic controller license. During my master’s studies, advised by Prof. [Keumjin Lee](https://scholar.google.com/citations?user=GO7fwgEAAAAJ&hl=ko), I worked on multi agent trajectory modeling, generative models for flight trajectories, and automatic speech recognition systems for air traffic control communication.
 
 My research focuses on developing autonomous systems that are reliable, safe, and capable of high level reasoning. I am particularly interested in generative models for prediction and planning under uncertainty, and in methods that enable machines to perform structured decision making with high reliability. 
 
