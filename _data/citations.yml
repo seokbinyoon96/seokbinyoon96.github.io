@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2025-11-24'
+  last_updated: '2025-12-05'
 papers:
   tcjmyp4AAAAJ:KxtntwgDAa4C:
     citations: 0
@@ -13,14 +13,14 @@ papers:
     citations: 0
     title: Aircraft Trajectory Dataset Augmentation in Latent Space
     year: '2025'
-  tcjmyp4AAAAJ:YFjsv_pBGBYC:
-    citations: 0
-    title: Urban Air Mobility Fleet Rebalancing with Real-Time Updates on Estimated Time of Arrival
-    year: '2024'
   tcjmyp4AAAAJ:dhFuZR0502QC:
     citations: 0
     title: Safety and Capacity Analysis Framework for Integrated UAM Operation in Airports
     year: '2023'
+  tcjmyp4AAAAJ:eJXPG6dFmWUC:
+    citations: 0
+    title: Urban Air Mobility Fleet Rebalancing with Real-Time Updates on Estimated Time of Arrival
+    year: '2024'
   tcjmyp4AAAAJ:fQNAKQ3IYiAC:
     citations: 9
     title: Aircraft Trajectory Prediction with Inverted Transformer
