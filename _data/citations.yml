@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2025-12-19'
+  last_updated: '2026-01-05'
 papers:
   tcjmyp4AAAAJ:BrmTIyaxlBUC:
     citations: 1
@@ -22,7 +22,7 @@ papers:
     title: Probabilistic Multi-Agent Aircraft Landing Time Prediction
     year: '2025'
   tcjmyp4AAAAJ:kRWSkSYxWN8C:
-    citations: 10
+    citations: 9
     title: Aircraft Trajectory Prediction with Inverted Transformer
     year: '2025'
   tcjmyp4AAAAJ:mvPsJ3kp5DgC:
