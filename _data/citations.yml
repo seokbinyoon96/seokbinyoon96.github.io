@@ -1,6 +1,10 @@
 metadata:
-  last_updated: '2026-01-05'
+  last_updated: '2026-01-23'
 papers:
+  tcjmyp4AAAAJ:1qzjygNMrQYC:
+    citations: 0
+    title: Probabilistic Multi-Agent Aircraft Landing Time Prediction
+    year: '2026'
   tcjmyp4AAAAJ:BrmTIyaxlBUC:
     citations: 1
     title: 'MAIFormer: Multi-Agent Inverted Transformer for Flight Trajectory Prediction'
@@ -17,12 +21,8 @@ papers:
     citations: 0
     title: Urban Air Mobility Fleet Rebalancing with Real-Time Updates on Estimated Time of Arrival
     year: '2024'
-  tcjmyp4AAAAJ:eflP2zaiRacC:
-    citations: 0
-    title: Probabilistic Multi-Agent Aircraft Landing Time Prediction
-    year: '2025'
   tcjmyp4AAAAJ:kRWSkSYxWN8C:
-    citations: 9
+    citations: 10
     title: Aircraft Trajectory Prediction with Inverted Transformer
     year: '2025'
   tcjmyp4AAAAJ:mvPsJ3kp5DgC:
