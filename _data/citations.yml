@@ -1,17 +1,25 @@
 metadata:
-  last_updated: '2026-01-26'
+  last_updated: '2026-03-13'
 papers:
   tcjmyp4AAAAJ:1qzjygNMrQYC:
     citations: 0
     title: Probabilistic Multi-Agent Aircraft Landing Time Prediction
     year: '2026'
-  tcjmyp4AAAAJ:BrmTIyaxlBUC:
-    citations: 1
-    title: 'MAIFormer: Multi-Agent Inverted Transformer for Flight Trajectory Prediction'
-    year: '2025'
+  tcjmyp4AAAAJ:5ugPr518TE4C:
+    citations: 5
+    title: Improving Aircraft Trajectory Prediction Accuracy with Over-sampling Technique
+    year: '2023'
   tcjmyp4AAAAJ:UxriW0iASnsC:
-    citations: 0
+    citations: 1
     title: Aircraft Trajectory Dataset Augmentation in Latent Space
+    year: '2025'
+  tcjmyp4AAAAJ:XiVPGOgt02cC:
+    citations: 15
+    title: Aircraft Trajectory Prediction with Inverted Transformer
+    year: '2025'
+  tcjmyp4AAAAJ:bnK-pcrLprsC:
+    citations: 3
+    title: Multi-Agent Inverted Transformer for Flight Trajectory Prediction
     year: '2025'
   tcjmyp4AAAAJ:dhFuZR0502QC:
     citations: 0
@@ -21,14 +29,6 @@ papers:
     citations: 1
     title: Urban Air Mobility Fleet Rebalancing with Real-Time Updates on Estimated Time of Arrival
     year: '2024'
-  tcjmyp4AAAAJ:kRWSkSYxWN8C:
-    citations: 10
-    title: Aircraft Trajectory Prediction with Inverted Transformer
-    year: '2025'
-  tcjmyp4AAAAJ:mvPsJ3kp5DgC:
-    citations: 4
-    title: Improving Aircraft Trajectory Prediction Accuracy with Over-sampling Technique
-    year: '2023'
   tcjmyp4AAAAJ:q3oQSFYPqjQC:
     citations: 1
     title: Learning to Explain Air Traffic Situation
