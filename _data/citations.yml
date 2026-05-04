@@ -1,20 +1,24 @@
 metadata:
-  last_updated: '2026-03-13'
+  last_updated: '2026-05-04'
 papers:
-  tcjmyp4AAAAJ:1qzjygNMrQYC:
+  tcjmyp4AAAAJ:AXPGKjj_ei8C:
     citations: 0
     title: Probabilistic Multi-Agent Aircraft Landing Time Prediction
     year: '2026'
-  tcjmyp4AAAAJ:5ugPr518TE4C:
-    citations: 5
+  tcjmyp4AAAAJ:HE397vMXCloC:
+    citations: 6
     title: Improving Aircraft Trajectory Prediction Accuracy with Over-sampling Technique
     year: '2023'
-  tcjmyp4AAAAJ:UxriW0iASnsC:
+  tcjmyp4AAAAJ:Mojj43d5GZwC:
     citations: 1
+    title: Urban Air Mobility Fleet Rebalancing with Real-Time Updates on Estimated Time of Arrival
+    year: '2024'
+  tcjmyp4AAAAJ:WA5NYHcadZ8C:
+    citations: 2
     title: Aircraft Trajectory Dataset Augmentation in Latent Space
     year: '2025'
   tcjmyp4AAAAJ:XiVPGOgt02cC:
-    citations: 15
+    citations: 16
     title: Aircraft Trajectory Prediction with Inverted Transformer
     year: '2025'
   tcjmyp4AAAAJ:bnK-pcrLprsC:
@@ -25,10 +29,6 @@ papers:
     citations: 0
     title: Safety and Capacity Analysis Framework for Integrated UAM Operation in Airports
     year: '2023'
-  tcjmyp4AAAAJ:eJXPG6dFmWUC:
-    citations: 1
-    title: Urban Air Mobility Fleet Rebalancing with Real-Time Updates on Estimated Time of Arrival
-    year: '2024'
   tcjmyp4AAAAJ:q3oQSFYPqjQC:
     citations: 1
     title: Learning to Explain Air Traffic Situation
