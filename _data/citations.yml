@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-04'
+  last_updated: '2026-05-15'
 papers:
   tcjmyp4AAAAJ:AXPGKjj_ei8C:
     citations: 0
@@ -18,15 +18,15 @@ papers:
     title: Aircraft Trajectory Dataset Augmentation in Latent Space
     year: '2025'
   tcjmyp4AAAAJ:XiVPGOgt02cC:
-    citations: 16
+    citations: 17
     title: Aircraft Trajectory Prediction with Inverted Transformer
     year: '2025'
-  tcjmyp4AAAAJ:bnK-pcrLprsC:
+  tcjmyp4AAAAJ:Y5dfb0dijaUC:
     citations: 3
     title: Multi-Agent Inverted Transformer for Flight Trajectory Prediction
-    year: '2025'
+    year: '2026'
   tcjmyp4AAAAJ:dhFuZR0502QC:
-    citations: 0
+    citations: 1
     title: Safety and Capacity Analysis Framework for Integrated UAM Operation in Airports
     year: '2023'
   tcjmyp4AAAAJ:q3oQSFYPqjQC:
