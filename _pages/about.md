@@ -26,6 +26,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+seokbin.yoon [at] gwu [dot] edu
+
 I am an incoming Ph.D. student in Mechanical and Aerospace Engineering at [George Washington University](https://www.gwu.edu/), where I will be advised by Prof. [Peng Wei](https://scholar.google.com/citations?user=1cfltHsAAAAJ&hl=ko&oi=ao). I work at the intersection of air traffic control and machine learning.
 
 I received both my B.S. and M.S. in Air Transportation from [Korea Aerospace University](https://kau.ac.kr/english/index/main.php). As an undergraduate, I studied air traffic control and earned an air traffic controller license. During my master’s studies, advised by Prof. [Keumjin Lee](https://scholar.google.com/citations?user=GO7fwgEAAAAJ&hl=ko), I worked on multi agent trajectory modeling, generative models for flight trajectories, and automatic speech recognition systems for air traffic control communication.
