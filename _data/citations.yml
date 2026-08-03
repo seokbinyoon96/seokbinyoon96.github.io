@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-01'
+  last_updated: '2026-08-03'
 papers:
   tcjmyp4AAAAJ:AXPGKjj_ei8C:
     citations: 0
@@ -18,7 +18,7 @@ papers:
     title: Aircraft Trajectory Dataset Augmentation in Latent Space
     year: '2026'
   tcjmyp4AAAAJ:XiVPGOgt02cC:
-    citations: 20
+    citations: 19
     title: Aircraft Trajectory Prediction with Inverted Transformer
     year: '2025'
   tcjmyp4AAAAJ:Y5dfb0dijaUC:
