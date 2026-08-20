@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-seokbin.yoon [at] gwu [dot] edu
+seokbin [dot] yoon [at] gwu [dot] edu
 
 I am a Ph.D. student in Mechanical and Aerospace Engineering at [George Washington University](https://www.gwu.edu/), where I am currently advised by Prof. [Peng Wei](https://scholar.google.com/citations?user=1cfltHsAAAAJ&hl=ko&oi=ao). I work at the intersection of air traffic control and machine learning.
 
