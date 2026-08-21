@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-12'
+  last_updated: '2026-08-21'
 papers:
   tcjmyp4AAAAJ:AXPGKjj_ei8C:
     citations: 0
@@ -17,8 +17,12 @@ papers:
     citations: 3
     title: Aircraft Trajectory Dataset Augmentation in Latent Space
     year: '2026'
+  tcjmyp4AAAAJ:SdhP9T11ey4C:
+    citations: 0
+    title: Can Vision Models Read the Radar Display? On the Feasibility of Radar Imagery for Air Traffic Complexity Estimation
+    year: '2026'
   tcjmyp4AAAAJ:XiVPGOgt02cC:
-    citations: 22
+    citations: 24
     title: Aircraft Trajectory Prediction with Inverted Transformer
     year: '2025'
   tcjmyp4AAAAJ:Y5dfb0dijaUC:
