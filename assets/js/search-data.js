@@ -376,8 +376,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-obtained-an-air-traffic-controller-license-from-the-ministry-of-land-infrastructure-and-transport-south-korea",
-          title: 'Obtained an air traffic controller license from the Ministry of Land, Infrastructure and...',
+            },},{id: "news-i-obtained-my-air-traffic-controller-license-from-the-ministry-of-land-infrastructure-and-transport-south-korea-one-of-the-most-meaningful-milestones-in-my-journey-in-aviation",
+          title: 'I obtained my Air Traffic Controller License from the Ministry of Land, Infrastructure...',
           description: "",
           section: "News",},{id: "news-our-study-on-integrated-uam-operations-at-airports-was-selected-for-the-best-paper-of-session-award-at-dasc-2023",
           title: 'Our study on integrated UAM operations at airports was selected for the Best...',
