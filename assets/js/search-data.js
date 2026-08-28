@@ -415,7 +415,7 @@ ninja.data = [{
           section: "News",},{id: "news-i-gave-a-talk-at-the-department-of-civil-urban-and-environmental-engineering-seoul-national-university-on-trajectory-modeling-and-prediction-i-shared-my-thoughts-on-the-similarities-and-differences-between-autonomous-driving-and-air-traffic-and-how-we-might-approach-these-problems-from-a-modeling-perspective",
           title: 'I gave a talk at the Department of Civil, Urban and Environmental Engineering,...',
           description: "",
-          section: "News",},{id: "news-i-started-my-ph-d-in-mechanical-and-aerospace-engineering-at-george-washington-university-advised-by-prof-peng-wei-my-research-focuses-on-machine-learning-and-autonomous-systems-for-air-traffic-control",
+          section: "News",},{id: "news-i-started-my-ph-d-in-mechanical-and-aerospace-engineering-at-george-washington-university-advised-by-prof-peng-wei-my-research-focuses-on-machine-learning-and-autonomous-systems-for-air-traffic-control-very-excited-for-what-s-ahead-let-s-goooo",
           title: 'I started my Ph.D. in Mechanical and Aerospace Engineering at George Washington University,...',
           description: "",
           section: "News",},{id: "news-received-the-best-paper-of-session-award-at-dasc-2026-for-our-work-on-airport-passenger-queue-forecasting-i-will-be-attending-dasc-2026-in-orlando-florida-feel-free-to-reach-out-if-you-d-like-to-connect-check-out-the-paper-here",
