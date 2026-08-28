@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our work on probabilistic multi-agent aircraft landing time prediction received the Best Student Paper Award at AIAA SciTech 2026.
+Best Student Paper Award, AIAA SciTech 2026, for work on probabilistic aircraft landing time prediction.
