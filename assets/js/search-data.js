@@ -400,7 +400,7 @@ ninja.data = [{
           section: "News",},{id: "news-our-work-on-explaining-air-traffic-situations-using-machine-learning-was-presented-at-the-us-europe-air-transportation-research-amp-amp-development-symposium-2025",
           title: 'Our work on explaining air traffic situations using machine learning was presented at...',
           description: "",
-          section: "News",},{id: "news-our-paper-on-aircraft-trajectory-data-augmentation-in-latent-space-was-accepted-to-the-international-journal-of-aeronautical-and-space-sciences",
+          section: "News",},{id: "news-our-paper-on-aircraft-trajectory-data-augmentation-in-latent-space-was-accepted-to-the-international-journal-of-aeronautical-and-space-sciences-you-can-find-the-paper-here",
           title: 'Our paper on aircraft trajectory data augmentation in latent space was accepted to...',
           description: "",
           section: "News",},{id: "news-our-work-on-probabilistic-multi-agent-aircraft-landing-time-prediction-received-the-best-student-paper-award-in-intelligent-systems-at-aiaa-scitech-2026-read-more-about-the-work-here",
