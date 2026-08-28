@@ -406,7 +406,7 @@ ninja.data = [{
           section: "News",},{id: "news-our-work-on-probabilistic-multi-agent-aircraft-landing-time-prediction-received-the-best-student-paper-award-in-intelligent-systems-at-aiaa-scitech-2026",
           title: 'Our work on probabilistic multi-agent aircraft landing time prediction received the Best Student...',
           description: "",
-          section: "News",},{id: "news-our-paper-on-multi-agent-aircraft-trajectory-prediction-was-accepted-to-ieee-transactions-on-intelligent-transportation-systems-maiformer-is-particularly-special-to-me-so-i-am-especially-happy-to-see-this-work-published",
+          section: "News",},{id: "news-our-paper-on-multi-agent-aircraft-trajectory-prediction-was-accepted-to-ieee-transactions-on-intelligent-transportation-systems-maiformer-is-particularly-special-to-me-so-i-am-especially-happy-to-see-this-work-published-the-paper-link-is-here",
           title: 'Our paper on multi-agent aircraft trajectory prediction was accepted to IEEE Transactions on...',
           description: "",
           section: "News",},{id: "news-i-presented-our-work-on-air-traffic-complexity-estimation-using-radar-imagery-at-the-atrs-world-conference-2026-the-study-explores-the-use-of-vision-models-to-estimate-air-traffic-complexity-directly-from-radar-displays",
