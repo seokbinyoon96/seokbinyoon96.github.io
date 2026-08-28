@@ -391,7 +391,7 @@ ninja.data = [{
           section: "News",},{id: "news-i-graduated-from-korea-aerospace-university-with-an-m-s-in-air-transport-transportation-and-logistics-thanks-to-everyone-who-supported-me-throughout-my-master-s-journey",
           title: 'I graduated from Korea Aerospace University with an M.S. in Air Transport, Transportation,...',
           description: "",
-          section: "News",},{id: "news-honored-to-receive-the-best-paper-of-session-award-at-dasc-2024-for-our-research-on-real-time-uam-fleet-rebalancing",
+          section: "News",},{id: "news-honored-to-receive-the-best-paper-of-session-award-at-dasc-2024-for-our-research-on-real-time-uam-fleet-rebalancing-the-paper-is-available-here",
           title: 'Honored to receive the Best Paper of Session Award at DASC 2024 for...',
           description: "",
           section: "News",},{id: "news-our-work-on-aircraft-trajectory-prediction-using-inverted-transformers-was-accepted-to-ieee-access-it-s-my-first-journal-paper-check-out-the-paper-here",
