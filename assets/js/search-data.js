@@ -385,7 +385,7 @@ ninja.data = [{
           section: "News",},{id: "news-i-received-the-president-s-award-at-korea-aerospace-university-for-winning-first-place-in-the-graduate-research-competition",
           title: 'I received the President’s Award at Korea Aerospace University for winning first place...',
           description: "",
-          section: "News",},{id: "news-our-study-on-integrated-uam-operations-at-airports-was-selected-for-the-best-paper-of-session-award-at-dasc-2023",
+          section: "News",},{id: "news-our-study-on-integrated-uam-operations-at-airports-was-selected-for-the-best-paper-of-session-award-at-dasc-2023-the-paper-link-is-here",
           title: 'Our study on integrated UAM operations at airports was selected for the Best...',
           description: "",
           section: "News",},{id: "news-i-graduated-from-korea-aerospace-university-with-an-m-s-in-air-transport-transportation-and-logistics-thanks-to-everyone-who-supported-me-throughout-my-master-s-journey",
