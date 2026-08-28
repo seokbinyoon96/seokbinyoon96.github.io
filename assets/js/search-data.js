@@ -403,7 +403,7 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-aircraft-trajectory-data-augmentation-in-latent-space-was-accepted-to-the-international-journal-of-aeronautical-and-space-sciences",
           title: 'Our paper on aircraft trajectory data augmentation in latent space was accepted to...',
           description: "",
-          section: "News",},{id: "news-our-work-on-probabilistic-multi-agent-aircraft-landing-time-prediction-received-the-best-student-paper-award-in-intelligent-systems-at-aiaa-scitech-2026",
+          section: "News",},{id: "news-our-work-on-probabilistic-multi-agent-aircraft-landing-time-prediction-received-the-best-student-paper-award-in-intelligent-systems-at-aiaa-scitech-2026-read-more-about-the-work-here",
           title: 'Our work on probabilistic multi-agent aircraft landing time prediction received the Best Student...',
           description: "",
           section: "News",},{id: "news-our-paper-on-multi-agent-aircraft-trajectory-prediction-was-accepted-to-ieee-transactions-on-intelligent-transportation-systems-maiformer-is-particularly-special-to-me-so-i-am-especially-happy-to-see-this-work-published-the-paper-link-is-here",
