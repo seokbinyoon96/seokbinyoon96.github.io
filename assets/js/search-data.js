@@ -376,10 +376,7 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-our-paper-on-aircraft-trajectory-prediction-using-inverted-transformers-was-accepted-to-ieee-access",
+            },},{id: "news-our-paper-on-aircraft-trajectory-prediction-using-inverted-transformers-was-accepted-to-ieee-access",
           title: 'Our paper on aircraft trajectory prediction using inverted Transformers was accepted to IEEE...',
           description: "",
           section: "News",},{id: "news-our-paper-on-aircraft-trajectory-data-augmentation-using-latent-representations-was-accepted-to-the-international-journal-of-aeronautical-and-space-sciences",
