@@ -376,7 +376,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-best-paper-of-session-award-dasc-2023-for-work-on-safety-and-capacity-analysis-of-integrated-uam-operations-at-airports",
+            },},{id: "news-obtained-an-air-traffic-controller-license-from-the-ministry-of-land-infrastructure-and-transport-south-korea",
+          title: 'Obtained an air traffic controller license from the Ministry of Land, Infrastructure and...',
+          description: "",
+          section: "News",},{id: "news-best-paper-of-session-award-dasc-2023-for-work-on-safety-and-capacity-analysis-of-integrated-uam-operations-at-airports",
           title: 'Best Paper of Session Award, DASC 2023, for work on safety and capacity...',
           description: "",
           section: "News",},{id: "news-best-paper-of-session-award-dasc-2024-for-work-on-uam-fleet-rebalancing-with-real-time-eta-updates",
