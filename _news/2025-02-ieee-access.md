@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper on aircraft trajectory prediction using inverted Transformers was accepted to IEEE Access.
+Paper on aircraft trajectory prediction accepted to IEEE Access.
