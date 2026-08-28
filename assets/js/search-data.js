@@ -397,7 +397,7 @@ ninja.data = [{
           section: "News",},{id: "news-our-work-on-aircraft-trajectory-prediction-using-inverted-transformers-was-accepted-to-ieee-access-it-s-my-first-journal-paper-check-out-the-paper-here",
           title: 'Our work on aircraft trajectory prediction using Inverted Transformers was accepted to IEEE...',
           description: "",
-          section: "News",},{id: "news-our-work-on-explaining-air-traffic-situations-using-machine-learning-was-presented-at-the-us-europe-air-transportation-research-amp-amp-development-symposium-2025",
+          section: "News",},{id: "news-our-work-on-explaining-air-traffic-situations-using-machine-learning-was-presented-at-the-us-europe-air-transportation-research-amp-amp-development-symposium-2025-check-out-the-paper-here",
           title: 'Our work on explaining air traffic situations using machine learning was presented at...',
           description: "",
           section: "News",},{id: "news-our-paper-on-aircraft-trajectory-data-augmentation-in-latent-space-was-accepted-to-the-international-journal-of-aeronautical-and-space-sciences-you-can-find-the-paper-here",
