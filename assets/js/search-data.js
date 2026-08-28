@@ -394,7 +394,7 @@ ninja.data = [{
           section: "News",},{id: "news-honored-to-receive-the-best-paper-of-session-award-at-dasc-2024-for-our-research-on-real-time-uam-fleet-rebalancing",
           title: 'Honored to receive the Best Paper of Session Award at DASC 2024 for...',
           description: "",
-          section: "News",},{id: "news-our-work-on-aircraft-trajectory-prediction-using-inverted-transformers-was-accepted-to-ieee-access-it-s-my-first-journal-paper",
+          section: "News",},{id: "news-our-work-on-aircraft-trajectory-prediction-using-inverted-transformers-was-accepted-to-ieee-access-it-s-my-first-journal-paper-check-out-the-paper-here",
           title: 'Our work on aircraft trajectory prediction using Inverted Transformers was accepted to IEEE...',
           description: "",
           section: "News",},{id: "news-our-work-on-explaining-air-traffic-situations-using-machine-learning-was-presented-at-the-us-europe-air-transportation-research-amp-amp-development-symposium-2025",
