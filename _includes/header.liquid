@@ -31,8 +31,39 @@
 
       {% elsif site.enable_navbar_social %}
         <!-- Social Icons on Home Page -->
-        <div class="navbar-brand social navbar-social-icons">
-          {% include social.liquid %}
+        <div class="navbar-brand d-flex align-items-center" style="gap: 14px;">
+
+          <a
+            href="mailto:seokbin.yoon@gwu.edu"
+            title="Email"
+            aria-label="Email"
+            style="color: var(--global-text-color); font-size: 1.1rem;"
+          >
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/seokbin-yoon-329799227/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="LinkedIn"
+            aria-label="LinkedIn"
+            style="color: var(--global-text-color); font-size: 1.1rem;"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a
+            href="https://scholar.google.com/citations?user=tcjmyp4AAAAJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Google Scholar"
+            aria-label="Google Scholar"
+            style="color: var(--global-text-color); font-size: 1.1rem;"
+          >
+            <i class="ai ai-google-scholar"></i>
+          </a>
+
         </div>
       {% endif %}
 
