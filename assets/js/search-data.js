@@ -376,8 +376,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-our-paper-on-aircraft-trajectory-prediction-using-inverted-transformers-was-accepted-to-ieee-access",
-          title: 'Our paper on aircraft trajectory prediction using inverted Transformers was accepted to IEEE...',
+            },},{id: "news-paper-on-aircraft-trajectory-prediction-accepted-to-ieee-access",
+          title: 'Paper on aircraft trajectory prediction accepted to IEEE Access.',
           description: "",
           section: "News",},{id: "news-paper-on-aircraft-trajectory-data-augmentation-accepted-to-the-international-journal-of-aeronautical-and-space-sciences",
           title: 'Paper on aircraft trajectory data augmentation accepted to the International Journal of Aeronautical...',
