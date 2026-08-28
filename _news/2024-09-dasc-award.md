@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Best Paper of Session Award, DASC 2024, for work on UAM fleet rebalancing with real-time ETA updates.
+Honored to receive the Best Paper of Session Award at DASC 2024 for our research on real-time UAM fleet rebalancing.
