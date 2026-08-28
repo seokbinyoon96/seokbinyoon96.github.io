@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our work on airport passenger queue forecasting received the Best Paper of Session Award at DASC 2026.
+Best Paper of Session Award, DASC 2026, for work on airport passenger queue forecasting.
