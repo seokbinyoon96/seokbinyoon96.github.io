@@ -379,7 +379,7 @@ ninja.data = [{
             },},{id: "news-i-was-awarded-the-brain-korea-21-plus-bk21-research-scholarship-funded-by-the-korean-government",
           title: 'I was awarded the Brain Korea 21 Plus (BK21+) Research Scholarship funded by...',
           description: "",
-          section: "News",},{id: "news-i-obtained-my-air-traffic-controller-license-from-the-ministry-of-land-infrastructure-and-transport-south-korea-one-of-the-most-meaningful-milestones-in-my-journey-in-aviation",
+          section: "News",},{id: "news-i-obtained-my-air-traffic-controller-license-from-the-ministry-of-land-infrastructure-and-transport-south-korea-this-came-after-a-year-of-training-and-remains-one-of-the-most-meaningful-milestones-in-my-journey-in-aviation",
           title: 'I obtained my Air Traffic Controller License from the Ministry of Land, Infrastructure...',
           description: "",
           section: "News",},{id: "news-i-received-the-president-s-award-at-korea-aerospace-university-for-winning-first-place-in-the-graduate-research-competition",
