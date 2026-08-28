@@ -377,7 +377,7 @@ ninja.data = [{
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
             },},{id: "news-i-was-awarded-the-brain-korea-21-plus-bk21-research-scholarship-funded-by-the-korean-government",
-          title: 'I was awarded the Brain Korea 21 Plus (BK21+) Research Scholarship** funded by...',
+          title: 'I was awarded the Brain Korea 21 Plus (BK21+) Research Scholarship funded by...',
           description: "",
           section: "News",},{id: "news-i-obtained-my-air-traffic-controller-license-from-the-ministry-of-land-infrastructure-and-transport-south-korea-one-of-the-most-meaningful-milestones-in-my-journey-in-aviation",
           title: 'I obtained my Air Traffic Controller License from the Ministry of Land, Infrastructure...',
@@ -403,7 +403,7 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-aircraft-trajectory-data-augmentation-in-latent-space-was-accepted-to-the-international-journal-of-aeronautical-and-space-sciences",
           title: 'Our paper on aircraft trajectory data augmentation in latent space was accepted to...',
           description: "",
-          section: "News",},{id: "news-our-work-on-probabilistic-multi-agent-aircraft-landing-time-prediction-received-the-best-student-paper-award-at-aiaa-scitech-2026",
+          section: "News",},{id: "news-our-work-on-probabilistic-multi-agent-aircraft-landing-time-prediction-received-the-best-student-paper-award-in-intelligent-systems-at-aiaa-scitech-2026",
           title: 'Our work on probabilistic multi-agent aircraft landing time prediction received the Best Student...',
           description: "",
           section: "News",},{id: "news-our-paper-on-multi-agent-aircraft-trajectory-prediction-was-accepted-to-ieee-transactions-on-intelligent-transportation-systems-maiformer-is-particularly-special-to-me-so-i-am-especially-happy-to-see-this-work-published",
