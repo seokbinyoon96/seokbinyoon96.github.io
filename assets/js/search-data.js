@@ -377,7 +377,7 @@ ninja.data = [{
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
             },},{id: "news-i-was-awarded-the-brain-korea-21-plus-bk21-research-scholarship-funded-by-the-korean-government",
-          title: 'I was awarded the Brain Korea 21 Plus (BK21+) Research Scholarship** funded by...',
+          title: 'I was awarded the Brain Korea 21 Plus (BK21+) Research Scholarship funded by...',
           description: "",
           section: "News",},{id: "news-i-obtained-my-air-traffic-controller-license-from-the-ministry-of-land-infrastructure-and-transport-south-korea-one-of-the-most-meaningful-milestones-in-my-journey-in-aviation",
           title: 'I obtained my Air Traffic Controller License from the Ministry of Land, Infrastructure...',
@@ -415,7 +415,7 @@ ninja.data = [{
           section: "News",},{id: "news-i-started-my-ph-d-in-mechanical-and-aerospace-engineering-at-george-washington-university-advised-by-prof-peng-wei-my-research-focuses-on-machine-learning-and-autonomous-systems-for-air-traffic-control",
           title: 'I started my Ph.D. in Mechanical and Aerospace Engineering at George Washington University,...',
           description: "",
-          section: "News",},{id: "news-received-the-best-paper-of-session-award-at-dasc-2026-for-our-work-on-airport-passenger-queue-forecasting-i-will-be-attending-dasc-2026-in-orlando-florida-feel-free-to-reach-out-if-you-d-like-to-connect",
+          section: "News",},{id: "news-received-the-best-paper-of-session-award-at-dasc-2026-for-our-work-on-airport-passenger-queue-forecasting-i-will-be-attending-dasc-2026-in-orlando-florida-feel-free-to-reach-out-if-you-d-like-to-connect-check-out-the-paper-here",
           title: 'Received the Best Paper of Session Award at DASC 2026 for our work...',
           description: "",
           section: "News",},{id: "projects-project-1",
