@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Best Paper of Session Award, DASC 2023, for work on safety and capacity analysis of integrated UAM operations at airports.
+Our study on integrated UAM operations at airports was selected for the Best Paper of Session Award at DASC 2023.
