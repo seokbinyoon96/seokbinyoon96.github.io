@@ -1,14 +1,14 @@
 metadata:
-  last_updated: '2026-08-21'
+  last_updated: '2026-09-02'
 papers:
+  tcjmyp4AAAAJ:5awf1xo2G04C:
+    citations: 6
+    title: Improving Aircraft Trajectory Prediction Accuracy with Over-sampling Technique
+    year: '2023'
   tcjmyp4AAAAJ:AXPGKjj_ei8C:
     citations: 0
     title: Probabilistic Multi-Agent Aircraft Landing Time Prediction
     year: '2026'
-  tcjmyp4AAAAJ:HE397vMXCloC:
-    citations: 6
-    title: Improving Aircraft Trajectory Prediction Accuracy with Over-sampling Technique
-    year: '2023'
   tcjmyp4AAAAJ:Mojj43d5GZwC:
     citations: 1
     title: Urban Air Mobility Fleet Rebalancing with Real-Time Updates on Estimated Time of Arrival
@@ -21,12 +21,12 @@ papers:
     citations: 0
     title: Can Vision Models Read the Radar Display? On the Feasibility of Radar Imagery for Air Traffic Complexity Estimation
     year: '2026'
-  tcjmyp4AAAAJ:XiVPGOgt02cC:
+  tcjmyp4AAAAJ:WqliGbK-hY8C:
     citations: 24
     title: Aircraft Trajectory Prediction with Inverted Transformer
     year: '2025'
   tcjmyp4AAAAJ:Y5dfb0dijaUC:
-    citations: 3
+    citations: 4
     title: Multi-Agent Inverted Transformer for Flight Trajectory Prediction
     year: '2026'
   tcjmyp4AAAAJ:dTyEYWd-f8wC:
