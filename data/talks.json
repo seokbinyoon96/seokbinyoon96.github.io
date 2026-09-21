@@ -5,7 +5,11 @@
     "height": 90,
     "lines": [
       {
-        "text": "I gave a talk titled \"Not All Trajectory Predictions Are the Same,\" discussing trajectory prediction in autonomous driving and air traffic control, at the Department of Civil, Urban and Environmental Engineering, Seoul National University, 2026."
+        "text": "Not All Trajectory Predictions Are the Same",
+        "bold": true
+      },
+      {
+        "text": "I gave a talk about trajectory prediction in autonomous driving and air traffic control at the Department of Civil, Urban and Environmental Engineering, Seoul National University, 2026."
       }
     ]
   }
