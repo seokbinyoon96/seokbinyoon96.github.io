@@ -1,0 +1,88 @@
+[
+  {
+    "id": "airport-queue",
+    "title": "Airport Terminal Passenger Queue Forecasting for Departure Gates and Security Checkpoints",
+    "authors": [
+      { "name": "Juhwan Lee" },
+      { "name": "Seokbin Yoon", "me": true },
+      { "name": "Keumjin Lee", "url": "https://scholar.google.com/citations?user=GO7fwgEAAAAJ" },
+      { "name": "Hojong Baik" },
+      { "name": "Seyeon Jung" }
+    ],
+    "venue": "AIAA DATC/IEEE Digital Avionics Systems Conference (DASC)",
+    "year": 2026,
+    "image": "images/result_t-SNE_hour.png",
+    "notes": ["Best Paper of Session Award", "Top 10 Student Paper Finalist"],
+    "links": [{ "label": "arXiv", "url": "https://arxiv.org/abs/2606.07622" }],
+    "bibtex": "data/bib/lee2026airport.bib",
+    "summary": "We develop a Transformer-based framework for forecasting passenger queues across airport facilities by jointly learning temporal dependencies and correlations among check-in islands, departure gates, and security checkpoints."
+  },
+  {
+    "id": "maiformer",
+    "title": "Multi-Agent Inverted Transformer for Flight Trajectory Prediction",
+    "authors": [
+      { "name": "Seokbin Yoon", "me": true },
+      { "name": "Keumjin Lee", "url": "https://scholar.google.com/citations?user=GO7fwgEAAAAJ" }
+    ],
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "year": 2026,
+    "image": "images/maiformer1.png",
+    "notes": [],
+    "links": [
+      { "label": "paper", "url": "https://ieeexplore.ieee.org/document/11509261" },
+      { "label": "doi", "url": "https://doi.org/10.1109/TITS.2026.3689290" }
+    ],
+    "bibtex": "data/bib/yoon2026maiformer.bib",
+    "summary": "We introduce MAIFormer, a multi-agent trajectory prediction model that jointly captures each aircraft's spatio-temporal behavior and interactions among aircraft through multivariate and agent attention."
+  },
+  {
+    "id": "landing-time",
+    "title": "Probabilistic Multi-Agent Aircraft Landing Time Prediction",
+    "authors": [
+      { "name": "Kyungmin Kim" },
+      { "name": "Seokbin Yoon", "me": true },
+      { "name": "Keumjin Lee", "url": "https://scholar.google.com/citations?user=GO7fwgEAAAAJ" }
+    ],
+    "venue": "AIAA SciTech",
+    "year": 2026,
+    "image": "images/unstable.png",
+    "notes": ["Best Student Paper Award in Intelligent Systems"],
+    "links": [
+      { "label": "paper", "url": "https://arc.aiaa.org/doi/abs/10.2514/6.2026-1764" },
+      { "label": "doi", "url": "https://doi.org/10.2514/6.2026-1764" }
+    ],
+    "bibtex": "data/bib/kim2026landing.bib",
+    "summary": "We model aircraft landing times probabilistically while accounting for interactions among multiple aircraft, enabling both accurate predictions and explicit uncertainty estimation."
+  },
+  {
+    "id": "learning-to-explain",
+    "title": "Learning to Explain Air Traffic Situation",
+    "authors": [
+      { "name": "Hong-ah Chai" },
+      { "name": "Seokbin Yoon", "me": true },
+      { "name": "Keumjin Lee", "url": "https://scholar.google.com/citations?user=GO7fwgEAAAAJ" }
+    ],
+    "venue": "US-Europe Air Transportation Research & Development Symposium",
+    "year": 2025,
+    "image": "images/learning4.png",
+    "notes": [],
+    "links": [{ "label": "arXiv", "url": "https://arxiv.org/abs/2502.10764" }],
+    "bibtex": "data/bib/chai2025learning.bib",
+    "summary": "We investigate how attention learned from multi-agent aircraft trajectories can identify influential aircraft and provide interpretable representations of complex air traffic situations."
+  },
+  {
+    "id": "latent-augmentation",
+    "title": "Aircraft Trajectory Dataset Augmentation in Latent Space",
+    "authors": [
+      { "name": "Seokbin Yoon", "me": true },
+      { "name": "Keumjin Lee", "url": "https://scholar.google.com/citations?user=GO7fwgEAAAAJ" }
+    ],
+    "venue": "International Journal of Aeronautical and Space Sciences",
+    "year": 2025,
+    "image": "images/density.png",
+    "notes": [],
+    "links": [{ "label": "paper", "url": "https://doi.org/10.1007/s42405-025-01054-x" }],
+    "bibtex": "data/bib/yoon2025aircraft.bib",
+    "summary": "We propose a latent-space aircraft trajectory augmentation framework that learns compact representations of flight trajectories and generates realistic synthetic trajectories while preserving the underlying structure of the original data."
+  }
+]

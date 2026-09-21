@@ -1,0 +1,46 @@
+[
+  { "date": "09/2026", "recent": true,
+    "html": "Our work on <a href=\"https://arxiv.org/abs/2606.07622\"><strong>airport terminal passenger queue forecasting</strong></a> received the <strong>Best Paper of Session Award</strong> at DASC 2026." },
+
+  { "date": "08/2026", "recent": true,
+    "html": "I started my Ph.D. in Mechanical and Aerospace Engineering at <strong>George Washington University</strong>, advised by Prof. <a href=\"https://scholar.google.com/citations?user=1cfltHsAAAAJ\"><strong>Peng Wei</strong></a>." },
+
+  { "date": "07/2026", "recent": true,
+    "html": "I gave a talk at the Department of Civil, Urban and Environmental Engineering at <strong>Seoul National University</strong> on aircraft trajectory modeling and prediction." },
+
+  { "date": "06/2026", "recent": true,
+    "html": "I presented our work on <strong>air traffic complexity estimation using radar imagery</strong> at the ATRS World Conference 2026." },
+
+  { "date": "05/2026", "recent": true,
+    "html": "Our paper <a href=\"https://ieeexplore.ieee.org/document/11509261\"><strong>Multi-Agent Inverted Transformer for Flight Trajectory Prediction</strong></a> was accepted to <strong>IEEE Transactions on Intelligent Transportation Systems</strong>." },
+
+  { "date": "01/2026", "recent": true,
+    "html": "Our work on <a href=\"https://arc.aiaa.org/doi/abs/10.2514/6.2026-1764\"><strong>Probabilistic Multi-Agent Aircraft Landing Time Prediction</strong></a> received the <strong>Best Student Paper Award in Intelligent Systems</strong> at AIAA SciTech 2026." },
+
+  { "date": "10/2025",
+    "html": "Our paper <a href=\"https://doi.org/10.1007/s42405-025-01054-x\"><strong>Aircraft Trajectory Dataset Augmentation in Latent Space</strong></a> was accepted to the <strong>International Journal of Aeronautical and Space Sciences</strong>." },
+
+  { "date": "06/2025",
+    "html": "Our work on <a href=\"https://arxiv.org/abs/2502.10764\"><strong>Learning to Explain Air Traffic Situation</strong></a> was presented at the <strong>US-Europe Air Transportation Research &amp; Development Symposium</strong>." },
+
+  { "date": "02/2025",
+    "html": "Our paper <a href=\"https://ieeexplore.ieee.org/document/10877800\"><strong>Aircraft Trajectory Prediction with Inverted Transformer</strong></a> was accepted to <strong>IEEE Access</strong>." },
+
+  { "date": "09/2024",
+    "html": "Our research on real-time UAM fleet rebalancing received the <strong>Best Paper of Session Award</strong> at DASC 2024." },
+
+  { "date": "02/2024",
+    "html": "I received my M.S. in Air Transportation from <strong>Korea Aerospace University</strong>." },
+
+  { "date": "10/2023",
+    "html": "Our work on integrated UAM operations at airports received the <strong>Best Paper of Session Award</strong> at DASC 2023." },
+
+  { "date": "09/2023",
+    "html": "I received the <strong>President's Award</strong> at Korea Aerospace University for placing first in the Graduate Research Competition." },
+
+  { "date": "09/2023",
+    "html": "I obtained my <strong>Air Traffic Controller License</strong> from the Ministry of Land, Infrastructure and Transport, Republic of Korea." },
+
+  { "date": "09/2022",
+    "html": "I received the <strong>Brain Korea 21 Plus (BK21+) Research Scholarship</strong>." }
+]

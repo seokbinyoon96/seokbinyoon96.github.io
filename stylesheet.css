@@ -141,3 +141,29 @@ details[open] summary {
   /* border-bottom: 1px solid #aaa; */
   margin-bottom: 0.5em;
 }
+
+/* ---- layout helpers (previously repeated inline on every table) ---- */
+
+table.page {
+  width: 100%;
+  max-width: 800px;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+table.block {
+  width: 100%;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Talks / Misc rows: link-coloured lines, no body copy. */
+.entryline {
+  color: #1772d0;
+}

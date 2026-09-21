@@ -1,0 +1,13 @@
+[
+  { "logo": "images/jais.png", "alt": "AIAA Journal of Aerospace Information Systems", "height": 90,
+    "lines": [
+      { "text": "Reviewer, AIAA Journal of Aerospace Information Systems (2026 - Current)",
+        "url": "https://arc.aiaa.org/journal/jais" }
+    ] },
+
+  { "logo": "images/molit.jpg", "alt": "Ministry of Land, Infrastructure and Transport", "height": 60,
+    "lines": [
+      { "text": "Air Traffic Controller License, 2023" },
+      { "text": "Ministry of Land, Infrastructure and Transport, Republic of Korea" }
+    ] }
+]

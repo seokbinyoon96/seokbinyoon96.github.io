@@ -2,16 +2,56 @@
 
 Personal academic homepage, served at <https://seokbinyoon96.github.io>.
 
-Static site — no build step. The whole page is `index.html` plus `stylesheet.css`.
+Static site — no build step, no dependencies.
+
+## Layout
 
 ```
-index.html        the entire page
-stylesheet.css    fonts and styles
-images/           profile photo and paper thumbnails
-data/             CV PDF
+index.html              page shell: profile, section headings, footer
+stylesheet.css          fonts and styles
+script/site.js          renders the sections below from data/
+data/
+  news.json             news list ("recent": true shows above the fold)
+  publications.json     papers shown on the page
+  awards.json           honors and awards
+  talks.json            talks
+  misc.json             reviewing, licenses, and the like
+  bib/*.bib             one BibTeX entry per paper
+  seokbinyoon_CV.pdf
+images/                 profile photo, paper thumbnails, logos
 ```
 
-To edit, open `index.html` and change the text directly. To preview locally:
+## Editing
+
+Almost everything lives in `data/`. To add a paper, append an entry to
+`data/publications.json` and drop its BibTeX in `data/bib/`:
+
+```json
+{
+  "id": "short-name",
+  "title": "Paper Title",
+  "authors": [
+    { "name": "Seokbin Yoon", "me": true },
+    { "name": "Coauthor", "url": "https://..." }
+  ],
+  "venue": "Conference or Journal",
+  "year": 2026,
+  "image": "images/thumbnail.png",
+  "notes": ["Best Paper Award"],
+  "links": [{ "label": "paper", "url": "https://..." }],
+  "bibtex": "data/bib/key.bib",
+  "summary": "One or two sentences."
+}
+```
+
+`me: true` bolds the name, `notes` render in orange, and a `bibtex` link is
+appended to the link row automatically. Only the bio, the research blurb and
+the section headings live in `index.html`.
+
+## Previewing
+
+The page reads `data/` with `fetch`, so it needs to be served over HTTP —
+opening `index.html` from disk will leave the sections empty.
 
 ```
 python3 -m http.server 8000
