@@ -12,7 +12,7 @@
     "venue": "AIAA DATC/IEEE Digital Avionics Systems Conference (DASC)",
     "year": 2026,
     "image": "images/result_t-SNE_hour.png",
-    "notes": ["Best Paper of Session Award", "Top 10 Student Paper Finalist"],
+    "notes": ["Best Paper of Session Award", "Top 10 Best Student Paper Finalist"],
     "links": [{ "label": "arXiv", "url": "https://arxiv.org/abs/2606.07622" }],
     "bibtex": "data/bib/lee2026airport.bib",
     "summary": "We develop a Transformer-based framework for forecasting passenger queues across airport facilities by jointly learning temporal dependencies and correlations among check-in islands, departure gates, and security checkpoints."
@@ -46,7 +46,7 @@
     "venue": "AIAA SciTech",
     "year": 2026,
     "image": "images/unstable.png",
-    "notes": ["Best Student Paper Award in Intelligent Systems"],
+    "notes": ["Best Student Paper Award"],
     "links": [
       { "label": "paper", "url": "https://arc.aiaa.org/doi/abs/10.2514/6.2026-1764" },
       { "label": "doi", "url": "https://doi.org/10.2514/6.2026-1764" }
