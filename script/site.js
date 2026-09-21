@@ -79,11 +79,11 @@ function renderPublications(pubs, mount) {
 
     return `
       <tr>
-        <td style="padding:20px;width:25%;vertical-align:middle">
+        <td style="padding:20px 10px 20px 20px;width:32%;vertical-align:middle">
           <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.title)}"
-               style="width:160px;max-width:100%;border-style:none">
+               style="width:100%;border-style:none">
         </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td style="padding:20px;width:68%;vertical-align:middle">
           <a href="${escapeHtml(href)}"><papertitle>${escapeHtml(p.title)}</papertitle></a>
           <br>
           ${authorLine(p.authors)}
@@ -122,8 +122,8 @@ function renderAwards(groups, mount) {
 
     return `
       <tr>
-        <td style="padding:20px 16px;width:30%;vertical-align:middle;text-align:center">${logo}</td>
-        <td style="padding:20px 10px;width:70%;vertical-align:middle">${body}</td>
+        <td style="padding:20px 16px;width:34%;vertical-align:middle;text-align:center">${logo}</td>
+        <td style="padding:20px 10px;width:66%;vertical-align:middle">${body}</td>
       </tr>`;
   });
 
