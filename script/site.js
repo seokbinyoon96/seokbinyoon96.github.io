@@ -114,13 +114,16 @@ function renderAwards(groups, mount) {
                       style="max-width:100%;max-height:${g.height || 66}px;object-fit:contain">`;
     const logo = g.url ? `<a href="${escapeHtml(g.url)}">${img}</a>` : img;
     const body = g.items
-      .map((i) => `<strong>${escapeHtml(i.name)}</strong>, ${escapeHtml(i.venue)}`)
+      .map((i) => {
+        const subtitle = i.subtitle ? `<br><em>${escapeHtml(i.subtitle)}</em>` : "";
+        return `<strong>${escapeHtml(i.name)}</strong>${subtitle}<br>${escapeHtml(i.venue)}`;
+      })
       .join("<br><br>");
 
     return `
       <tr>
-        <td style="padding:20px 16px;width:24%;vertical-align:middle;text-align:center">${logo}</td>
-        <td style="padding:20px 10px;width:76%;vertical-align:middle">${body}</td>
+        <td style="padding:20px 16px;width:30%;vertical-align:middle;text-align:center">${logo}</td>
+        <td style="padding:20px 10px;width:70%;vertical-align:middle">${body}</td>
       </tr>`;
   });
 
@@ -149,11 +152,11 @@ function renderEntries(entries, mount) {
 
     return `
       <tr>
-        <td style="padding:20px 16px;width:24%;vertical-align:middle;text-align:center">
+        <td style="padding:20px 16px;width:30%;vertical-align:middle;text-align:center">
           <img src="${escapeHtml(e.logo)}" alt="${escapeHtml(e.alt)}"
                style="max-width:100%;max-height:${e.height || 80}px;object-fit:contain">
         </td>
-        <td style="padding:20px 10px;width:76%;vertical-align:middle;font-family:sans-serif">
+        <td style="padding:20px 10px;width:70%;vertical-align:middle;font-family:sans-serif">
           ${lines}
         </td>
       </tr>`;
