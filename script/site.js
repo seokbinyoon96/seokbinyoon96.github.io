@@ -136,11 +136,15 @@ function renderAwards(groups, mount) {
 function renderEntries(entries, mount) {
   const rows = entries.map((e) => {
     const lines = e.lines
-      .map((l) =>
-        l.url
-          ? `<a href="${escapeHtml(l.url)}">${escapeHtml(l.text)}</a>`
-          : `<span class="entryline">${escapeHtml(l.text)}</span>`
-      )
+      .map((l) => {
+        const text = l.bold
+          ? `<strong>${escapeHtml(l.text)}</strong>`
+          : escapeHtml(l.text);
+    
+        return l.url
+          ? `<a href="${escapeHtml(l.url)}">${text}</a>`
+          : `<span class="entryline">${text}</span>`;
+      })
       .join("<br>");
 
     return `
