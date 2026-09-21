@@ -1,7 +1,6 @@
 [
   { "logo": "images/snu.png", "alt": "Seoul National University", "height": 90,
     "lines": [
-      { "text": "Aircraft Trajectory Modeling and Prediction, 2026" },
-      { "text": "Department of Civil, Urban and Environmental Engineering, Seoul National University" }
+      { "text": "I gave a talk titled "Not All Trajectory Predictions Are the Same," discussing trajectory prediction in autonomous driving and air traffic control, at the Department of Civil, Urban and Environmental Engineering, Seoul National University, 2026." }
     ] }
 ]
