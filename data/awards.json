@@ -1,14 +1,14 @@
 [
-  { "logo": "images/aiaa_logo.png", "alt": "AIAA", "url": "https://www.aiaa.org/", "height": 66,
-    "items": [{ "name": "Best Student Paper Award", "subtitle": "Intelligent Systems", "venue": "AIAA SciTech Forum, 2026" }] },
-
-  { "logo": "images/dasc26.webp", "alt": "DASC 2026", "url": "https://dasconline.org/", "height": 60,
+  { "logo": "images/dasc26.webp", "alt": "DASC 2026", "url": "https://dasconline.org/", "height": 100,
     "items": [{ "name": "Best Paper of Session Award", "subtitle": "Airport and Terminal Operations Analytics session", "venue": "AIAA DATC/IEEE Digital Avionics Systems Conference, 2026" }] },
 
-  { "logo": "images/dasc24.png", "alt": "DASC 2024", "height": 60,
+  { "logo": "images/aiaa_logo.png", "alt": "AIAA", "url": "https://www.aiaa.org/", "height": 80,
+    "items": [{ "name": "Best Student Paper Award", "subtitle": "Intelligent Systems", "venue": "AIAA SciTech Forum, 2026" }] },
+
+  { "logo": "images/dasc24.png", "alt": "DASC 2024", "height": 95,
     "items": [{ "name": "Best Paper of Session Award", "subtitle": "UAM Traffic Management session", "venue": "AIAA DATC/IEEE Digital Avionics Systems Conference, 2024" }] },
 
-  { "logo": "images/dasc23.png", "alt": "DASC 2023", "height": 60,
+  { "logo": "images/dasc23.png", "alt": "DASC 2023", "height": 100,
     "items": [{ "name": "Best Paper of Session Award", "subtitle": "AAM Operations Analysis session", "venue": "IEEE/AIAA Digital Avionics Systems Conference, 2023" }] },
 
   { "logo": "images/bk21_logo.png", "alt": "Brain Korea 21", "height": 52,
