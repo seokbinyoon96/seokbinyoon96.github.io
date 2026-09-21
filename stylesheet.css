@@ -163,7 +163,7 @@ table.block {
   margin-left: auto;
 }
 
-/* Talks / Misc rows: link-coloured lines, no body copy. */
+/* Talks / Misc rows: plain body text for lines that aren't links. */
 .entryline {
-  color: #1772d0;
+  color: inherit;
 }
