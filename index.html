@@ -1,397 +1,1532 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <title>Seokbin Yoon</title>
 
   <meta name="author" content="Seokbin Yoon">
-  <meta name="description" content="Seokbin Yoon is a Ph.D. student in Mechanical and Aerospace Engineering at George Washington University, working at the intersection of air traffic control and machine learning.">
+  <meta name="description"
+        content="Seokbin Yoon is a Ph.D. student at George Washington University working on machine learning, autonomous systems, and air traffic control.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9992;</text></svg>">
+
+  <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9992;</text></svg>">
+
+  <script>
+    function toggleblock(id) {
+      var element = document.getElementById(id);
+      if (element.style.display === "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    }
+  </script>
 </head>
 
+
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Seokbin Yoon</name><br>
-                <span style="font-size:18px">윤석빈</span>
-              </p>
 
-              <p style="font-family:sans-serif">
-                I am a Ph.D. student in Mechanical and Aerospace Engineering at
-                <a href="https://www.gwu.edu/">George Washington University</a>, advised by Prof.
-                <a href="https://scholar.google.com/citations?user=1cfltHsAAAAJ">Peng Wei</a>.
-                I work at the intersection of air traffic control and machine learning.
-              </p>
+<table style="width:100%;
+              max-width:800px;
+              border:0px;
+              border-spacing:0px;
+              border-collapse:separate;
+              margin-right:auto;
+              margin-left:auto;">
 
-              <p style="font-family:sans-serif">
-                I received both my B.S. and M.S. in Air Transportation from
-                <a href="https://kau.ac.kr/english/index/main.php">Korea Aerospace University</a>.
-                As an undergraduate, I studied air traffic control and earned an air traffic controller license.
-                During my master's studies, advised by Prof.
-                <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">Keumjin Lee</a>,
-                I worked on multi-agent trajectory modeling, generative models for flight trajectories,
-                and automatic speech recognition for air traffic control.
-              </p>
+<tbody>
 
-              <p style="font-family:sans-serif">
-                My research focuses on developing reliable and safe autonomous systems capable of high-level
-                reasoning. I am particularly interested in generative models for prediction and planning under
-                uncertainty, as well as methods for structured and reliable decision making. I believe machines
-                can eventually perform complex tasks traditionally carried out by humans, such as air traffic
-                control and driving, and ultimately perform them even better.
-              </p>
+<tr style="padding:0px">
+<td style="padding:0px">
 
-              <p style="font-family:sans-serif">
-                <strong>Research Keywords</strong>: air traffic management, trajectory prediction,
-                generative models, multi-agent systems, decision making under uncertainty
-              </p>
 
-              <p style="text-align:center">
-                <a href="mailto:seokbin.yoon@gwu.edu">Email</a> &nbsp;/&nbsp;
-                <a href="data/seokbinyoon_CV.pdf">CV</a> &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=tcjmyp4AAAAJ">Google Scholar</a> &nbsp;/&nbsp;
-                <a href="https://www.linkedin.com/in/seokbin-yoon-329799227">LinkedIn</a> &nbsp;/&nbsp;
-                <a href="https://github.com/seokbinyoon96">GitHub</a>
-              </p>
-            </td>
+<!-- ========================================================= -->
+<!--                         PROFILE                           -->
+<!-- ========================================================= -->
 
-            <td style="padding:2.5%;width:37%;max-width:37%">
-              <a href="images/seokbinyoon_pic.jpg">
-                <img style="width:100%;max-width:100%;object-fit:cover;border-radius:8px" alt="profile photo" src="images/seokbinyoon_pic.jpg">
-              </a>
-            </td>
-          </tr>
-        </tbody></table>
+<table style="width:100%;
+              border:0px;
+              border-spacing:0px;
+              border-collapse:separate;
+              margin-right:auto;
+              margin-left:auto;">
 
-        <!-- ============================ RESEARCH ============================ -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p style="font-family:sans-serif">
-                I work on machine learning models for air traffic, with an emphasis on making their
-                predictions both accurate and interpretable to the people who have to act on them.
-                Representative papers are highlighted below.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+<tbody>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<tr style="padding:0px">
 
-          <!-- MAIFormer -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/maiformer1.png" alt="MAIFormer" width="160" style="border-style:none">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://ieeexplore.ieee.org/document/11509261">
-                <papertitle>Multi-Agent Inverted Transformer for Flight Trajectory Prediction</papertitle>
-              </a>
-              <br>
-              <strong>Seokbin Yoon</strong>,
-              <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">Keumjin Lee</a>
-              <br>
-              <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2026
-              <br>
-              <a href="https://ieeexplore.ieee.org/document/11509261">paper</a> /
-              <a href="https://doi.org/10.1109/TITS.2026.3689290">doi</a>
-              <p></p>
-              <p>
-                MAIFormer predicts the trajectories of many aircraft at once using two attention modules:
-                masked multivariate attention for each aircraft's spatio-temporal behavior, and agent
-                attention for the social interactions between flights. Its attention maps are readable by
-                humans, which makes the predictions usable in an air traffic control setting.
-              </p>
-            </td>
-          </tr>
+  <td style="padding:2.5%;width:63%;vertical-align:middle">
 
-          <!-- Airport queue forecasting -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/result_t-SNE_hour.png" alt="Airport queue forecasting" width="160" style="border-style:none">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2606.07622">
-                <papertitle>Airport Terminal Passenger Queue Forecasting for Departure Gates and Security Checkpoints</papertitle>
-              </a>
-              <br>
-              Juhwan Lee,
-              <strong>Seokbin Yoon</strong>,
-              <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">Keumjin Lee</a>,
-              Hojong Baik,
-              Seyeon Jung
-              <br>
-              <em>AIAA DATC/IEEE Digital Avionics Systems Conference (DASC)</em>, 2026
-              <br>
-              <span style="color:#d55e00"><strong>Best Paper of Session Award</strong></span>
-              <br>
-              <a href="https://arxiv.org/abs/2606.07622">arXiv</a>
-              <p></p>
-              <p>
-                A Transformer-based forecaster that learns temporal dependencies and inter-facility
-                correlations across departure gates, security checkpoints and check-in islands, giving
-                accurate queue length and waiting time predictions up to two hours ahead.
-              </p>
-            </td>
-          </tr>
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+      <tbody>
+      <tr>
 
-          <!-- Landing time -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/unstable.png" alt="Landing time prediction" width="160" style="border-style:none">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arc.aiaa.org/doi/abs/10.2514/6.2026-1764">
-                <papertitle>Probabilistic Multi-Agent Aircraft Landing Time Prediction</papertitle>
-              </a>
-              <br>
-              Kyungmin Kim,
-              <strong>Seokbin Yoon</strong>,
-              <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">Keumjin Lee</a>
-              <br>
-              <em>AIAA SciTech</em>, 2026
-              <br>
-              <span style="color:#d55e00"><strong>Best Student Paper Award in Intelligent Systems</strong></span>
-              <br>
-              <a href="https://arc.aiaa.org/doi/abs/10.2514/6.2026-1764">paper</a> /
-              <a href="https://doi.org/10.2514/6.2026-1764">doi</a>
-              <p></p>
-              <p>
-                Landing times are modeled as distributions rather than point estimates, so the framework
-                reports the uncertainty alongside the prediction. Attention scores expose the radar vectoring
-                patterns controllers use, adding explainability.
-              </p>
-            </td>
-          </tr>
+        <td width="100%" valign="middle">
+          <p style="text-align:center">
+            <name>
+              <span style="font-family:Arial">Seokbin Yoon</span>
+            </name>
+            <br>
+            <span style="font-size:18px">윤석빈</span>
+          </p>
+        </td>
 
-          <!-- Learning to Explain -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/learning4.png" alt="Learning to explain air traffic" width="160" style="border-style:none">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2502.10764">
-                <papertitle>Learning to Explain Air Traffic Situation</papertitle>
-              </a>
-              <br>
-              Hong-ah Chai,
-              <strong>Seokbin Yoon</strong>,
-              <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">Keumjin Lee</a>
-              <br>
-              <em>US-Europe Air Transportation Research &amp; Development Symposium</em>, 2025
-              <br>
-              <a href="https://arxiv.org/abs/2502.10764">arXiv</a>
-              <p></p>
-              <p>
-                A Transformer-based multi-agent trajectory model whose attention scores quantify how much
-                each aircraft influences the overall traffic situation, offering a window into how
-                controllers build their mental picture of the airspace.
-              </p>
-            </td>
-          </tr>
+      </tr>
+      </tbody>
+    </table>
 
-          <!-- ATRADA -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/density.png" alt="Trajectory augmentation" width="160" style="border-style:none">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://doi.org/10.1007/s42405-025-01054-x">
-                <papertitle>Aircraft Trajectory Dataset Augmentation in Latent Space</papertitle>
-              </a>
-              <br>
-              <strong>Seokbin Yoon</strong>,
-              <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">Keumjin Lee</a>
-              <br>
-              <em>International Journal of Aeronautical and Space Sciences</em>, 2025
-              <br>
-              <a href="https://doi.org/10.1007/s42405-025-01054-x">paper</a>
-              <p></p>
-              <p>
-                ATRADA encodes trajectories with a Transformer, reduces them with PCA, fits a Gaussian
-                mixture in the reduced space, and decodes new samples back into full trajectories &mdash;
-                producing synthetic flight data that keeps the structure of the original dataset.
-              </p>
-            </td>
-          </tr>
 
-          <!-- iTransformer -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/itrans.png" alt="Inverted Transformer" width="160" style="border-style:none">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://ieeexplore.ieee.org/document/10877800">
-                <papertitle>Aircraft Trajectory Prediction with Inverted Transformer</papertitle>
-              </a>
-              <br>
-              <strong>Seokbin Yoon</strong>,
-              <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">Keumjin Lee</a>
-              <br>
-              <em>IEEE Access</em>, 2025
-              <br>
-              <a href="https://ieeexplore.ieee.org/document/10877800">paper</a> /
-              <a href="https://doi.org/10.1109/ACCESS.2025.3539742">doi</a>
-              <p></p>
-              <p>
-                Instead of embedding one token per time step, each series is embedded independently as a
-                variate token. Capturing multivariate correlations this way improves prediction accuracy
-                over standard deep learning baselines on Incheon terminal airspace data.
-              </p>
-            </td>
-          </tr>
+    <p style="font-family:sans-serif">
 
-        </tbody></table>
+      I am a Ph.D. student in
+      <a href="https://www.gwu.edu/">Mechanical and Aerospace Engineering at
+      George Washington University</a>,
+      advised by Prof.
+      <a href="https://scholar.google.com/citations?user=1cfltHsAAAAJ">
+        Peng Wei
+      </a>.
 
-        <!-- ============================ OTHER PUBLICATIONS ============================ -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Other Publications</heading>
-            </td>
-          </tr>
-        </tbody></table>
+      My research lies at the intersection of
+      <strong>air traffic control and machine learning</strong>,
+      with the long-term goal of developing intelligent and autonomous
+      systems capable of supporting and eventually performing complex
+      air traffic management tasks.
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:8px 20px;width:100%;vertical-align:middle">
-              <a href="https://ieeexplore.ieee.org/document/10748919">
-                <papertitle>Urban Air Mobility Fleet Rebalancing with Real-Time Updates on Estimated Time of Arrival</papertitle>
-              </a>
-              <br>
-              Jungu Kang,
-              <strong>Seokbin Yoon</strong>,
-              <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">Keumjin Lee</a>,
-              Sang Hyun Kim
-              <br>
-              <em>AIAA DATC/IEEE 43rd Digital Avionics Systems Conference (DASC)</em>, 2024
-              &nbsp;&middot;&nbsp;
-              <span style="color:#d55e00"><strong>Best Paper of Session Award</strong></span>
-              <br>
-              <a href="https://ieeexplore.ieee.org/document/10748919">paper</a>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:8px 20px;width:100%;vertical-align:middle">
-              <a href="https://doi.org/10.1109/DASC58513.2023.10311324">
-                <papertitle>Improving Aircraft Trajectory Prediction Accuracy with Over-sampling Technique</papertitle>
-              </a>
-              <br>
-              <strong>Seokbin Yoon</strong>,
-              <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">Keumjin Lee</a>
-              <br>
-              <em>IEEE/AIAA 42nd Digital Avionics Systems Conference (DASC)</em>, 2023
-              <br>
-              <a href="https://doi.org/10.1109/DASC58513.2023.10311324">paper</a>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:8px 20px;width:100%;vertical-align:middle">
-              <a href="https://ieeexplore.ieee.org/document/10311230">
-                <papertitle>Safety and Capacity Analysis Framework for Integrated UAM Operation in Airports</papertitle>
-              </a>
-              <br>
-              Naomi Hani Gray,
-              Suyoung Shin,
-              <strong>Seokbin Yoon</strong>,
-              Yulim Park,
-              Hongah Chai,
-              <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">Keumjin Lee</a>,
-              Han-Joong Kim,
-              Se-Yeon Jung
-              <br>
-              <em>IEEE/AIAA 42nd Digital Avionics Systems Conference (DASC)</em>, 2023
-              &nbsp;&middot;&nbsp;
-              <span style="color:#d55e00"><strong>Best Paper of Session Award</strong></span>
-              <br>
-              <a href="https://ieeexplore.ieee.org/document/10311230">paper</a>
-            </td>
-          </tr>
-        </tbody></table>
+    </p>
 
-        <!-- ============================ NEWS ============================ -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>News</heading>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle">
-              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;font-family:sans-serif"><tbody>
 
-                <tr><td style="padding:6px 12px 6px 0;vertical-align:top;white-space:nowrap;width:1%"><strong>Sep 2026</strong></td>
-                <td style="padding:6px 0;vertical-align:top">Received the Best Paper of Session Award at DASC 2026 for our work on airport passenger queue forecasting. I will be attending DASC 2026 in Orlando, Florida. Feel free to reach out if you'd like to connect! Check out the paper <a href="https://arxiv.org/abs/2606.07622">here</a>.</td></tr>
+    <p style="font-family:sans-serif">
 
-                <tr><td style="padding:6px 12px 6px 0;vertical-align:top;white-space:nowrap"><strong>Aug 2026</strong></td>
-                <td style="padding:6px 0;vertical-align:top">I started my Ph.D. in Mechanical and Aerospace Engineering at George Washington University, advised by Prof. Peng Wei. My research focuses on machine learning and autonomous systems for air traffic control. Very excited for what's ahead.</td></tr>
+      Previously, I received my B.S. and M.S. in Air Transportation from
+      <a href="https://kau.ac.kr/english/index/main.php">
+        Korea Aerospace University
+      </a>.
 
-                <tr><td style="padding:6px 12px 6px 0;vertical-align:top;white-space:nowrap"><strong>Jul 2026</strong></td>
-                <td style="padding:6px 0;vertical-align:top">I gave a talk at the Department of Civil, Urban and Environmental Engineering, Seoul National University on trajectory modeling and prediction, covering the similarities and differences between autonomous driving and air traffic.</td></tr>
+      During my master's studies, advised by Prof.
+      <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">
+        Keumjin Lee
+      </a>,
+      I worked on multi-agent aircraft trajectory modeling,
+      generative modeling, explainable machine learning,
+      and automatic speech recognition for air traffic control.
 
-                <tr><td style="padding:6px 12px 6px 0;vertical-align:top;white-space:nowrap"><strong>Jun 2026</strong></td>
-                <td style="padding:6px 0;vertical-align:top">I presented our work on air traffic complexity estimation using radar imagery at the ATRS World Conference 2026, exploring vision models that estimate complexity directly from radar displays.</td></tr>
+    </p>
 
-                <tr><td style="padding:6px 12px 6px 0;vertical-align:top;white-space:nowrap"><strong>May 2026</strong></td>
-                <td style="padding:6px 0;vertical-align:top">Our paper on multi-agent aircraft trajectory prediction was accepted to IEEE Transactions on Intelligent Transportation Systems. MAIFormer is particularly special to me, so I am especially happy to see this work published! The paper is <a href="https://ieeexplore.ieee.org/document/11509261">here</a>.</td></tr>
 
-                <tr><td style="padding:6px 12px 6px 0;vertical-align:top;white-space:nowrap"><strong>Jan 2026</strong></td>
-                <td style="padding:6px 0;vertical-align:top">Our work on probabilistic multi-agent aircraft landing time prediction received the Best Student Paper Award in Intelligent Systems at AIAA SciTech 2026. Read more <a href="https://arc.aiaa.org/doi/abs/10.2514/6.2026-1764">here</a>.</td></tr>
+    <p style="font-family:sans-serif">
 
-                <tr><td style="padding:6px 12px 6px 0;vertical-align:top;white-space:nowrap"><strong>Oct 2025</strong></td>
-                <td style="padding:6px 0;vertical-align:top">Our paper on aircraft trajectory data augmentation in latent space was accepted to the International Journal of Aeronautical and Space Sciences. The paper is <a href="https://link.springer.com/article/10.1007/s42405-025-01054-x">here</a>.</td></tr>
+      I am broadly interested in how learning-based systems can
+      <strong>understand, predict, generate, and control multi-agent
+      air traffic</strong>.
 
-                <tr><td style="padding:6px 12px 6px 0;vertical-align:top;white-space:nowrap"><strong>Jun 2025</strong></td>
-                <td style="padding:6px 0;vertical-align:top">Our work on explaining air traffic situations using machine learning was presented at the US-Europe Air Transportation Research &amp; Development Symposium 2025. Check out the paper <a href="https://arxiv.org/abs/2502.10764">here</a>.</td></tr>
+      My current interests include generative models,
+      large language and vision models,
+      multi-agent reasoning,
+      decision making under uncertainty,
+      and autonomous air traffic control.
 
-                <tr><td style="padding:6px 12px 6px 0;vertical-align:top;white-space:nowrap"><strong>Feb 2025</strong></td>
-                <td style="padding:6px 0;vertical-align:top">Our work on aircraft trajectory prediction using Inverted Transformers was accepted to IEEE Access. It's my first journal paper! Check out the paper <a href="https://ieeexplore.ieee.org/document/10877800">here</a>.</td></tr>
+    </p>
 
-                <tr><td style="padding:6px 12px 6px 0;vertical-align:top;white-space:nowrap"><strong>Sep 2024</strong></td>
-                <td style="padding:6px 0;vertical-align:top">Honored to receive the Best Paper of Session Award at DASC 2024 for our research on real-time UAM fleet rebalancing. The paper is available <a href="https://ieeexplore.ieee.org/document/10748919">here</a>.</td></tr>
 
-                <tr><td style="padding:6px 12px 6px 0;vertical-align:top;white-space:nowrap"><strong>Feb 2024</strong></td>
-                <td style="padding:6px 0;vertical-align:top">I graduated from Korea Aerospace University with an M.S. in Air Transport, Transportation, and Logistics. Thanks to everyone who supported me throughout my master's journey!</td></tr>
+    <p style="font-family:sans-serif">
 
-                <tr><td style="padding:6px 12px 6px 0;vertical-align:top;white-space:nowrap"><strong>Oct 2023</strong></td>
-                <td style="padding:6px 0;vertical-align:top">Our study on integrated UAM operations at airports was selected for the Best Paper of Session Award at DASC 2023. The paper link is <a href="https://ieeexplore.ieee.org/document/10311230">here</a>.</td></tr>
+      <strong>Research Keywords</strong>:
+      air traffic management,
+      autonomous air traffic control,
+      trajectory prediction,
+      generative models,
+      multi-agent systems,
+      LLM/VLM,
+      decision making under uncertainty
 
-                <tr><td style="padding:6px 12px 6px 0;vertical-align:top;white-space:nowrap"><strong>Sep 2023</strong></td>
-                <td style="padding:6px 0;vertical-align:top">I received the President's Award at Korea Aerospace University for winning first place in the Graduate Research Competition.</td></tr>
+    </p>
 
-                <tr><td style="padding:6px 12px 6px 0;vertical-align:top;white-space:nowrap"><strong>Sep 2023</strong></td>
-                <td style="padding:6px 0;vertical-align:top">I obtained my Air Traffic Controller License from the Ministry of Land, Infrastructure and Transport, South Korea. This came after a year of training and remains one of the most meaningful milestones in my journey in aviation!</td></tr>
 
-                <tr><td style="padding:6px 12px 6px 0;vertical-align:top;white-space:nowrap"><strong>Sep 2022</strong></td>
-                <td style="padding:6px 0;vertical-align:top">I was awarded the Brain Korea 21 Plus (BK21+) Research Scholarship funded by the Korean government.</td></tr>
+    <p style="text-align:center">
 
-              </tbody></table>
-            </td>
-          </tr>
-        </tbody></table>
+      <a href="mailto:seokbin.yoon@gwu.edu">Email</a>
+      &nbsp;/&nbsp;
 
-        <!-- ============================ FOOTER ============================ -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <p style="text-align:right;font-size:small;">
-                Template stolen from
-                <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+      <a href="data/seokbinyoon_CV.pdf">CV</a>
+      &nbsp;/&nbsp;
 
-      </td>
-    </tr>
-  </tbody></table>
+      <a href="https://scholar.google.com/citations?user=tcjmyp4AAAAJ">
+        Google Scholar
+      </a>
+      &nbsp;/&nbsp;
+
+      <a href="https://www.linkedin.com/in/seokbin-yoon-329799227">
+        LinkedIn
+      </a>
+      &nbsp;/&nbsp;
+
+      <a href="https://github.com/seokbinyoon96">
+        GitHub
+      </a>
+
+    </p>
+
+  </td>
+
+
+  <!-- PROFILE PHOTO -->
+
+  <td style="padding:2.5%;width:37%;max-width:37%">
+
+    <a href="images/seokbinyoon_pic.jpg">
+
+      <img
+        style="width:100%;
+               max-width:100%;
+               object-fit:cover;
+               border-radius:8px"
+        alt="profile photo"
+        src="images/seokbinyoon_pic.jpg"
+        class="hoverZoomLink">
+
+    </a>
+
+  </td>
+
+</tr>
+
+</tbody>
+</table>
+
+
+
+<hr>
+
+
+
+<!-- ========================================================= -->
+<!--                         1. NEWS                           -->
+<!-- ========================================================= -->
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+<tbody>
+
+<tr>
+
+<td>
+
+<heading>News</heading>
+
+<ul>
+
+
+  <li>
+    <strong>09/2026</strong>
+    Our work on
+    <a href="https://arxiv.org/abs/2606.07622">
+      <strong>airport terminal passenger queue forecasting</strong>
+    </a>
+    received the
+    <strong>Best Paper of Session Award</strong>
+    at DASC 2026.
+  </li>
+
+
+  <li>
+    <strong>09/2026</strong>
+    I was selected as a
+    <strong>Student Research Competition finalist</strong>
+    at DASC 2026 in Orlando, Florida.
+  </li>
+
+
+  <li>
+    <strong>08/2026</strong>
+    I started my Ph.D. in Mechanical and Aerospace Engineering at
+    <strong>George Washington University</strong>,
+    advised by Prof.
+    <a href="https://scholar.google.com/citations?user=1cfltHsAAAAJ">
+      <strong>Peng Wei</strong>
+    </a>.
+  </li>
+
+
+  <li>
+    <strong>07/2026</strong>
+    I gave a talk at the Department of Civil, Urban and Environmental
+    Engineering at
+    <strong>Seoul National University</strong>
+    on aircraft trajectory modeling and prediction.
+  </li>
+
+
+  <li>
+    <strong>06/2026</strong>
+    I presented our work on
+    <strong>air traffic complexity estimation using radar imagery</strong>
+    at the ATRS World Conference 2026.
+  </li>
+
+
+  <li>
+    <strong>05/2026</strong>
+    Our paper
+    <a href="https://ieeexplore.ieee.org/document/11509261">
+      <strong>
+        Multi-Agent Inverted Transformer for Flight Trajectory Prediction
+      </strong>
+    </a>
+    was accepted to
+    <strong>IEEE Transactions on Intelligent Transportation Systems</strong>.
+  </li>
+
+
+  <li>
+    <strong>01/2026</strong>
+    Our work on
+    <a href="https://arc.aiaa.org/doi/abs/10.2514/6.2026-1764">
+      <strong>
+        Probabilistic Multi-Agent Aircraft Landing Time Prediction
+      </strong>
+    </a>
+    received the
+    <strong>Best Student Paper Award in Intelligent Systems</strong>
+    at AIAA SciTech 2026.
+  </li>
+
+
+  <a href="javascript:toggleblock('old_news')">
+    ---- show more ----
+  </a>
+
+
+  <div id="old_news" style="display:none;">
+
+
+    <li>
+      <strong>10/2025</strong>
+      Our paper
+      <a href="https://doi.org/10.1007/s42405-025-01054-x">
+        <strong>
+          Aircraft Trajectory Dataset Augmentation in Latent Space
+        </strong>
+      </a>
+      was accepted to the
+      <strong>
+        International Journal of Aeronautical and Space Sciences
+      </strong>.
+    </li>
+
+
+    <li>
+      <strong>06/2025</strong>
+      Our work on
+      <a href="https://arxiv.org/abs/2502.10764">
+        <strong>Learning to Explain Air Traffic Situation</strong>
+      </a>
+      was presented at the
+      <strong>
+        US-Europe Air Transportation Research &amp; Development Symposium
+      </strong>.
+    </li>
+
+
+    <li>
+      <strong>02/2025</strong>
+      Our paper
+      <a href="https://ieeexplore.ieee.org/document/10877800">
+        <strong>
+          Aircraft Trajectory Prediction with Inverted Transformer
+        </strong>
+      </a>
+      was accepted to <strong>IEEE Access</strong>.
+    </li>
+
+
+    <li>
+      <strong>09/2024</strong>
+      Our research on real-time UAM fleet rebalancing received the
+      <strong>Best Paper of Session Award</strong>
+      at DASC 2024.
+    </li>
+
+
+    <li>
+      <strong>02/2024</strong>
+      I received my M.S. in Air Transport, Transportation, and Logistics
+      from <strong>Korea Aerospace University</strong>.
+    </li>
+
+
+    <li>
+      <strong>10/2023</strong>
+      Our work on integrated UAM operations at airports received the
+      <strong>Best Paper of Session Award</strong>
+      at DASC 2023.
+    </li>
+
+
+    <li>
+      <strong>09/2023</strong>
+      I received the
+      <strong>President's Award</strong>
+      at Korea Aerospace University for placing first in the
+      Graduate Research Competition.
+    </li>
+
+
+    <li>
+      <strong>09/2023</strong>
+      I obtained my
+      <strong>Air Traffic Controller License</strong>
+      from the Ministry of Land, Infrastructure and Transport,
+      Republic of Korea.
+    </li>
+
+
+    <li>
+      <strong>09/2022</strong>
+      I received the
+      <strong>Brain Korea 21 Plus (BK21+) Research Scholarship</strong>.
+    </li>
+
+
+  </div>
+
+</ul>
+
+</td>
+
+</tr>
+
+</tbody>
+</table>
+
+
+
+<hr>
+
+
+
+<!-- ========================================================= -->
+<!--                        2. RESEARCH                        -->
+<!-- ========================================================= -->
+
+<table style="width:100%;
+              border:0px;
+              border-spacing:0px;
+              border-collapse:separate;
+              margin-right:auto;
+              margin-left:auto;">
+
+<tbody>
+
+<tr>
+
+<td style="padding:20px;width:100%;vertical-align:middle">
+
+  <heading>Research</heading>
+
+  <p style="font-family:sans-serif">
+
+    My research focuses on intelligent and autonomous systems for
+    air traffic management.
+
+    I am particularly interested in learning representations of
+    multi-agent air traffic, predicting and generating aircraft
+    trajectories, and developing reliable decision-making systems
+    for future autonomous air traffic control.
+
+  </p>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<table style="width:100%;
+              border:0px;
+              border-spacing:0px;
+              border-collapse:separate;
+              margin-right:auto;
+              margin-left:auto;">
+
+<tbody>
+
+
+
+<!-- ===================== MAIFORMER ===================== -->
+
+<tr>
+
+<td style="padding:20px;width:25%;vertical-align:middle">
+
+  <img
+    src="images/maiformer1.png"
+    alt="MAIFormer"
+    width="160"
+    style="border-style:none">
+
+</td>
+
+
+<td style="padding:20px;width:75%;vertical-align:middle">
+
+  <a href="https://ieeexplore.ieee.org/document/11509261">
+
+    <papertitle style="font-size:medium">
+      Multi-Agent Inverted Transformer for Flight Trajectory Prediction
+    </papertitle>
+
+  </a>
+
+  <br>
+
+  <strong>
+    <font color="#9900FF">Seokbin Yoon</font>
+  </strong>,
+
+  <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">
+    Keumjin Lee
+  </a>
+
+  <br>
+
+  <em>
+    <strong>
+      IEEE Transactions on Intelligent Transportation Systems
+    </strong>
+  </em>, 2026
+
+  <br>
+
+  <a href="https://ieeexplore.ieee.org/document/11509261">
+    paper
+  </a>
+
+  |
+
+  <a href="https://doi.org/10.1109/TITS.2026.3689290">
+    doi
+  </a>
+
+
+  <p></p>
+
+  <p>
+
+    We introduce MAIFormer, a multi-agent trajectory prediction model
+    that jointly captures each aircraft's spatio-temporal behavior and
+    interactions among aircraft through multivariate and agent attention.
+
+  </p>
+
+</td>
+
+</tr>
+
+
+
+<!-- ================= PASSENGER QUEUE ================= -->
+
+<tr>
+
+<td style="padding:20px;width:25%;vertical-align:middle">
+
+  <img
+    src="images/result_t-SNE_hour.png"
+    alt="Airport passenger queue forecasting"
+    width="160"
+    style="border-style:none">
+
+</td>
+
+
+<td style="padding:20px;width:75%;vertical-align:middle">
+
+  <a href="https://arxiv.org/abs/2606.07622">
+
+    <papertitle style="font-size:medium">
+      Airport Terminal Passenger Queue Forecasting for Departure Gates
+      and Security Checkpoints
+    </papertitle>
+
+  </a>
+
+  <br>
+
+  Juhwan Lee,
+
+  <strong>
+    <font color="#9900FF">Seokbin Yoon</font>
+  </strong>,
+
+  <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">
+    Keumjin Lee
+  </a>,
+
+  Hojong Baik,
+  Seyeon Jung
+
+  <br>
+
+  <em>
+    <strong>
+      AIAA DATC/IEEE Digital Avionics Systems Conference (DASC)
+    </strong>
+  </em>, 2026
+
+  <br>
+
+  <strong>
+    <font color="#d55e00">
+      Best Paper of Session Award
+    </font>
+  </strong>
+
+  <br>
+
+  <a href="https://arxiv.org/abs/2606.07622">
+    arXiv
+  </a>
+
+
+  <p></p>
+
+  <p>
+
+    We develop a Transformer-based framework for forecasting passenger
+    queues across airport facilities by jointly learning temporal
+    dependencies and correlations among check-in islands, departure gates,
+    and security checkpoints.
+
+  </p>
+
+</td>
+
+</tr>
+
+
+
+<!-- ================= LANDING TIME ================= -->
+
+<tr>
+
+<td style="padding:20px;width:25%;vertical-align:middle">
+
+  <img
+    src="images/unstable.png"
+    alt="Probabilistic landing time prediction"
+    width="160"
+    style="border-style:none">
+
+</td>
+
+
+<td style="padding:20px;width:75%;vertical-align:middle">
+
+  <a href="https://arc.aiaa.org/doi/abs/10.2514/6.2026-1764">
+
+    <papertitle style="font-size:medium">
+      Probabilistic Multi-Agent Aircraft Landing Time Prediction
+    </papertitle>
+
+  </a>
+
+  <br>
+
+  Kyungmin Kim,
+
+  <strong>
+    <font color="#9900FF">Seokbin Yoon</font>
+  </strong>,
+
+  <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">
+    Keumjin Lee
+  </a>
+
+  <br>
+
+  <em>
+    <strong>AIAA SciTech</strong>
+  </em>, 2026
+
+  <br>
+
+  <strong>
+    <font color="#d55e00">
+      Best Student Paper Award in Intelligent Systems
+    </font>
+  </strong>
+
+  <br>
+
+  <a href="https://arc.aiaa.org/doi/abs/10.2514/6.2026-1764">
+    paper
+  </a>
+
+  |
+
+  <a href="https://doi.org/10.2514/6.2026-1764">
+    doi
+  </a>
+
+
+  <p></p>
+
+  <p>
+
+    We model aircraft landing times probabilistically while accounting
+    for interactions among multiple aircraft, enabling both accurate
+    predictions and explicit uncertainty estimation.
+
+  </p>
+
+</td>
+
+</tr>
+
+
+
+<!-- ================= LEARNING TO EXPLAIN ================= -->
+
+<tr>
+
+<td style="padding:20px;width:25%;vertical-align:middle">
+
+  <img
+    src="images/learning4.png"
+    alt="Learning to Explain Air Traffic Situation"
+    width="160"
+    style="border-style:none">
+
+</td>
+
+
+<td style="padding:20px;width:75%;vertical-align:middle">
+
+  <a href="https://arxiv.org/abs/2502.10764">
+
+    <papertitle style="font-size:medium">
+      Learning to Explain Air Traffic Situation
+    </papertitle>
+
+  </a>
+
+  <br>
+
+  Hong-ah Chai,
+
+  <strong>
+    <font color="#9900FF">Seokbin Yoon</font>
+  </strong>,
+
+  <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">
+    Keumjin Lee
+  </a>
+
+  <br>
+
+  <em>
+    <strong>
+      US-Europe Air Transportation Research &amp; Development Symposium
+    </strong>
+  </em>, 2025
+
+  <br>
+
+  <a href="https://arxiv.org/abs/2502.10764">
+    arXiv
+  </a>
+
+
+  <p></p>
+
+  <p>
+
+    We investigate how attention learned from multi-agent aircraft
+    trajectories can identify influential aircraft and provide
+    interpretable representations of complex air traffic situations.
+
+  </p>
+
+</td>
+
+</tr>
+
+
+
+<!-- ================= ATRADA ================= -->
+
+<tr>
+
+<td style="padding:20px;width:25%;vertical-align:middle">
+
+  <img
+    src="images/density.png"
+    alt="Aircraft trajectory dataset augmentation"
+    width="160"
+    style="border-style:none">
+
+</td>
+
+
+<td style="padding:20px;width:75%;vertical-align:middle">
+
+  <a href="https://doi.org/10.1007/s42405-025-01054-x">
+
+    <papertitle style="font-size:medium">
+      Aircraft Trajectory Dataset Augmentation in Latent Space
+    </papertitle>
+
+  </a>
+
+  <br>
+
+  <strong>
+    <font color="#9900FF">Seokbin Yoon</font>
+  </strong>,
+
+  <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">
+    Keumjin Lee
+  </a>
+
+  <br>
+
+  <em>
+    <strong>
+      International Journal of Aeronautical and Space Sciences
+    </strong>
+  </em>, 2025
+
+  <br>
+
+  <a href="https://doi.org/10.1007/s42405-025-01054-x">
+    paper
+  </a>
+
+
+  <p></p>
+
+  <p>
+
+    We propose a latent-space aircraft trajectory augmentation framework
+    that learns compact representations of flight trajectories and
+    generates realistic synthetic trajectories while preserving the
+    underlying structure of the original data.
+
+  </p>
+
+</td>
+
+</tr>
+
+
+
+<!-- ================= ITRANSFORMER ================= -->
+
+<tr>
+
+<td style="padding:20px;width:25%;vertical-align:middle">
+
+  <img
+    src="images/itrans.png"
+    alt="Inverted Transformer"
+    width="160"
+    style="border-style:none">
+
+</td>
+
+
+<td style="padding:20px;width:75%;vertical-align:middle">
+
+  <a href="https://ieeexplore.ieee.org/document/10877800">
+
+    <papertitle style="font-size:medium">
+      Aircraft Trajectory Prediction with Inverted Transformer
+    </papertitle>
+
+  </a>
+
+  <br>
+
+  <strong>
+    <font color="#9900FF">Seokbin Yoon</font>
+  </strong>,
+
+  <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">
+    Keumjin Lee
+  </a>
+
+  <br>
+
+  <em>
+    <strong>IEEE Access</strong>
+  </em>, 2025
+
+  <br>
+
+  <a href="https://ieeexplore.ieee.org/document/10877800">
+    paper
+  </a>
+
+  |
+
+  <a href="https://doi.org/10.1109/ACCESS.2025.3539742">
+    doi
+  </a>
+
+
+  <p></p>
+
+  <p>
+
+    We reformulate aircraft trajectory prediction using an inverted
+    Transformer architecture in which trajectory variables are represented
+    as tokens, allowing the model to explicitly learn multivariate
+    correlations in aircraft motion.
+
+  </p>
+
+</td>
+
+</tr>
+
+
+
+<!-- ================= UAM REBALANCING ================= -->
+
+<tr>
+
+<td style="padding:20px;width:25%;vertical-align:middle">
+
+  <!-- Replace this with your paper figure later -->
+  <img
+    src="images/uam_rebalancing.png"
+    alt="UAM Fleet Rebalancing"
+    width="160"
+    style="border-style:none">
+
+</td>
+
+
+<td style="padding:20px;width:75%;vertical-align:middle">
+
+  <a href="https://ieeexplore.ieee.org/document/10748919">
+
+    <papertitle style="font-size:medium">
+      Urban Air Mobility Fleet Rebalancing with Real-Time Updates
+      on Estimated Time of Arrival
+    </papertitle>
+
+  </a>
+
+  <br>
+
+  Jungu Kang,
+
+  <strong>
+    <font color="#9900FF">Seokbin Yoon</font>
+  </strong>,
+
+  <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">
+    Keumjin Lee
+  </a>,
+
+  Sang Hyun Kim
+
+  <br>
+
+  <em>
+    <strong>
+      AIAA DATC/IEEE 43rd Digital Avionics Systems Conference (DASC)
+    </strong>
+  </em>, 2024
+
+  <br>
+
+  <strong>
+    <font color="#d55e00">
+      Best Paper of Session Award
+    </font>
+  </strong>
+
+  <br>
+
+  <a href="https://ieeexplore.ieee.org/document/10748919">
+    paper
+  </a>
+
+
+  <p></p>
+
+  <p>
+
+    We study real-time fleet rebalancing for urban air mobility systems
+    using dynamically updated estimated arrival times to improve vehicle
+    allocation and operational efficiency.
+
+  </p>
+
+</td>
+
+</tr>
+
+
+
+<!-- ================= OVERSAMPLING ================= -->
+
+<tr>
+
+<td style="padding:20px;width:25%;vertical-align:middle">
+
+  <!-- Replace this with your paper figure later -->
+  <img
+    src="images/oversampling.png"
+    alt="Aircraft trajectory oversampling"
+    width="160"
+    style="border-style:none">
+
+</td>
+
+
+<td style="padding:20px;width:75%;vertical-align:middle">
+
+  <a href="https://doi.org/10.1109/DASC58513.2023.10311324">
+
+    <papertitle style="font-size:medium">
+      Improving Aircraft Trajectory Prediction Accuracy
+      with Over-sampling Technique
+    </papertitle>
+
+  </a>
+
+  <br>
+
+  <strong>
+    <font color="#9900FF">Seokbin Yoon</font>
+  </strong>,
+
+  <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">
+    Keumjin Lee
+  </a>
+
+  <br>
+
+  <em>
+    <strong>
+      IEEE/AIAA 42nd Digital Avionics Systems Conference (DASC)
+    </strong>
+  </em>, 2023
+
+  <br>
+
+  <a href="https://doi.org/10.1109/DASC58513.2023.10311324">
+    paper
+  </a>
+
+
+  <p></p>
+
+  <p>
+
+    We investigate trajectory data over-sampling as a method for
+    improving learning-based aircraft trajectory prediction,
+    particularly when representative training trajectories are limited.
+
+  </p>
+
+</td>
+
+</tr>
+
+
+
+<!-- ================= UAM AIRPORT ================= -->
+
+<tr>
+
+<td style="padding:20px;width:25%;vertical-align:middle">
+
+  <!-- Replace this with your paper figure later -->
+  <img
+    src="images/uam_airport.png"
+    alt="Integrated UAM airport operations"
+    width="160"
+    style="border-style:none">
+
+</td>
+
+
+<td style="padding:20px;width:75%;vertical-align:middle">
+
+  <a href="https://ieeexplore.ieee.org/document/10311230">
+
+    <papertitle style="font-size:medium">
+      Safety and Capacity Analysis Framework for Integrated UAM
+      Operation in Airports
+    </papertitle>
+
+  </a>
+
+  <br>
+
+  Naomi Hani Gray,
+  Suyoung Shin,
+
+  <strong>
+    <font color="#9900FF">Seokbin Yoon</font>
+  </strong>,
+
+  Yulim Park,
+  Hongah Chai,
+
+  <a href="https://scholar.google.com/citations?user=GO7fwgEAAAAJ">
+    Keumjin Lee
+  </a>,
+
+  Han-Joong Kim,
+  Se-Yeon Jung
+
+  <br>
+
+  <em>
+    <strong>
+      IEEE/AIAA 42nd Digital Avionics Systems Conference (DASC)
+    </strong>
+  </em>, 2023
+
+  <br>
+
+  <strong>
+    <font color="#d55e00">
+      Best Paper of Session Award
+    </font>
+  </strong>
+
+  <br>
+
+  <a href="https://ieeexplore.ieee.org/document/10311230">
+    paper
+  </a>
+
+
+  <p></p>
+
+  <p>
+
+    We develop a simulation-based framework for evaluating the safety
+    and capacity implications of integrating urban air mobility
+    operations with conventional airport traffic.
+
+  </p>
+
+</td>
+
+</tr>
+
+
+
+</tbody>
+</table>
+
+
+
+<hr>
+
+
+
+<!-- ========================================================= -->
+<!--                  3. HONORS AND AWARDS                    -->
+<!-- ========================================================= -->
+
+<table width="100%"
+       align="center"
+       border="0"
+       cellspacing="0"
+       cellpadding="20">
+
+<tbody>
+
+<tr>
+
+<td>
+
+  <a id="honors_and_awards"></a>
+
+  <heading>
+    Honors and Awards
+  </heading>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<table width="100%"
+       align="center"
+       border="0"
+       cellpadding="20">
+
+<tbody>
+
+
+
+<!-- HONORS IMAGE #1 -->
+
+<tr>
+
+<td style="padding:30px;
+           width:25%;
+           vertical-align:middle;
+           text-align:center;">
+
+  <!--
+    PLACEHOLDER IMAGE #1
+
+    Replace this image later with a GWU / AIAA / IEEE /
+    conference / institution logo.
+  -->
+
+  <img
+    src="images/gwu_logo.png"
+    alt="Institution Logo"
+    width="120"
+    style="max-width:100%;">
+
+</td>
+
+
+<td width="75%" valign="center">
+
+  <strong>
+    Graduate Research Award
+  </strong>,
+  George Washington University, 2026
+
+  <br><br>
+
+  <strong>
+    Best Paper of Session Award
+  </strong>,
+  AIAA DATC/IEEE Digital Avionics Systems Conference (DASC), 2026
+
+  <br><br>
+
+  <strong>
+    Best Student Paper Award in Intelligent Systems
+  </strong>,
+  AIAA SciTech, 2026
+
+</td>
+
+</tr>
+
+
+
+<!-- HONORS IMAGE #2 -->
+
+<tr>
+
+<td style="padding:30px;
+           width:25%;
+           vertical-align:middle;
+           text-align:center;">
+
+  <!--
+    PLACEHOLDER IMAGE #2
+
+    Replace this image later with a KAU / Korean Government /
+    DASC / scholarship institution logo.
+  -->
+
+  <img
+    src="images/kau_logo.png"
+    alt="Institution Logo"
+    width="120"
+    style="max-width:100%;">
+
+</td>
+
+
+<td width="75%" valign="center">
+
+  <strong>
+    Best Paper of Session Award
+  </strong>,
+  AIAA DATC/IEEE Digital Avionics Systems Conference (DASC), 2024
+
+  <br><br>
+
+  <strong>
+    President's Award
+  </strong>,
+  Graduate Research Competition,
+  Korea Aerospace University, 2023
+
+  <br><br>
+
+  <strong>
+    Best Paper of Session Award
+  </strong>,
+  IEEE/AIAA Digital Avionics Systems Conference (DASC), 2023
+
+  <br><br>
+
+  <strong>
+    Brain Korea 21 Plus (BK21+) Research Scholarship
+  </strong>,
+  Republic of Korea, 2022
+
+</td>
+
+</tr>
+
+
+
+</tbody>
+</table>
+
+
+
+<hr>
+
+
+
+<!-- ========================================================= -->
+<!--                         4. MISC                           -->
+<!-- ========================================================= -->
+
+<table style="width:100%;
+              border:0px;
+              border-spacing:0px;
+              border-collapse:separate;
+              margin-right:auto;
+              margin-left:auto;">
+
+<tbody>
+
+<tr>
+
+<td style="padding:20px;width:100%;vertical-align:middle">
+
+  <heading>Misc</heading>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<table style="width:100%;
+              border:0px;
+              border-spacing:0px;
+              border-collapse:separate;
+              margin-right:auto;
+              margin-left:auto;">
+
+<tbody>
+
+
+
+<!-- AIR TRAFFIC CONTROLLER -->
+
+<tr>
+
+<td style="padding:20px;width:25%;vertical-align:middle;text-align:center">
+
+  <img
+    src="images/atc.png"
+    alt="Air Traffic Control"
+    width="150"
+    style="max-width:100%;">
+
+</td>
+
+
+<td style="padding:20px;width:75%;vertical-align:middle">
+
+  <papertitle style="font-size:medium">
+    Air Traffic Controller License
+  </papertitle>
+
+  <br>
+
+  <em>
+    Ministry of Land, Infrastructure and Transport,
+    Republic of Korea
+  </em>, 2023
+
+  <p></p>
+
+  <p>
+
+    Before focusing on machine learning research, I studied
+    air traffic control and completed professional controller training.
+    I hold an Air Traffic Controller License issued by the
+    Ministry of Land, Infrastructure and Transport of South Korea.
+
+  </p>
+
+</td>
+
+</tr>
+
+
+
+<!-- SNU TALK -->
+
+<tr>
+
+<td style="padding:20px;width:25%;vertical-align:middle;text-align:center">
+
+  <img
+    src="images/snu_talk.png"
+    alt="Seoul National University Talk"
+    width="150"
+    style="max-width:100%;">
+
+</td>
+
+
+<td style="padding:20px;width:75%;vertical-align:middle">
+
+  <papertitle style="font-size:medium">
+    Invited Talk on Aircraft Trajectory Modeling and Prediction
+  </papertitle>
+
+  <br>
+
+  <em>
+    Department of Civil, Urban and Environmental Engineering,
+    Seoul National University
+  </em>, 2026
+
+  <p></p>
+
+  <p>
+
+    I gave a talk on learning-based aircraft trajectory modeling
+    and prediction, including connections between trajectory
+    prediction problems in air traffic management and autonomous driving.
+
+  </p>
+
+</td>
+
+</tr>
+
+
+
+<!-- RESEARCH INTEREST -->
+
+<tr>
+
+<td style="padding:20px;width:25%;vertical-align:middle;text-align:center">
+
+  <img
+    src="images/airtraffic_misc.png"
+    alt="Air Traffic Research"
+    width="150"
+    style="max-width:100%;">
+
+</td>
+
+
+<td style="padding:20px;width:75%;vertical-align:middle">
+
+  <papertitle style="font-size:medium">
+    Toward Autonomous Air Traffic Control
+  </papertitle>
+
+  <p></p>
+
+  <p>
+
+    My long-term research goal is to develop autonomous systems
+    that can reason about complex multi-aircraft situations,
+    anticipate future traffic evolution, and make reliable
+    high-level decisions under uncertainty.
+
+    I am particularly interested in combining multi-agent
+    trajectory representations with generative models,
+    large language and vision models, and structured
+    decision-making methods.
+
+  </p>
+
+</td>
+
+</tr>
+
+
+
+</tbody>
+</table>
+
+
+
+<hr>
+
+
+
+<!-- ========================================================= -->
+<!--                         FOOTER                            -->
+<!-- ========================================================= -->
+
+<table style="width:100%;
+              border:0px;
+              border-spacing:0px;
+              border-collapse:separate;
+              margin-right:auto;
+              margin-left:auto;">
+
+<tbody>
+
+<tr>
+
+<td style="padding:20px;width:100%;vertical-align:middle">
+
+  <p style="text-align:right;font-size:small;">
+
+    Template adapted from
+    <a href="https://github.com/jonbarron/jonbarron_website">
+      Jon Barron
+    </a>.
+
+  </p>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+</td>
+</tr>
+
+</tbody>
+</table>
+
+
 </body>
 </html>
