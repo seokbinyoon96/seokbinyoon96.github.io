@@ -152,11 +152,11 @@ function renderEntries(entries, mount) {
 
     return `
       <tr>
-        <td style="padding:20px 16px;width:30%;vertical-align:middle;text-align:center">
+        <td style="padding:20px 16px;width:34%;vertical-align:middle;text-align:center">
           <img src="${escapeHtml(e.logo)}" alt="${escapeHtml(e.alt)}"
                style="max-width:100%;max-height:${e.height || 80}px;object-fit:contain">
         </td>
-        <td style="padding:20px 10px;width:70%;vertical-align:middle;font-family:sans-serif">
+        <td style="padding:20px 10px;width:66%;vertical-align:middle;font-family:sans-serif">
           ${lines}
         </td>
       </tr>`;
