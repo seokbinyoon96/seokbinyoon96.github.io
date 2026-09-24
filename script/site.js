@@ -65,45 +65,59 @@ function authorLine(authors) {
 }
 
 function renderPublications(pubs, mount) {
-  const rows = pubs.map((p) => {
-    const links = (p.links || []).map(
-      (l) => `<a href="${escapeHtml(l.url)}">${escapeHtml(l.label)}</a>`
-    );
-    if (p.bibtex) links.push(`<a href="${escapeHtml(p.bibtex)}">bibtex</a>`);
+  const sorted = [...pubs].sort((a, b) => b.year - a.year);
+  const latestYear = Math.max(...pubs.map((p) => p.year));
+  const filters = [
+    ["recent", "Recent"],
+    ["trajectory", "Trajectory Modeling"],
+    ["operations", "Air Transportation"],
+    ["all", "All"],
+  ];
+  const controls = el(`<div class="publication-filters" role="group" aria-label="Filter publications">
+    ${filters.map(([id, label]) => `<button type="button" data-filter="${id}"
+      aria-controls="publication-list" aria-pressed="false">${escapeHtml(label)}</button>`).join("")}
+  </div>`);
+  const status = el('<p class="publication-status" aria-live="polite"></p>');
+  const list = el('<div id="publication-list"></div>');
+  mount.replaceChildren(controls, status, list);
 
-    const notes = (p.notes || [])
-      .map((n) => `<span style="color:${ACCENT}"><strong>${escapeHtml(n)}</strong></span>`)
-      .join(" &nbsp;&middot;&nbsp; ");
-
-    const href = (p.links && p.links[0] && p.links[0].url) || p.bibtex || "#";
-
-    return `
-      <tr>
-        <td style="padding:20px 10px 20px 20px;width:32%;vertical-align:middle">
-          <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.title)}"
-               style="width:100%;border-style:none">
-        </td>
-        <td style="padding:20px;width:68%;vertical-align:middle">
-          <a href="${escapeHtml(href)}"><papertitle>${escapeHtml(p.title)}</papertitle></a>
-          <br>
-          ${authorLine(p.authors)}
-          <br>
-          <em>${escapeHtml(p.venue)}</em>, ${escapeHtml(p.year)}
-          ${notes ? `<br>${notes}` : ""}
-          <br>
-          ${links.join(" / ")}
-          <p></p>
-          <p>${escapeHtml(p.summary)}</p>
-        </td>
-      </tr>`;
+  function selectFilter(filter) {
+    controls.querySelectorAll("button").forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.dataset.filter === filter));
+    });
+    const visible = sorted.filter((p) => filter === "all" ||
+      (filter === "recent" ? p.year >= latestYear - 1 : p.category === filter));
+    status.textContent = filter === "recent"
+      ? `${latestYear - 1}–${latestYear} · ${visible.length} publications`
+      : `${visible.length} publications`;
+    list.replaceChildren(...visible.map((p) => {
+      const links = (p.links || []).map((l) =>
+        `<a href="${escapeHtml(l.url)}">${escapeHtml(l.label)}</a>`);
+      if (p.bibtex) links.push(`<a href="${escapeHtml(p.bibtex)}">bibtex</a>`);
+      const notes = (p.notes || []).map((n) =>
+        `<span class="publication-note">${escapeHtml(n)}</span>`).join(" · ");
+      const href = p.links?.[0]?.url || p.bibtex || "#";
+      const visual = p.image
+        ? `<img src="${escapeHtml(p.image)}" alt="Figure from ${escapeHtml(p.title)}" loading="lazy">`
+        : `<div class="publication-placeholder" aria-hidden="true"><span>${p.year}</span>${p.category === "trajectory" ? "Trajectory modeling" : "Air transportation"}</div>`;
+      return el(`<article class="publication">
+        <div class="publication-visual">${visual}</div>
+        <div class="publication-content">
+          <h3><a href="${escapeHtml(href)}">${escapeHtml(p.title)}</a></h3>
+          <div>${authorLine(p.authors)}</div>
+          <div class="publication-venue"><em>${escapeHtml(p.venue)}</em>, ${escapeHtml(p.year)}</div>
+          ${notes ? `<div>${notes}</div>` : ""}
+          ${p.summary ? `<p>${escapeHtml(p.summary)}</p>` : ""}
+          <div class="publication-links">${links.join(" / ")}</div>
+        </div>
+      </article>`);
+    }));
+  }
+  controls.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-filter]");
+    if (button) selectFilter(button.dataset.filter);
   });
-
-  mount.appendChild(el(`
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;
-                  margin-right:auto;margin-left:auto">
-      <tbody>${rows.join("")}</tbody>
-    </table>
-  `));
+  selectFilter("recent");
 }
 
 /* ---------------------------- awards ---------------------------- */

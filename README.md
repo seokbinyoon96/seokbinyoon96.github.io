@@ -59,3 +59,13 @@ python3 -m http.server 8000
 ```
 
 Template adapted from [Jon Barron](https://github.com/jonbarron/jonbarron_website).
+
+## Publication filters
+
+The default **Recent** view shows the latest publication year and the preceding
+year. **All** shows every paper, sorted newest first. Each publication has a
+`category`: `trajectory` (Trajectory Modeling) or `operations`
+(Air Transportation). Images and summaries are optional.
+
+News is preserved in `data/news.json`; its section in `index.html` is commented
+out. Remove the surrounding HTML comment to show it again.
