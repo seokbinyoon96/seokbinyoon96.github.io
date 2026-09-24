@@ -68,3 +68,9 @@ The default **Recent** view shows the five newest publications across all topics
 
 News is preserved in `data/news.json`; its section in `index.html` is commented
 out. Remove the surrounding HTML comment to show it again.
+
+## Awards, talks, and service
+
+`awards.json`, `talks.json`, and `misc.json` share the same compact list format:
+a `year` label and `lines` with `text`, optional `bold`, and optional `url`.
+The page displays these as Awards, Talks, and Service & Credentials without logos.

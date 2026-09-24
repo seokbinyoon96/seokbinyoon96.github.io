@@ -1,15 +1,16 @@
 [
   {
-    "logo": "images/snu.png",
-    "alt": "Seoul National University",
-    "height": 90,
+    "year": "2026",
     "lines": [
       {
         "text": "Not All Trajectory Predictions Are the Same",
         "bold": true
       },
       {
-        "text": "I gave a talk about trajectory prediction in autonomous driving and air traffic control at the Department of Civil, Urban and Environmental Engineering, Seoul National University, 2026."
+        "text": "Department of Civil, Urban and Environmental Engineering, Seoul National University"
+      },
+      {
+        "text": "Trajectory prediction in autonomous driving and air traffic control."
       }
     ]
   }

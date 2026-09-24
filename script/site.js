@@ -111,67 +111,19 @@ function renderPublications(pubs, mount) {
   selectFilter("recent");
 }
 
-/* ---------------------------- awards ---------------------------- */
-
-function renderAwards(groups, mount) {
-  const rows = groups.map((g) => {
-    const img = `<img src="${escapeHtml(g.logo)}" alt="${escapeHtml(g.alt)}"
-                      style="max-width:100%;max-height:${g.height || 66}px;object-fit:contain">`;
-    const logo = g.url ? `<a href="${escapeHtml(g.url)}">${img}</a>` : img;
-    const body = g.items
-      .map((i) => {
-        const subtitle = i.subtitle ? `<br><em>${escapeHtml(i.subtitle)}</em>` : "";
-        return `<strong>${escapeHtml(i.name)}</strong>${subtitle}<br>${escapeHtml(i.venue)}`;
-      })
-      .join("<br><br>");
-
-    return `
-      <tr>
-        <td style="padding:20px 16px;width:34%;vertical-align:middle;text-align:center">${logo}</td>
-        <td style="padding:20px 10px;width:66%;vertical-align:middle">${body}</td>
-      </tr>`;
-  });
-
-  mount.appendChild(el(`
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
-      <tbody>${rows.join("")}</tbody>
-    </table>
-  `));
-}
-
-/* ----------------------- talks and misc ------------------------- */
+/* --------------------- awards, talks and service --------------------- */
 
 function renderEntries(entries, mount) {
-  const rows = entries.map((e) => {
-    const lines = e.lines
-      .map((l) => {
-        const text = l.bold
-          ? `<strong>${escapeHtml(l.text)}</strong>`
-          : escapeHtml(l.text);
-    
-        return l.url
-          ? `<a href="${escapeHtml(l.url)}">${text}</a>`
-          : `<span class="entryline">${text}</span>`;
-      })
-      .join("<br>");
-
-    return `
-      <tr>
-        <td style="padding:20px 16px;width:34%;vertical-align:middle;text-align:center">
-          <img src="${escapeHtml(e.logo)}" alt="${escapeHtml(e.alt)}"
-               style="max-width:100%;max-height:${e.height || 80}px;object-fit:contain">
-        </td>
-        <td style="padding:20px 10px;width:66%;vertical-align:middle;font-family:sans-serif">
-          ${lines}
-        </td>
-      </tr>`;
-  });
-
-  mount.appendChild(el(`
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
-      <tbody>${rows.join("")}</tbody>
-    </table>
-  `));
+  mount.replaceChildren(el(`<ul class="timeline-list">
+    ${entries.map((entry) => `<li class="timeline-entry">
+      <span class="timeline-year">${escapeHtml(entry.year)}</span>
+      <div class="timeline-body">${entry.lines.map((line) => {
+        const text = escapeHtml(line.text);
+        const content = line.url ? `<a href="${escapeHtml(line.url)}">${text}</a>` : text;
+        return `<div${line.bold ? ' class="timeline-title"' : ''}>${content}</div>`;
+      }).join("")}</div>
+    </li>`).join("")}
+  </ul>`));
 }
 
 /* ---------------------------- wiring ---------------------------- */
@@ -179,7 +131,7 @@ function renderEntries(entries, mount) {
 const SECTIONS = [
   ["news", "data/news.json", renderNews],
   ["publications", "data/publications.json", renderPublications],
-  ["awards", "data/awards.json", renderAwards],
+  ["awards", "data/awards.json", renderEntries],
   ["talks", "data/talks.json", renderEntries],
   ["misc", "data/misc.json", renderEntries],
 ];

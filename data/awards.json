@@ -1,16 +1,74 @@
 [
-  { "logo": "images/dasc26.webp", "alt": "DASC 2026", "url": "https://dasconline.org/", "height": 88,
-    "items": [{ "name": "Best Paper of Session Award", "subtitle": "Airport and Terminal Operations Analytics session", "venue": "AIAA DATC/IEEE Digital Avionics Systems Conference, 2026" }] },
-
-  { "logo": "images/aiaa_logo.png", "alt": "AIAA", "url": "https://www.aiaa.org/", "height": 70,
-    "items": [{ "name": "Best Student Paper Award", "subtitle": "Intelligent Systems", "venue": "AIAA SciTech Forum, 2026" }] },
-
-  { "logo": "images/dasc24.png", "alt": "DASC 2024", "height": 84,
-    "items": [{ "name": "Best Paper of Session Award", "subtitle": "UAM Traffic Management session", "venue": "AIAA DATC/IEEE Digital Avionics Systems Conference, 2024" }] },
-
-  { "logo": "images/dasc23.png", "alt": "DASC 2023", "height": 88,
-    "items": [{ "name": "Best Paper of Session Award", "subtitle": "AAM Operations Analysis session", "venue": "IEEE/AIAA Digital Avionics Systems Conference, 2023" }] },
-
-  { "logo": "images/bk21_logo.png", "alt": "Brain Korea 21", "height": 46,
-    "items": [{ "name": "Brain Korea 21 Plus Research Scholarship", "venue": "National Research Foundation of Korea, 2022" }] }
+  {
+    "year": "2026",
+    "lines": [
+      {
+        "text": "Best Paper of Session Award",
+        "bold": true
+      },
+      {
+        "text": "AIAA DATC/IEEE Digital Avionics Systems Conference"
+      },
+      {
+        "text": "Airport and Terminal Operations Analytics session"
+      }
+    ]
+  },
+  {
+    "year": "2026",
+    "lines": [
+      {
+        "text": "Best Student Paper Award",
+        "bold": true
+      },
+      {
+        "text": "AIAA SciTech Forum"
+      },
+      {
+        "text": "Intelligent Systems"
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "lines": [
+      {
+        "text": "Best Paper of Session Award",
+        "bold": true
+      },
+      {
+        "text": "AIAA DATC/IEEE Digital Avionics Systems Conference"
+      },
+      {
+        "text": "UAM Traffic Management session"
+      }
+    ]
+  },
+  {
+    "year": "2023",
+    "lines": [
+      {
+        "text": "Best Paper of Session Award",
+        "bold": true
+      },
+      {
+        "text": "IEEE/AIAA Digital Avionics Systems Conference"
+      },
+      {
+        "text": "AAM Operations Analysis session"
+      }
+    ]
+  },
+  {
+    "year": "2022",
+    "lines": [
+      {
+        "text": "Brain Korea 21 Plus Research Scholarship",
+        "bold": true
+      },
+      {
+        "text": "National Research Foundation of Korea"
+      }
+    ]
+  }
 ]
