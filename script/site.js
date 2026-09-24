@@ -130,10 +130,10 @@ function renderEntries(entries, mount) {
 
 const SECTIONS = [
   ["news", "data/news.json", renderNews],
-  ["publications", "data/publications.json", renderPublications],
-  ["awards", "data/awards.json?v=compact-footer-1", renderEntries],
-  ["talks", "data/talks.json?v=compact-footer-1", renderEntries],
-  ["misc", "data/misc.json?v=compact-footer-1", renderEntries],
+  ["publications", "data/publications.json?v=concise-copy-1", renderPublications],
+  ["awards", "data/awards.json?v=concise-copy-1", renderEntries],
+  ["talks", "data/talks.json?v=concise-copy-1", renderEntries],
+  ["misc", "data/misc.json?v=concise-copy-1", renderEntries],
 ];
 
 document.addEventListener("DOMContentLoaded", () => {

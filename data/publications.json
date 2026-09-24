@@ -35,7 +35,7 @@
       }
     ],
     "bibtex": "data/bib/lee2026airport.bib",
-    "summary": "We develop a Transformer-based framework for forecasting passenger queues across airport facilities by jointly learning temporal dependencies and correlations among check-in islands, departure gates, and security checkpoints.",
+    "summary": "A Transformer-based framework for airport passenger queue forecasting, jointly modeling temporal patterns and dependencies across airport facilities.",
     "category": "operations"
   },
   {
@@ -66,7 +66,7 @@
       }
     ],
     "bibtex": "data/bib/yoon2026maiformer.bib",
-    "summary": "We introduce MAIFormer, a multi-agent trajectory prediction model that jointly captures each aircraft's spatio-temporal behavior and interactions among aircraft through multivariate and agent attention.",
+    "summary": "A multi-agent inverted Transformer for flight trajectory prediction, combining multivariate and agent attention to model aircraft dynamics and interactions.",
     "category": "trajectory"
   },
   {
@@ -102,7 +102,7 @@
       }
     ],
     "bibtex": "data/bib/kim2026landing.bib",
-    "summary": "We model aircraft landing times probabilistically while accounting for interactions among multiple aircraft, enabling both accurate predictions and explicit uncertainty estimation.",
+    "summary": "A probabilistic multi-agent model for aircraft landing time prediction, capturing interactions between aircraft and uncertainty in arrival times.",
     "category": "trajectory"
   },
   {
@@ -129,7 +129,7 @@
       }
     ],
     "bibtex": "data/bib/yoon2025aircraft.bib",
-    "summary": "We propose a latent-space aircraft trajectory augmentation framework that learns compact representations of flight trajectories and generates realistic synthetic trajectories while preserving the underlying structure of the original data.",
+    "summary": "Generating synthetic flight trajectories in a learned latent space augments aircraft trajectory datasets while preserving their underlying structure.",
     "category": "trajectory"
   },
   {
@@ -190,7 +190,7 @@
       }
     ],
     "bibtex": "data/bib/chai2025learning.bib",
-    "summary": "We investigate how attention learned from multi-agent aircraft trajectories can identify influential aircraft and provide interpretable representations of complex air traffic situations.",
+    "summary": "Attention learned from multi-agent trajectories identifies influential aircraft and provides interpretable representations of complex air traffic situations.",
     "category": "operations"
   },
   {
