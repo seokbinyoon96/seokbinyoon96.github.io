@@ -66,7 +66,6 @@ function authorLine(authors) {
 
 function renderPublications(pubs, mount) {
   const sorted = [...pubs].sort((a, b) => b.year - a.year);
-  const latestYear = Math.max(...pubs.map((p) => p.year));
   const filters = [
     ["recent", "Recent"],
     ["trajectory", "Trajectory Modeling"],
@@ -77,23 +76,16 @@ function renderPublications(pubs, mount) {
     ${filters.map(([id, label]) => `<button type="button" data-filter="${id}"
       aria-controls="publication-list" aria-pressed="false">${escapeHtml(label)}</button>`).join("")}
   </div>`);
-  const status = el('<p class="publication-status" aria-live="polite"></p>');
   const list = el('<div id="publication-list"></div>');
-  mount.replaceChildren(controls, status, list);
+  mount.replaceChildren(controls, list);
 
   function selectFilter(filter) {
     controls.querySelectorAll("button").forEach((button) => {
       button.setAttribute("aria-pressed", String(button.dataset.filter === filter));
     });
-    const visible = sorted.filter((p) => filter === "all" ||
-      (filter === "recent" ? p.year >= latestYear - 1 : p.category === filter));
-    status.textContent = filter === "recent"
-      ? `${latestYear - 1}–${latestYear} · ${visible.length} publications`
-      : `${visible.length} publications`;
+    const visible = filter === "recent" ? sorted.slice(0, 5)
+      : sorted.filter((p) => filter === "all" || p.category === filter);
     list.replaceChildren(...visible.map((p) => {
-      const links = (p.links || []).map((l) =>
-        `<a href="${escapeHtml(l.url)}">${escapeHtml(l.label)}</a>`);
-      if (p.bibtex) links.push(`<a href="${escapeHtml(p.bibtex)}">bibtex</a>`);
       const notes = (p.notes || []).map((n) =>
         `<span class="publication-note">${escapeHtml(n)}</span>`).join(" · ");
       const href = p.links?.[0]?.url || p.bibtex || "#";
@@ -108,7 +100,6 @@ function renderPublications(pubs, mount) {
           <div class="publication-venue"><em>${escapeHtml(p.venue)}</em>, ${escapeHtml(p.year)}</div>
           ${notes ? `<div>${notes}</div>` : ""}
           ${p.summary ? `<p>${escapeHtml(p.summary)}</p>` : ""}
-          <div class="publication-links">${links.join(" / ")}</div>
         </div>
       </article>`);
     }));

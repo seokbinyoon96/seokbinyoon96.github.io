@@ -44,8 +44,8 @@ Almost everything lives in `data/`. To add a paper, append an entry to
 }
 ```
 
-`me: true` bolds the name, `notes` render in orange, and a `bibtex` link is
-appended to the link row automatically. Only the bio, the research blurb and
+`me: true` bolds the name and `notes` render in orange. Paper titles link to
+the first URL in `links`; additional resource links are not displayed. Only the bio, the research blurb and
 the section headings live in `index.html`.
 
 ## Previewing
@@ -62,8 +62,7 @@ Template adapted from [Jon Barron](https://github.com/jonbarron/jonbarron_websit
 
 ## Publication filters
 
-The default **Recent** view shows the latest publication year and the preceding
-year. **All** shows every paper, sorted newest first. Each publication has a
+The default **Recent** view shows the five newest publications across all topics. **All** shows every paper, sorted newest first. Each publication has a
 `category`: `trajectory` (Trajectory Modeling) or `operations`
 (Air Transportation). Images and summaries are optional.
 
