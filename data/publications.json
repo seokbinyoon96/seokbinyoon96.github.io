@@ -241,7 +241,9 @@
     "venue": "AIAA DATC/IEEE Digital Avionics Systems Conference (DASC)",
     "year": 2024,
     "category": "operations",
-    "notes": [],
+    "notes": [
+      "Best Paper of Session Award"
+    ],
     "links": [
       {
         "label": "Google Scholar",
@@ -309,7 +311,9 @@
     "venue": "IEEE/AIAA Digital Avionics Systems Conference (DASC)",
     "year": 2023,
     "category": "operations",
-    "notes": [],
+    "notes": [
+      "Best Paper of Session Award"
+    ],
     "links": [
       {
         "label": "Google Scholar",
