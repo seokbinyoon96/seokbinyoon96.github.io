@@ -4,7 +4,8 @@
     "title": "Airport Terminal Passenger Queue Forecasting for Departure Gates and Security Checkpoints",
     "authors": [
       {
-        "name": "Juhwan Lee"
+        "name": "Juhwan Lee",
+        "url": "https://scholar.google.com/citations?user=D3YbIA8AAAAJ"
       },
       {
         "name": "Seokbin Yoon",
@@ -15,7 +16,8 @@
         "url": "https://scholar.google.com/citations?user=GO7fwgEAAAAJ"
       },
       {
-        "name": "Hojong Baik"
+        "name": "Hojong Baik",
+        "url": "https://scholar.google.com/citations?user=XfySCAcAAAAJ"
       },
       {
         "name": "Seyeon Jung"
@@ -74,7 +76,8 @@
     "title": "Probabilistic Multi-Agent Aircraft Landing Time Prediction",
     "authors": [
       {
-        "name": "Kyungmin Kim"
+        "name": "Kyungmin Kim",
+        "url": "https://scholar.google.com/citations?user=ldIJyuMAAAAJ"
       },
       {
         "name": "Seokbin Yoon",
@@ -137,10 +140,11 @@
     "title": "Can Vision Models Read the Radar Display? On the Feasibility of Radar Imagery for Air Traffic Complexity Estimation",
     "authors": [
       {
-        "name": "H. Kim"
+        "name": "Hyewook Kim",
+        "url": "https://scholar.google.com/citations?user=RuXJdVQAAAAJ"
       },
       {
-        "name": "B. Kang"
+        "name": "Byul Kang"
       },
       {
         "name": "Seokbin Yoon",
@@ -168,7 +172,7 @@
     "title": "Learning to Explain Air Traffic Situation",
     "authors": [
       {
-        "name": "Hong-ah Chai"
+        "name": "Hongah Chai"
       },
       {
         "name": "Seokbin Yoon",
@@ -224,7 +228,7 @@
     "title": "Urban Air Mobility Fleet Rebalancing with Real-Time Updates on Estimated Time of Arrival",
     "authors": [
       {
-        "name": "J. Kang"
+        "name": "Jungu Kang"
       },
       {
         "name": "Seokbin Yoon",
@@ -235,7 +239,8 @@
         "url": "https://scholar.google.com/citations?user=GO7fwgEAAAAJ"
       },
       {
-        "name": "S. H. Kim"
+        "name": "Sang Hyun Kim",
+        "url": "https://scholar.google.com/citations?user=4pQwl1sAAAAJ"
       }
     ],
     "venue": "AIAA DATC/IEEE Digital Avionics Systems Conference (DASC)",
@@ -282,30 +287,31 @@
     "title": "Safety and Capacity Analysis Framework for Integrated UAM Operation in Airports",
     "authors": [
       {
-        "name": "N. H. Gray"
+        "name": "Naomi Hani Gray"
       },
       {
-        "name": "S. Shin"
+        "name": "Suyoung Shin",
+        "url": "https://scholar.google.com/citations?user=YiiEOBkAAAAJ"
       },
       {
         "name": "Seokbin Yoon",
         "me": true
       },
       {
-        "name": "Y. Park"
+        "name": "Yulim Park"
       },
       {
-        "name": "H. Chai"
+        "name": "Hongah Chai"
       },
       {
         "name": "Keumjin Lee",
         "url": "https://scholar.google.com/citations?user=GO7fwgEAAAAJ"
       },
       {
-        "name": "H. J. Kim"
+        "name": "Han-Joong Kim"
       },
       {
-        "name": "S. Y. Jung"
+        "name": "Se-Yeon Jung"
       }
     ],
     "venue": "IEEE/AIAA Digital Avionics Systems Conference (DASC)",
