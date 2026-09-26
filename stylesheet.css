@@ -12,8 +12,8 @@ section { clear:both; margin-top:32px; scroll-margin-top:84px; }
 #about { scroll-margin-top:90px; }
 .post-header { margin-bottom:22px; }
 .desc { font-size:15px; color:#555; }
-.profile { margin:0 0 16px 28px; width:28%; }
-.profile img { aspect-ratio:1; object-fit:cover; height:auto; }
+.profile { float:right; margin:0 0 16px 28px; width:28%; }
+.profile img { display:block; aspect-ratio:1; object-fit:cover; height:auto; border-radius:6px; }
 .contact-links { clear:both; padding-top:2px; }
 .resource-note { font-size:15px; margin-bottom:0; }
 .navbar { opacity:1; min-height:56px; padding:8px 16px; }
@@ -52,7 +52,7 @@ section { clear:both; margin-top:32px; scroll-margin-top:84px; }
   main.container.mt-5 { margin-top:28px!important; padding:0 20px; }
   h1 { font-size:36px; }
   h2 { font-size:26px; }
-  .profile { width:30%; margin-left:18px; }
+  .profile { float:none; width:200px; max-width:100%; margin:0 auto 24px; }
   .publication { grid-template-columns:140px minmax(0,1fr); gap:16px; }
   .publication-filters { gap:16px; }
   .timeline-entry { grid-template-columns:75px minmax(0,1fr); gap:14px; }
@@ -60,7 +60,6 @@ section { clear:both; margin-top:32px; scroll-margin-top:84px; }
 @media (max-width:450px) {
   .publication { grid-template-columns:1fr; gap:12px; }
   .publication-visual { max-width:230px; }
-  .profile { width:112px; }
   .publication-filters { gap:14px; }
   .publication-filters button { font-size:13px; }
   .contact-links { line-height:1.9; }
