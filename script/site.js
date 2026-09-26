@@ -97,7 +97,7 @@ function renderPublications(pubs, mount) {
         <div class="publication-content">
           <h3><a href="${escapeHtml(href)}">${escapeHtml(p.title)}</a></h3>
           <div>${authorLine(p.authors)}</div>
-          <div class="publication-venue"><em>${escapeHtml(p.venue)}</em>, ${escapeHtml(p.year)}</div>
+          <div class="publication-venue">${escapeHtml(p.venue)}, ${escapeHtml(p.year)}</div>
           ${notes ? `<div>${notes}</div>` : ""}
           ${p.summary ? `<p>${escapeHtml(p.summary)}</p>` : ""}
         </div>
