@@ -92,7 +92,7 @@ function renderPublications(pubs, mount) {
       const visual = p.image
         ? `<img src="${escapeHtml(p.image)}" alt="Figure from ${escapeHtml(p.title)}" loading="lazy">`
         : `<div class="publication-placeholder" aria-hidden="true"><span>${p.year}</span>${p.category === "trajectory" ? "Trajectory modeling" : "Air transportation"}</div>`;
-      return el(`<article class="publication">
+      return el(`<article class="publication" data-publication-id="${escapeHtml(p.id)}">
         <div class="publication-visual">${visual}</div>
         <div class="publication-content">
           <h3><a href="${escapeHtml(href)}">${escapeHtml(p.title)}</a></h3>

@@ -34,6 +34,7 @@ html[data-theme='dark'] .theme-moon { display:none; }
 .publication-filters button:hover,.publication-filters button[aria-pressed="true"] { color:var(--global-theme-color); border-bottom-color:var(--global-theme-color); }
 .publication { display:grid; grid-template-columns:200px minmax(0,1fr); gap:24px; padding:18px 0; align-items:center; }
 .publication-visual img { width:100%; height:auto; max-height:160px; object-fit:contain; }
+.publication[data-publication-id="radar-vision"] .publication-visual img { max-height:none; }
 .publication-content { font-size:15px; line-height:1.45; }
 .publication-content h3 { font-size:16px; font-weight:500; line-height:1.4; margin:0 0 4px; }
 .publication-content h3 a { color:var(--global-text-color); }
