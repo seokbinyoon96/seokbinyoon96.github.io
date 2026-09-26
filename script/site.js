@@ -130,7 +130,7 @@ function renderEntries(entries, mount) {
 
 const SECTIONS = [
   ["news", "data/news.json", renderNews],
-  ["publications", "data/publications.json?v=full-authors-1", renderPublications],
+  ["publications", "data/publications.json?v=complete-summaries-1", renderPublications],
   ["awards", "data/awards.json?v=session-names-1", renderEntries],
   ["talks", "data/talks.json?v=concise-copy-1", renderEntries],
   ["misc", "data/misc.json?v=concise-copy-1", renderEntries],

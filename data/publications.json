@@ -165,7 +165,7 @@
         "url": "https://arxiv.org/abs/2608.11810"
       }
     ],
-    "summary": ""
+    "summary": "A Vision Transformer estimates air traffic complexity from radar imagery enriched with aircraft state information, capturing how individual aircraft contribute to overall complexity."
   },
   {
     "id": "learning-to-explain",
@@ -220,7 +220,7 @@
         "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=tcjmyp4AAAAJ&citation_for_view=tcjmyp4AAAAJ:WqliGbK-hY8C"
       }
     ],
-    "summary": "",
+    "summary": "An inverted Transformer improves aircraft trajectory prediction by encoding each coordinate sequence as a separate token and learning correlations across trajectory variables.",
     "image": "images/itrans.png"
   },
   {
@@ -255,7 +255,7 @@
         "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=tcjmyp4AAAAJ&citation_for_view=tcjmyp4AAAAJ:Mojj43d5GZwC"
       }
     ],
-    "summary": ""
+    "summary": "Real-time arrival estimates inform UAM fleet rebalancing, linking flight time prediction to aircraft redistribution and delay management at vertiports."
   },
   {
     "id": "oversampling",
@@ -280,7 +280,7 @@
         "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=tcjmyp4AAAAJ&citation_for_view=tcjmyp4AAAAJ:5awf1xo2G04C"
       }
     ],
-    "summary": ""
+    "summary": "Clustering flight trajectories and oversampling underrepresented patterns with SMOTE balances training data for LSTM-based aircraft trajectory prediction."
   },
   {
     "id": "uam-safety",
@@ -326,6 +326,6 @@
         "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=tcjmyp4AAAAJ&citation_for_view=tcjmyp4AAAAJ:dhFuZR0502QC"
       }
     ],
-    "summary": ""
+    "summary": "A two-stage framework combines obstacle-aware UAM route design with runway capacity assessment to evaluate the integration of UAM operations at airports."
   }
 ]
