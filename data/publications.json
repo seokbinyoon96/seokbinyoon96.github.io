@@ -165,7 +165,8 @@
         "url": "https://arxiv.org/abs/2608.11810"
       }
     ],
-    "summary": "A Vision Transformer estimates air traffic complexity from radar imagery enriched with aircraft state information, capturing how individual aircraft contribute to overall complexity."
+    "summary": "A Vision Transformer estimates air traffic complexity from radar imagery enriched with aircraft state information, capturing how individual aircraft contribute to overall complexity.",
+    "image": "images/vit.jpeg"
   },
   {
     "id": "learning-to-explain",
@@ -255,7 +256,8 @@
         "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=tcjmyp4AAAAJ&citation_for_view=tcjmyp4AAAAJ:Mojj43d5GZwC"
       }
     ],
-    "summary": "Real-time arrival estimates inform UAM fleet rebalancing, linking flight time prediction to aircraft redistribution and delay management at vertiports."
+    "summary": "Real-time arrival estimates inform UAM fleet rebalancing, linking flight time prediction to aircraft redistribution and delay management at vertiports.",
+    "image": "images/rebalancing.png"
   },
   {
     "id": "oversampling",
@@ -280,7 +282,8 @@
         "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=tcjmyp4AAAAJ&citation_for_view=tcjmyp4AAAAJ:5awf1xo2G04C"
       }
     ],
-    "summary": "Clustering flight trajectories and oversampling underrepresented patterns with SMOTE balances training data for LSTM-based aircraft trajectory prediction."
+    "summary": "Clustering flight trajectories and oversampling underrepresented patterns with SMOTE balances training data for LSTM-based aircraft trajectory prediction.",
+    "image": "images/oversample.jpeg"
   },
   {
     "id": "uam-safety",
@@ -326,6 +329,7 @@
         "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=tcjmyp4AAAAJ&citation_for_view=tcjmyp4AAAAJ:dhFuZR0502QC"
       }
     ],
-    "summary": "A two-stage framework combines obstacle-aware UAM route design with runway capacity assessment to evaluate the integration of UAM operations at airports."
+    "summary": "A two-stage framework combines obstacle-aware UAM route design with runway capacity assessment to evaluate the integration of UAM operations at airports.",
+    "image": "images/safety_uam.jpeg"
   }
 ]
