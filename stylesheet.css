@@ -52,7 +52,7 @@ html[data-theme='dark'] .theme-moon { display:none; }
 .skip-link:focus { top:8px; }
 @media (max-width:650px) {
   body { font-size:15px; }
-  .navbar .container { justify-content:center; flex-wrap:wrap; gap:0; }
+  .navbar .container { justify-content:center; flex-wrap:nowrap; gap:6px; padding:0; }
   .navbar-brand { display:none; }
   .navbar-nav { margin:0; gap:12px; }
   .navbar .nav-link { font-size:14px; }
@@ -77,4 +77,4 @@ html[data-theme='dark'] .theme-moon { display:none; }
 .publication-filters button:hover,.publication-filters button[aria-pressed="true"] { color:var(--global-theme-color); }
 .publication-note { color:var(--award-color); }
 .skip-link { background:var(--global-bg-color); }
-@media (max-width:360px) { .navbar-nav { gap:9px; } .navbar .nav-link { font-size:13px; } }
+@media (max-width:360px) { .navbar-nav { gap:6px; } .navbar .nav-link { font-size:12px; } }
