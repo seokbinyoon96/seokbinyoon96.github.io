@@ -1,5 +1,6 @@
 /* Single-page adaptations; the underlying theme is al-folio in _sass/. */
-:root { --global-theme-color:#087c91; --global-hover-color:#065e6e; --global-text-color:#252525; }
+:root { color-scheme:light; --global-theme-color:#087f23; --global-hover-color:#06651c; --global-text-color:#252525; --muted-color:#656565; --award-color:#b44c00; }
+html[data-theme='dark'] { color-scheme:dark; --global-bg-color:#1c1c1d; --global-text-color:#e5e5e5; --global-theme-color:#59b6cf; --global-hover-color:#80c9dc; --muted-color:#aaa; --award-color:#efad69; }
 html { scroll-behavior:smooth; }
 body { font-family:Roboto,Arial,sans-serif; font-size:16px; font-weight:400; line-height:1.5; }
 a { text-underline-offset:3px; }
@@ -11,8 +12,8 @@ p { margin:0 0 16px; }
 section { clear:both; margin-top:32px; scroll-margin-top:84px; }
 #about { scroll-margin-top:90px; }
 .post-header { margin-bottom:22px; }
-.desc { font-size:15px; color:#555; }
-.profile { float:right; margin:0 0 16px 28px; width:28%; }
+.desc { font-size:15px; color:var(--muted-color); }
+.profile { float:right; margin:0 0 16px 28px; width:32%; }
 .profile img { display:block; aspect-ratio:1; object-fit:cover; height:auto; border-radius:6px; }
 .contact-links { clear:both; padding-top:2px; }
 .resource-note { font-size:15px; margin-bottom:0; }
@@ -22,6 +23,12 @@ section { clear:both; margin-top:32px; scroll-margin-top:84px; }
 .navbar-nav { flex-direction:row; gap:18px; margin-left:auto; }
 .navbar .nav-link { padding:5px 0; font-size:15px; }
 .navbar .nav-link[aria-current="location"] { color:var(--global-theme-color); }
+#theme-toggle { flex:none; display:grid; place-items:center; width:32px; height:32px; padding:6px; border:0; border-radius:4px; background:transparent; color:var(--global-text-color); cursor:pointer; }
+#theme-toggle:hover { color:var(--global-theme-color); }
+#theme-toggle svg { width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+.theme-sun { display:none; }
+html[data-theme='dark'] .theme-sun { display:block; }
+html[data-theme='dark'] .theme-moon { display:none; }
 .publication-filters { display:flex; flex-wrap:wrap; gap:20px; margin:20px 0 8px; border-bottom:1px solid #e5e5e5; }
 .publication-filters button { font:inherit; font-size:14px; border:0; border-bottom:2px solid transparent; padding:7px 0; background:transparent; color:#656565; cursor:pointer; }
 .publication-filters button:hover,.publication-filters button[aria-pressed="true"] { color:var(--global-theme-color); border-bottom-color:var(--global-theme-color); }
@@ -47,12 +54,12 @@ section { clear:both; margin-top:32px; scroll-margin-top:84px; }
   body { font-size:15px; }
   .navbar .container { justify-content:center; flex-wrap:wrap; gap:0; }
   .navbar-brand { display:none; }
-  .navbar-nav { margin:0; gap:17px; }
+  .navbar-nav { margin:0; gap:12px; }
   .navbar .nav-link { font-size:14px; }
   main.container.mt-5 { margin-top:28px!important; padding:0 20px; }
   h1 { font-size:36px; }
   h2 { font-size:26px; }
-  .profile { float:none; width:200px; max-width:100%; margin:0 auto 24px; }
+  .profile { float:none; width:230px; max-width:100%; margin:0 auto 24px; }
   .publication { grid-template-columns:140px minmax(0,1fr); gap:16px; }
   .publication-filters { gap:16px; }
   .timeline-entry { grid-template-columns:75px minmax(0,1fr); gap:14px; }
@@ -65,3 +72,9 @@ section { clear:both; margin-top:32px; scroll-margin-top:84px; }
   .contact-links { line-height:1.9; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+.publication-filters,.publication-placeholder,.site-footer { border-color:var(--global-divider-color); }
+.publication-filters button,.publication-placeholder,.publication-placeholder span,.timeline-year,.site-footer { color:var(--muted-color); }
+.publication-filters button:hover,.publication-filters button[aria-pressed="true"] { color:var(--global-theme-color); }
+.publication-note { color:var(--award-color); }
+.skip-link { background:var(--global-bg-color); }
+@media (max-width:360px) { .navbar-nav { gap:9px; } .navbar .nav-link { font-size:13px; } }
