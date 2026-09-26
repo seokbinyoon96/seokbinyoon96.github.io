@@ -283,7 +283,7 @@
       }
     ],
     "summary": "Clustering flight trajectories and oversampling underrepresented patterns with SMOTE balances training data for LSTM-based aircraft trajectory prediction.",
-    "image": "images/oversample.jpeg"
+    "image": "images/centroid.jpeg"
   },
   {
     "id": "uam-safety",
