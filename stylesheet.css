@@ -7,6 +7,7 @@ a { text-underline-offset:3px; }
 a:focus-visible,button:focus-visible { outline:2px solid var(--global-theme-color); outline-offset:4px; }
 h1,h2 { font-weight:300; }
 h1 { font-size:40px; margin-bottom:8px; }
+.korean-name { font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif; font-size:.72em; font-weight:400; letter-spacing:-.035em; vertical-align:.06em; }
 h2 { font-size:28px; margin:0 0 16px; }
 p { margin:0 0 16px; }
 section { clear:both; margin-top:32px; scroll-margin-top:84px; }
