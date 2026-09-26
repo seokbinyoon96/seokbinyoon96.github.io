@@ -16,7 +16,7 @@ section { clear:both; margin-top:32px; scroll-margin-top:84px; }
 .profile { float:right; margin:0 0 16px 28px; width:32%; }
 .profile img { display:block; aspect-ratio:1; object-fit:cover; height:auto; border-radius:6px; }
 .contact-links { clear:both; padding-top:2px; }
-.resource-note { font-size:15px; margin-bottom:0; }
+.resource-note { font-size:inherit; margin-bottom:0; }
 .navbar { opacity:1; min-height:56px; padding:8px 16px; }
 .navbar .container { display:flex; gap:12px; flex-wrap:nowrap; }
 .navbar-brand { font-size:19px; font-weight:300; margin:0; }
