@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+  <head>{% include head.html %}</head>
+  <body class="fixed-top-nav sticky-bottom-footer">
+    <a class="skip-link" href="#about">Skip to content</a>
+    {% include header.html %}
+    <main class="container mt-5">{{ content }}</main>
+    {% include footer.html %}
+    <script src="{{ '/script/site.js?v=al-folio-1' | relative_url }}" defer></script>
+  </body>
+</html>

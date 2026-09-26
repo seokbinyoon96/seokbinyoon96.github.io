@@ -137,6 +137,25 @@ const SECTIONS = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = [...document.querySelectorAll('.nav-link[href^="#"]')];
+  const updateNavigation = () => {
+    let current = navLinks[0];
+    for (const link of navLinks) {
+      const section = document.querySelector(link.getAttribute("href"));
+      if (section && section.getBoundingClientRect().top <= 120) current = link;
+    }
+    navLinks.forEach((link) => {
+      if (link === current) link.setAttribute("aria-current", "location");
+      else link.removeAttribute("aria-current");
+    });
+  };
+  let navPending = false;
+  window.addEventListener("scroll", () => {
+    if (navPending) return;
+    navPending = true;
+    requestAnimationFrame(() => { updateNavigation(); navPending = false; });
+  }, { passive: true });
+  updateNavigation();
   for (const [id, path, render] of SECTIONS) {
     const mount = document.getElementById(id);
     if (!mount) continue;

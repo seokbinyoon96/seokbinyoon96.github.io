@@ -1,0 +1,19 @@
+title: blank
+first_name: Seokbin
+last_name: Yoon
+lang: en
+url: https://seokbinyoon96.github.io
+baseurl: ""
+description: Seokbin Yoon is a Ph.D. student at George Washington University working on machine learning, autonomous systems, and air traffic control.
+max_width: 900px
+navbar_fixed: true
+footer_fixed: false
+sass:
+  style: compressed
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - LICENSE-al-folio
+  - THIRD_PARTY.md

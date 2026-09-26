@@ -1,76 +1,23 @@
-# seokbinyoon96.github.io
+# Seokbin Yoon
 
-Personal academic homepage, served at <https://seokbinyoon96.github.io>.
+A single-page academic homepage built with Jekyll and al-folio, adapted from Mingi Jeong's installation. See THIRD_PARTY.md and LICENSE-al-folio for source provenance and licensing.
 
-Static site — no build step, no dependencies.
+## Structure
 
-## Layout
-
-```
-index.html              page shell: profile, section headings, footer
-stylesheet.css          fonts and styles
-script/site.js          renders the sections below from data/
-data/
-  news.json             news list ("recent": true shows above the fold)
-  publications.json     papers shown on the page
-  awards.json           honors and awards
-  talks.json            talks
-  misc.json             reviewing, licenses, and the like
-  bib/*.bib             one BibTeX entry per paper
-  seokbinyoon_CV.pdf
-images/                 profile photo, paper thumbnails, logos
-```
+- `index.html`: biography and all sections, with Jekyll front matter.
+- `_layouts/`, `_includes/`: al-folio layouts adapted to one page. Navigation uses section anchors; CV links to the existing PDF.
+- `_sass/`, `assets/css/main.scss`: vendored al-folio styles.
+- `stylesheet.css`: local single-page and responsive presentation.
+- `script/site.js`: publication filters and dated lists.
+- `data/`: existing publication, award, talk, service and hidden news JSON, CV and BibTeX.
+- `images/`: existing portrait and publication figures.
 
 ## Editing
 
-Almost everything lives in `data/`. To add a paper, append an entry to
-`data/publications.json` and drop its BibTeX in `data/bib/`:
+Edit biography text in `index.html` and lists in `data/*.json`. Publication titles link to the first URL in each paper's `links` array. `me: true` bolds an author; `notes` adds award text.
 
-```json
-{
-  "id": "short-name",
-  "title": "Paper Title",
-  "authors": [
-    { "name": "Seokbin Yoon", "me": true },
-    { "name": "Coauthor", "url": "https://..." }
-  ],
-  "venue": "Conference or Journal",
-  "year": 2026,
-  "image": "images/thumbnail.png",
-  "notes": ["Best Paper Award"],
-  "links": [{ "label": "paper", "url": "https://..." }],
-  "bibtex": "data/bib/key.bib",
-  "summary": "One or two sentences."
-}
-```
+Recent shows the five newest papers across topics; the other filters are Trajectory Modeling, Air Transportation and All. News remains commented out. There are no separate CV, research, blog or publication pages.
 
-`me: true` bolds the name and `notes` render in orange. Paper titles link to
-the first URL in `links`; additional resource links are not displayed. Only the bio, the research blurb and
-the section headings live in `index.html`.
+## Build and publish
 
-## Previewing
-
-The page reads `data/` with `fetch`, so it needs to be served over HTTP —
-opening `index.html` from disk will leave the sections empty.
-
-```
-python3 -m http.server 8000
-# then open http://localhost:8000
-```
-
-Template adapted from [Jon Barron](https://github.com/jonbarron/jonbarron_website).
-
-## Publication filters
-
-The default **Recent** view shows the five newest publications across all topics. **All** shows every paper, sorted newest first. Each publication has a
-`category`: `trajectory` (Trajectory Modeling) or `operations`
-(Air Transportation). Images and summaries are optional.
-
-News is preserved in `data/news.json`; its section in `index.html` is commented
-out. Remove the surrounding HTML comment to show it again.
-
-## Awards, talks, and service
-
-`awards.json`, `talks.json`, and `misc.json` share the same compact list format:
-a `year` label and `lines` with `text`, optional `bold`, and optional `url`.
-The page displays these as Awards, Talks, and Service & Credentials without logos.
+GitHub Pages builds Jekyll from `main` at the repository root. No custom plugins are required. For local preview with Jekyll installed, run `jekyll serve` and visit the printed localhost URL. Keep `.nojekyll` absent so Sass and Liquid are compiled.

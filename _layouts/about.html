@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="post" id="about">
+  <header class="post-header">
+    <h1 class="post-title"><span class="font-weight-bold">{{ site.first_name }}</span> {{ site.last_name }}</h1>
+    <p class="desc">{{ page.subtitle }}</p>
+  </header>
+  <article>
+    <div class="profile float-right">
+      <a href="{{ '/images/seokbinyoon_pic.jpg' | relative_url }}"><img class="img-fluid rounded-circle" src="{{ '/images/seokbinyoon_pic.jpg' | relative_url }}" alt="Seokbin Yoon" width="260" height="260"></a>
+    </div>
+    <div class="clearfix">{{ content }}</div>
+  </article>
+</div>
