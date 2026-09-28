@@ -1,6 +1,6 @@
 [
   {
-    "year": "2026–Present",
+    "year": "",
     "lines": [
       {
         "text": "Reviewer",
@@ -11,7 +11,8 @@
         "url": "https://arc.aiaa.org/journal/jais"
       },
       {
-        "text": "IEEE Internet of Things Journal"
+        "text": "IEEE Internet of Things Journal",
+        "url": "https://ieee-iotj.org/"
       }
     ]
   },
