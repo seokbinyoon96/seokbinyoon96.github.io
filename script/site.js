@@ -133,7 +133,7 @@ const SECTIONS = [
   ["publications", "data/publications.json?v=centroid-image-1", renderPublications],
   ["awards", "data/awards.json?v=session-names-1", renderEntries],
   ["talks", "data/talks.json?v=concise-copy-1", renderEntries],
-  ["misc", "data/misc.json?v=service-align-1", renderEntries],
+  ["misc", "data/misc.json?v=iot-xplore-1", renderEntries],
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
