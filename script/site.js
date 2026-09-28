@@ -115,8 +115,8 @@ function renderPublications(pubs, mount) {
 
 function renderEntries(entries, mount) {
   mount.replaceChildren(el(`<ul class="timeline-list">
-    ${entries.map((entry) => `<li class="timeline-entry">
-      <span class="timeline-year">${escapeHtml(entry.year)}</span>
+    ${entries.map((entry) => `<li class="timeline-entry${entry.year ? "" : " timeline-entry-undated"}">
+      ${entry.year ? `<span class="timeline-year">${escapeHtml(entry.year)}</span>` : ""}
       <div class="timeline-body">${entry.lines.map((line) => {
         const text = escapeHtml(line.text);
         const content = line.url ? `<a href="${escapeHtml(line.url)}">${text}</a>` : text;
@@ -133,7 +133,7 @@ const SECTIONS = [
   ["publications", "data/publications.json?v=centroid-image-1", renderPublications],
   ["awards", "data/awards.json?v=session-names-1", renderEntries],
   ["talks", "data/talks.json?v=concise-copy-1", renderEntries],
-  ["misc", "data/misc.json?v=reviewer-links-2", renderEntries],
+  ["misc", "data/misc.json?v=service-align-1", renderEntries],
 ];
 
 document.addEventListener("DOMContentLoaded", () => {

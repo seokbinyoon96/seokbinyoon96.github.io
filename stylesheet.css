@@ -80,3 +80,5 @@ html[data-theme='dark'] .theme-moon { display:none; }
 .publication-note { color:var(--award-color); }
 .skip-link { background:var(--global-bg-color); }
 @media (max-width:360px) { .navbar-nav { gap:6px; } .navbar .nav-link { font-size:12px; } }
+
+.timeline-entry.timeline-entry-undated { grid-template-columns:minmax(0,1fr); gap:0; }
