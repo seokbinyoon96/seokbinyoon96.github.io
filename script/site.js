@@ -1,5 +1,5 @@
 /*
- * Renders each section of the homepage from the JSON files in data/.
+ * Renders publications from BibTeX and other sections from JSON in data/.
  * To change the content of the site, edit those files - not this script.
  */
 
@@ -88,14 +88,14 @@ function renderPublications(pubs, mount) {
     list.replaceChildren(...visible.map((p) => {
       const notes = (p.notes || []).map((n) =>
         `<span class="publication-note">${escapeHtml(n)}</span>`).join(" · ");
-      const href = p.links?.[0]?.url || p.bibtex || "#";
+      const href = p.links?.[0]?.url;
       const visual = p.image
         ? `<img src="${escapeHtml(p.image)}" alt="Figure from ${escapeHtml(p.title)}" loading="lazy">`
         : `<div class="publication-placeholder" aria-hidden="true"><span>${p.year}</span>${p.category === "trajectory" ? "Trajectory modeling" : "Air transportation"}</div>`;
       return el(`<article class="publication" data-publication-id="${escapeHtml(p.id)}">
         <div class="publication-visual">${visual}</div>
         <div class="publication-content">
-          <h3><a href="${escapeHtml(href)}">${escapeHtml(p.title)}</a></h3>
+          <h3>${href ? `<a href="${escapeHtml(href)}">${escapeHtml(p.title)}</a>` : escapeHtml(p.title)}</h3>
           <div>${authorLine(p.authors)}</div>
           <div class="publication-venue">${escapeHtml(p.venue)}, ${escapeHtml(p.year)}</div>
           ${notes ? `<div>${notes}</div>` : ""}
@@ -130,7 +130,7 @@ function renderEntries(entries, mount) {
 
 const SECTIONS = [
   ["news", "data/news.json", renderNews],
-  ["publications", "data/publications.json?v=centroid-image-1", renderPublications],
+  ["publications", "data/publications.bib", renderPublications, PublicationData.load],
   ["awards", "data/awards.json?v=session-names-1", renderEntries],
   ["talks", "data/talks.json?v=concise-copy-1", renderEntries],
   ["misc", "data/misc.json?v=iot-xplore-1", renderEntries],
@@ -156,10 +156,10 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(() => { updateNavigation(); navPending = false; });
   }, { passive: true });
   updateNavigation();
-  for (const [id, path, render] of SECTIONS) {
+  for (const [id, path, render, load = loadJSON] of SECTIONS) {
     const mount = document.getElementById(id);
     if (!mount) continue;
-    loadJSON(path)
+    load(path)
       .then((data) => render(data, mount))
       .catch((err) => {
         console.error(err);

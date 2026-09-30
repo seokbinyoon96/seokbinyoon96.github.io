@@ -11,6 +11,7 @@ footer_fixed: false
 sass:
   style: compressed
 exclude:
+  - tests
   - README.md
   - Gemfile
   - Gemfile.lock
