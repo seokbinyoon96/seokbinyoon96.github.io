@@ -67,3 +67,22 @@ Keep the filename slug unchanged to preserve the post URL.
 For local previews, use `jekyll serve`; to include drafts, use
 `jekyll serve --drafts`. No editor or plugin installation is required when writing
 through GitHub.
+
+## Equations
+
+MathJax renders equations on post pages automatically. Use Kramdown's `$$`
+delimiters for both inline and display equations.
+
+Inline: `The coefficient is $$\alpha$$.`
+
+Display (leave blank lines before and after):
+
+```text
+$$
+J = J_{\text{safety}} + \alpha J_{\text{efficiency}}
+$$
+```
+
+Avoid raw `\(...\)` and `\[...\]` in Markdown: Markdown can remove their
+backslashes before rendering. Do not put equations in code fences unless you want
+to show their source. Add `math: false` to front matter to disable MathJax on a post.

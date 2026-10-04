@@ -116,3 +116,5 @@ html[data-theme='dark'] .theme-moon { display:none; }
   .navbar .nav-link { font-size:12px; }
   #theme-toggle { width:26px; }
 }
+
+.blog-content mjx-container[display="true"] { max-width:100%; overflow-x:auto; overflow-y:hidden; padding:8px 0; }
