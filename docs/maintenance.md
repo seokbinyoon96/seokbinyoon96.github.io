@@ -94,3 +94,8 @@ node --test tests/publications.test.cjs
 ```
 
 The `docs/` directory is excluded from the published website.
+
+## Blog
+
+See [blog.md](blog.md) for posting instructions. Published Markdown posts live in
+`_posts/`, unpublished examples in `_drafts/`, and post images in `images/blog/`.

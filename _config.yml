@@ -19,3 +19,15 @@ exclude:
   - vendor
   - LICENSE-al-folio
   - THIRD_PARTY.md
+
+# Blog posts are published only on /blog/, not on the homepage.
+timezone: America/New_York
+future: false
+show_drafts: false
+permalink: /blog/:title/
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

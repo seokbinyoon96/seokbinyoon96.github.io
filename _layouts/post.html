@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="blog-page blog-post"{% if page.lang %} lang="{{ page.lang | escape }}"{% endif %}>
+  <a class="blog-back" href="{{ '/blog/' | relative_url }}">← All posts</a>
+  <header class="blog-header">
+    <h1>{{ page.title | escape }}</h1>
+    <time class="blog-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+  </header>
+  <div class="blog-content">{{ content }}</div>
+  <nav class="blog-post-navigation" aria-label="Other posts">
+    {% if page.previous.url %}<a href="{{ page.previous.url | relative_url }}">← {{ page.previous.title | escape }}</a>{% endif %}
+    {% if page.next.url %}<a href="{{ page.next.url | relative_url }}">{{ page.next.title | escape }} →</a>{% endif %}
+  </nav>
+</article>
