@@ -1,0 +1,193 @@
+---
+title: "Can We Even Achieve Autonomous Air Traffic Control?"
+description: "Why autonomous air traffic control feels surprisingly close and very far away at the same time."
+lang: en
+---
+
+We are living through an unusually exciting period of artificial intelligence. Machines can write, see, reason, generate videos, and increasingly act in the physical world.
+
+For me, autonomous driving is still one of the most fascinating examples. I simply enjoy watching it work.
+
+But it also makes me think about air traffic control.
+
+When I was training to become an air traffic controller, and later during my master's research, I kept coming back to a simple question:
+
+> **If I could learn how to do air traffic control, why couldn't a machine?**
+
+I learned procedures, separation standards, phraseology, traffic patterns, and how to make decisions from a traffic situation. None of this makes air traffic control easy. But it does make autonomous ATC feel, at least in principle, possible.
+
+Then I look at autonomous driving and become even more optimistic.
+
+And then I think about what an air traffic controller actually does.
+
+And suddenly it feels very far away again.
+
+## A. What Exactly Is the Machine Supposed to Optimize?
+
+It is tempting to compare autonomous driving with autonomous ATC.
+
+Both involve moving agents, uncertainty, prediction, safety, and control.
+
+But there is one difference that bothers me more than whether aircraft move in three dimensions.
+
+A self-driving car mostly needs to decide what **itself** should do.
+
+Air traffic control decides what **everyone** should do.
+
+That turns ATC into a centralized coordination problem.
+
+And this immediately creates a surprisingly difficult question:
+
+> **What is the objective function?**
+
+For autonomous driving, we can at least imagine something like
+
+\[
+J =
+J_{\text{safety}}
++
+\lambda_1 J_{\text{progress}}
++
+\lambda_2 J_{\text{comfort}}
++
+\lambda_3 J_{\text{rule compliance}}.
+\]
+
+The details are difficult, of course, but the direction is intuitive.
+
+What is the equivalent for an air traffic controller?
+
+Keep aircraft separated. Sure.
+
+But separation alone is not ATC.
+
+Get every aircraft to the airport as quickly as possible? That is not ATC either.
+
+Controllers implicitly balance separation, sequencing, delay, path efficiency, workload, sector transitions, predictability, and probably many other things that are difficult even to write down.
+
+Maybe something like
+
+\[
+J_{\text{ATC}}
+=
+J_{\text{safety}}
++
+\alpha J_{\text{efficiency}}
++
+\beta J_{\text{coordination}}
++
+\gamma J_{\text{workload}}
++\cdots
+\]
+
+But what are \(\alpha\), \(\beta\), and \(\gamma\)?
+
+Do they stay constant when traffic becomes dense?
+
+Does safety belong in the objective at all, or should it be a hard constraint?
+
+How much inefficiency is reasonable if it makes the traffic situation easier to manage five minutes later?
+
+Human controllers answer questions like these continuously without explicitly writing down an objective function.
+
+That may be one of the first major difficulties of autonomous ATC:
+
+> **Before teaching a machine how to control traffic, we may not even know precisely what "good control" means.**
+
+## B. Should It Be Human-Level or Human-Like?
+
+Autonomous driving is usually judged by performance.
+
+Is it safer than humans? Does it follow traffic rules? Does it handle unusual situations?
+
+We generally do not care whether the car thinks or drives exactly like a human. In fact, we probably do not want it to.
+
+So perhaps autonomous ATC should be the same.
+
+If an AI produces safer and more efficient traffic than a human controller, why should we care whether its decisions look human?
+
+I am not completely convinced.
+
+There is still a human between the controller and the aircraft:
+
+**the pilot.**
+
+A self-driving system makes a decision and the machine executes it.
+
+ATC is different:
+
+\[
+\text{decision}
+\rightarrow
+\text{communication}
+\rightarrow
+\text{human interpretation}
+\rightarrow
+\text{execution}.
+\]
+
+The pilot has to understand the instruction. The instruction has to fit existing procedures and expectations. Other controllers may also need to understand what the system is doing.
+
+So perhaps autonomous ATC does not have to be **human-like internally**, but it may have to remain **human-compatible externally**.
+
+That creates an uncomfortable possibility:
+
+> **The mathematically optimal ATC policy may not be the operationally desirable ATC policy.**
+
+## C. We Have the Data. Or Do We?
+
+At first, machine learning for ATC seems to have a huge advantage.
+
+There is an enormous amount of aircraft trajectory data.
+
+But trajectory data tell us primarily **what happened**.
+
+They rarely tell us **why it happened**.
+
+A controller may look at a trajectory and see sequencing, vectoring, conflict resolution, or the consequence of an instruction issued minutes earlier.
+
+The dataset sees latitude, longitude, altitude, and time.
+
+That gap matters.
+
+We can train a model to predict
+
+\[
+X_{\text{past}}
+\rightarrow
+X_{\text{future}}.
+\]
+
+But autonomous ATC ultimately needs something closer to
+
+\[
+X_{\text{past}}
+\rightarrow
+A.
+\]
+
+The first asks:
+
+> **What will happen next?**
+
+The second asks:
+
+> **What should happen next?**
+
+And those are fundamentally different questions.
+
+Prediction learns from observations.
+
+Control requires intervention.
+
+This is perhaps the strangest part of the problem for me. We may already have billions of observations containing traces of human ATC decisions, aircraft dynamics, procedures, weather, and pilot behavior.
+
+The information may already be there.
+
+But the thing we actually want to learn, **the decision**, is hidden underneath the trajectory.
+
+And maybe that is why autonomous ATC feels both close and far away at the same time.
+
+We have more data and more capable AI than ever before.
+
+I am just not sure yet that we are asking the machine the right question.
