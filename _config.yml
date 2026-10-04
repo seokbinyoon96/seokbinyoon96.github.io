@@ -11,6 +11,9 @@ footer_fixed: false
 sass:
   style: compressed
 exclude:
+  # Remove these two exclusions when reopening the blog.
+  - blog
+  - _posts
   - docs
   - tests
   - README.md
@@ -31,3 +34,6 @@ defaults:
       type: posts
     values:
       layout: post
+
+# Hide blog navigation while posts are being edited.
+blog_enabled: false

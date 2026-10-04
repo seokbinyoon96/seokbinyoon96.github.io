@@ -86,3 +86,11 @@ $$
 Avoid raw `\(...\)` and `\[...\]` in Markdown: Markdown can remove their
 backslashes before rendering. Do not put equations in code fences unless you want
 to show their source. Add `math: false` to front matter to disable MathJax on a post.
+
+## Temporary pause
+
+The blog is currently disabled. Post sources remain in `_posts/`.
+To reopen, set `blog_enabled: true` in `_config.yml` and remove `blog` and
+`_posts` from its `exclude` list, then commit. Both steps are required.
+While paused, the menu, blog index, and individual post pages are not published.
+Source files are still visible in this public GitHub repository.

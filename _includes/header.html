@@ -10,7 +10,9 @@
         <li class="nav-item"><a class="nav-link" href="{{ home_prefix }}#honors_and_awards">awards</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ home_prefix }}#talks-section">talks</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ home_prefix }}#service">service</a></li>
+        {% if site.blog_enabled %}
         <li class="nav-item"><a class="nav-link" href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' %} aria-current="page"{% endif %}>blog</a></li>
+        {% endif %}
         <li class="nav-item"><a class="nav-link" href="{{ '/data/seokbinyoon_CV.pdf' | relative_url }}">cv</a></li>
       </ul>
       <button id="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
