@@ -59,6 +59,7 @@
         .filter(Boolean).join(", ");
       return {
         id, title: text(f.title), year: Number(text(f.year)), venue,
+        shortVenue: text(f.venue_short) || text(f.journal || f.booktitle),
         authors: splitAuthors(f.author).map((name) => {
           const profile = Object.hasOwn(authorProfiles, name) ? authorProfiles[name] : {};
           return { name, ...(profile.me ? { me: true } : {}),
@@ -66,7 +67,11 @@
         }),
         image: text(f.image), category: text(f.category), summary: text(f.abstract),
         notes: f.award ? text(f.award).split(/\s*;\s*/).filter(Boolean) : [],
-        links: href ? [{ label: doi ? "doi" : "paper", url: href }] : [],
+        links: [
+          ...(href ? [{ label: /(?:arxiv\.org|arxiv\.)/i.test(href) ? "arXiv" : "Paper", url: href }] : []),
+          ...(httpURL(text(f.project)) ? [{ label: "Project", url: httpURL(text(f.project)) }] : []),
+          ...(httpURL(text(f.code)) ? [{ label: "Code", url: httpURL(text(f.code)) }] : []),
+        ],
       };
     });
   }

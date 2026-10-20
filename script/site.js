@@ -23,34 +23,6 @@ async function loadJSON(path) {
   return res.json();
 }
 
-/* ----------------------------- news ----------------------------- */
-
-function renderNews(items, mount) {
-  const recent = items.filter((n) => n.recent);
-  const older = items.filter((n) => !n.recent);
-
-  const li = (n) => `<li><strong>${escapeHtml(n.date)}</strong> ${n.html}</li>`;
-
-  mount.appendChild(el(`
-    <ul style="font-family:sans-serif">
-      ${recent.map(li).join("")}
-      ${older.length ? `
-        <a href="javascript:void(0)" id="news-toggle">---- show more ----</a>
-        <div id="news-older" style="display:none">${older.map(li).join("")}</div>
-      ` : ""}
-    </ul>
-  `));
-
-  const toggle = mount.querySelector("#news-toggle");
-  if (!toggle) return;
-  toggle.addEventListener("click", () => {
-    const box = mount.querySelector("#news-older");
-    const open = box.style.display !== "none";
-    box.style.display = open ? "none" : "block";
-    toggle.textContent = open ? "---- show more ----" : "---- show less ----";
-  });
-}
-
 /* ------------------------- publications ------------------------- */
 
 function authorLine(authors) {
@@ -67,10 +39,10 @@ function authorLine(authors) {
 function renderPublications(pubs, mount) {
   const sorted = [...pubs].sort((a, b) => b.year - a.year);
   const filters = [
+    ["all", "All"],
     ["recent", "Recent"],
     ["trajectory", "Trajectory Modeling"],
     ["operations", "Air Transportation"],
-    ["all", "All"],
   ];
   const controls = el(`<div class="publication-filters" role="group" aria-label="Filter publications">
     ${filters.map(([id, label]) => `<button type="button" data-filter="${id}"
@@ -87,19 +59,23 @@ function renderPublications(pubs, mount) {
       : sorted.filter((p) => filter === "all" || p.category === filter);
     list.replaceChildren(...visible.map((p) => {
       const notes = (p.notes || []).map((n) =>
-        `<span class="publication-note">${escapeHtml(n)}</span>`).join(" · ");
+        `<span class="publication-note">${escapeHtml(n)}</span>`).join("");
       const href = p.links?.[0]?.url;
       const visual = p.image
         ? `<img src="${escapeHtml(p.image)}" alt="Figure from ${escapeHtml(p.title)}" loading="lazy">`
         : `<div class="publication-placeholder" aria-hidden="true"><span>${p.year}</span>${p.category === "trajectory" ? "Trajectory modeling" : "Air transportation"}</div>`;
       return el(`<article class="publication" data-publication-id="${escapeHtml(p.id)}">
-        <div class="publication-visual">${visual}</div>
+        <div class="publication-visual">
+          <span class="venue-tag">${escapeHtml(p.shortVenue)}</span>
+          ${p.image ? `<a href="${escapeHtml(p.image)}" aria-label="View figure for ${escapeHtml(p.title)}">${visual}</a>` : visual}
+        </div>
         <div class="publication-content">
           <h3>${href ? `<a href="${escapeHtml(href)}">${escapeHtml(p.title)}</a>` : escapeHtml(p.title)}</h3>
-          <div>${authorLine(p.authors)}</div>
-          <div class="publication-venue">${escapeHtml(p.venue)}, ${escapeHtml(p.year)}</div>
-          ${notes ? `<div>${notes}</div>` : ""}
-          ${p.summary ? `<p>${escapeHtml(p.summary)}</p>` : ""}
+          <div class="publication-authors">${authorLine(p.authors)}</div>
+          <div class="publication-venue">${escapeHtml(p.shortVenue)}, ${escapeHtml(p.year)}</div>
+          ${notes ? `<div class="publication-notes">${notes}</div>` : ""}
+          ${p.links.length ? `<div class="publication-links">${p.links.map((link) =>
+            `<a href="${escapeHtml(link.url)}">${escapeHtml(link.label)}</a>`).join("")}</div>` : ""}
         </div>
       </article>`);
     }));
@@ -108,7 +84,7 @@ function renderPublications(pubs, mount) {
     const button = event.target.closest("button[data-filter]");
     if (button) selectFilter(button.dataset.filter);
   });
-  selectFilter("recent");
+  selectFilter("all");
 }
 
 /* --------------------- awards, talks and service --------------------- */
@@ -129,7 +105,6 @@ function renderEntries(entries, mount) {
 /* ---------------------------- wiring ---------------------------- */
 
 const SECTIONS = [
-  ["news", "data/news.json", renderNews],
   ["publications", "data/publications.bib", renderPublications, PublicationData.load],
   ["awards", "data/awards.json?v=session-names-1", renderEntries],
   ["talks", "data/talks.json?v=concise-copy-1", renderEntries],
@@ -137,6 +112,24 @@ const SECTIONS = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
+  const menu = document.getElementById("menu-toggle");
+  const navigation = document.getElementById("site-nav");
+  const closeMenu = () => {
+    navigation?.classList.remove("is-open");
+    menu?.setAttribute("aria-expanded", "false");
+    menu?.setAttribute("aria-label", "Open navigation");
+  };
+  menu?.addEventListener("click", () => {
+    const open = navigation.classList.toggle("is-open");
+    menu.setAttribute("aria-expanded", String(open));
+    menu.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+  });
+  navigation?.addEventListener("click", (event) => {
+    if (event.target.closest("a")) closeMenu();
+  });
+  navigation?.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") { closeMenu(); menu.focus(); }
+  });
   const navLinks = [...document.querySelectorAll('.nav-link[href^="#"]')];
   const updateNavigation = () => {
     let current = navLinks[0];
@@ -165,9 +158,8 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error(err);
         mount.appendChild(
           el(`<p style="font-family:sans-serif;color:${ACCENT}">
-                Could not load ${escapeHtml(path)}. If you are previewing locally,
-                serve the folder over HTTP (python3 -m http.server) rather than
-                opening index.html directly.
+                This section could not be loaded. Please refresh the page or view my
+                <a href="data/seokbinyoon_CV.pdf">CV</a>.
               </p>`)
         );
       });

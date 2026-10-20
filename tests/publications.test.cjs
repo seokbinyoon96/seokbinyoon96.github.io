@@ -31,17 +31,22 @@ test('missing metadata, duplicates and unsafe URLs', () => {
   assert.throws(() => parse(entry('doi={invalid}')));
   assert.deepEqual(parse(entry('url={javascript:alert(1)}'))[0].links, []);
 });
-test('real bibliography: ten papers, existing filters, images and DOI links', () => {
+test('real bibliography: full names, short venues, figures and publication links', () => {
   const papers = parse(fs.readFileSync('data/publications.bib', 'utf8'), JSON.parse(fs.readFileSync('data/authors.json', 'utf8')));
-  assert.equal(papers.length, 10);
-  assert.equal(papers.filter(p => p.category === 'trajectory').length, 5);
-  assert.equal(papers.filter(p => p.category === 'operations').length, 5);
+  assert.equal(papers.length, 12);
+  assert.equal(papers.filter(p => p.category === 'trajectory').length, 6);
+  assert.equal(papers.filter(p => p.category === 'operations').length, 6);
   assert.deepEqual([...papers].sort((a,b) => b.year-a.year).slice(0,5).map(p => p.id),
-    ['airport-queue','maiformer','landing-time','latent-augmentation','radar-vision']);
+    ['ditsg','radar-vision','airport-queue','maiformer','radar-atrs']);
+  assert.equal(papers.find(p => p.id === 'maiformer').shortVenue, 'T-ITS');
+  assert.equal(papers.find(p => p.id === 'learning-to-explain').shortVenue, 'ATRDS');
+  assert.deepEqual(papers.find(p => p.id === 'ditsg').links.map(l => l.label), ['arXiv', 'Project', 'Code']);
   for (const p of papers) {
     assert.ok(fs.existsSync(p.image), p.image);
     assert.ok(p.summary.length > 0);
-    assert.ok(p.links[0].url.startsWith('https://doi.org/'));
+    if (p.id !== 'radar-atrs') assert.ok(p.links[0].url.startsWith('https://doi.org/'));
+    for (const a of p.authors) assert.ok(!/\b[A-Z]\./.test(a.name), a.name);
+    assert.ok(p.shortVenue.length > 0);
     assert.equal(p.authors.filter(a => a.me).length, 1);
   }
 });

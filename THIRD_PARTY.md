@@ -13,3 +13,11 @@ The existing publication data and renderer are retained. Local presentation over
 Source: https://github.com/ORCID/bibtexParseJs
 License: MIT; see `script/vendor/LICENSE-bibtexParse`.
 No external CDN is needed at runtime.
+
+## Homepage redesign (October 2026)
+
+The standalone homepage uses an independently implemented layout inspired by
+https://mahyar-gh79.github.io/. GW and NASA logo files in `images/logos/`
+were retained from that reference at the site owner's request. These logos
+remain the marks of their respective organizations. No biography or research
+claims from the reference were copied.

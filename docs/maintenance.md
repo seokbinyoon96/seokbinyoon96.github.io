@@ -2,15 +2,17 @@
 
 ## Structure
 
-The site uses Jekyll and al-folio, adapted from Mingi Jeong's installation.
+The homepage is static HTML with a responsive profile sidebar and publication list.
+GitHub Pages still runs Jekyll for the retained blog layouts and Sass assets.
 See [THIRD_PARTY.md](../THIRD_PARTY.md) and [LICENSE-al-folio](../LICENSE-al-folio)
 for provenance and licensing.
 
-- `index.html`: biography and section content with Jekyll front matter.
+- `index.html`: standalone homepage, biography, education, and navigation.
+- `assets/css/portfolio.css`: homepage styling, responsive layout, and theme colors.
 - `_layouts/`, `_includes/`: single-page layouts and shared markup.
 - `_sass/`, `assets/css/main.scss`: al-folio styles.
 - `stylesheet.css`: local styling and responsive layout.
-- `script/site.js`: publication filters and other section rendering.
+- `script/site.js`: navigation, publication filters, and other section rendering.
 - `data/publications.bib`: publication source.
 - `data/authors.json`: shared author profiles and links.
 - Other `data/*.json` files: awards, talks, service, and hidden news.
@@ -44,15 +46,18 @@ Replace the example DOI with the actual DOI, or omit it if none exists.
 - Separate authors with `and`. Both `Seokbin Yoon` and `Yoon, Seokbin` are supported.
 - Title links use `https://doi.org/` followed by `doi`. If no DOI is provided,
   `url` is used. Without either field, the title is displayed without a link.
-- `abstract` supplies the visible description. Keep it brief for the current
-  layout; a full abstract will be displayed in full.
+- `abstract` retains the paper summary in the data. The compact homepage cards
+  show titles, full author lists, venue, awards, and links.
 - `category` accepts `trajectory` (Trajectory Modeling) or `operations`
   (Air Transportation). Without it, the paper appears only under Recent and All.
 - `image` is a repository-relative image path. When omitted, a placeholder is shown.
 - `award` is optional. Separate multiple awards with semicolons.
-- Optional `volume` and `pages` are displayed after the venue.
+- `venue_short` controls the visible venue badge and venue line (e.g. T-ITS, DASC, ATRS, ATRDS). Keep the full journal or conference name in the standard BibTeX field.
+- Optional `project` and `code` HTTP(S) URLs add publication buttons.
+- Authors are displayed in full, in BibTeX order, without truncation.
+- Optional `volume` and `pages` remain available in the parsed metadata.
 - Papers are sorted by descending year, retaining file order within a year.
-  Recent shows the first five papers.
+  All is the default filter; Recent shows the first five papers.
 - Use UTF-8 text. Protective braces and common escapes such as `\&`, `\%`, and
   `\_` are supported. Arbitrary LaTeX commands, math rendering, `@string`
   expansion, and `crossref` inheritance are not supported; use literal values.
@@ -79,12 +84,14 @@ the name in bold. Only HTTP and HTTPS author links are accepted.
 ## Other content
 
 Edit biography text in `index.html` and other lists in `data/*.json`.
-News is currently commented out. Navigation links to sections of the same page.
+News is not rendered or loaded. Navigation links to sections of the same page.
+GW and NASA logo assets live in `images/logos/`; the KAU logo remains in `images/`.
 
 ## Build and deployment
 
 GitHub Pages builds Jekyll from the root of `main`. No custom plugins are required.
-With Jekyll installed, run `jekyll serve` for a local preview. Keep `.nojekyll`
+Run `python3 -m http.server` for a homepage preview.
+With Jekyll installed, run `jekyll serve` to also preview blog layouts. Keep `.nojekyll`
 absent so Sass and Liquid are compiled.
 
 Run publication checks with:
