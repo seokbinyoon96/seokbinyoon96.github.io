@@ -51,7 +51,7 @@ Replace the example DOI with the actual DOI, or omit it if none exists.
 - `category` retains research-topic metadata. The homepage offers Recent and All filters only.
 - `image` is a repository-relative image path. When omitted, a placeholder is shown.
 - `award` is optional. Separate multiple awards with semicolons.
-- `venue_short` controls the visible venue badge and venue line (e.g. T-ITS, DASC, ATRS, ATRDS). Keep the full journal or conference name in the standard BibTeX field.
+- `venue_short` controls the image badge (e.g. T-ITS, DASC, ATRS, ATRDS). The full journal or conference name in the standard BibTeX field appears beneath the author list.
 - Optional `project` and `code` HTTP(S) URLs add publication buttons.
 - Authors are displayed in full, in BibTeX order, without truncation.
 - Optional `volume` and `pages` remain available in the parsed metadata.

@@ -70,7 +70,7 @@ function renderPublications(pubs, mount) {
         <div class="publication-content">
           <h3>${href ? `<a href="${escapeHtml(href)}">${escapeHtml(p.title)}</a>` : escapeHtml(p.title)}</h3>
           <div class="publication-authors">${authorLine(p.authors)}</div>
-          <div class="publication-venue">${escapeHtml(p.shortVenue)}, ${escapeHtml(p.year)}</div>
+          <div class="publication-venue">${escapeHtml(p.venue)}, ${escapeHtml(p.year)}</div>
           ${notes ? `<div class="publication-notes">${notes}</div>` : ""}
           ${p.links.length ? `<div class="publication-links">${p.links.map((link) =>
             `<a href="${escapeHtml(link.url)}">${escapeHtml(link.label)}</a>`).join("")}</div>` : ""}
