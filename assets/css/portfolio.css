@@ -122,3 +122,10 @@ footer { border-top: 1px solid var(--border); margin-top: 40px; }
   .footer-inner { flex-direction: column; padding: 20px 18px; gap: 4px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Social brand marks, matching the reference profile links. */
+.brand-icon { display: inline-block; width: 16px; height: 16px; flex: 0 0 16px; background-color: currentColor; -webkit-mask: var(--brand-icon) center / contain no-repeat; mask: var(--brand-icon) center / contain no-repeat; }
+.brand-googlescholar { color: #4285f4; --brand-icon: url('../../images/icons/googlescholar.svg'); }
+.brand-linkedin { color: #0a66c2; --brand-icon: url('../../images/icons/linkedin.svg'); }
+.brand-github { color: var(--heading); --brand-icon: url('../../images/icons/github.svg'); }
+.brand-researchgate { color: #00ccbb; --brand-icon: url('../../images/icons/researchgate.svg'); }

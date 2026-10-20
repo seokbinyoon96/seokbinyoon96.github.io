@@ -21,3 +21,7 @@ https://mahyar-gh79.github.io/. GW and NASA logo files in `images/logos/`
 were retained from that reference at the site owner's request. These logos
 remain the marks of their respective organizations. No biography or research
 claims from the reference were copied.
+
+The social icons in `images/icons/` are from Simple Icons v13
+(https://simpleicons.org/), distributed under CC0. Brand marks remain the
+property of their respective owners.
