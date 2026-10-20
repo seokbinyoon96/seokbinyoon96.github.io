@@ -41,8 +41,6 @@ function renderPublications(pubs, mount) {
   const filters = [
     ["all", "All"],
     ["recent", "Recent"],
-    ["trajectory", "Trajectory Modeling"],
-    ["operations", "Air Transportation"],
   ];
   const controls = el(`<div class="publication-filters" role="group" aria-label="Filter publications">
     ${filters.map(([id, label]) => `<button type="button" data-filter="${id}"
@@ -56,7 +54,7 @@ function renderPublications(pubs, mount) {
       button.setAttribute("aria-pressed", String(button.dataset.filter === filter));
     });
     const visible = filter === "recent" ? sorted.slice(0, 5)
-      : sorted.filter((p) => filter === "all" || p.category === filter);
+      : sorted;
     list.replaceChildren(...visible.map((p) => {
       const notes = (p.notes || []).map((n) =>
         `<span class="publication-note">${escapeHtml(n)}</span>`).join("");

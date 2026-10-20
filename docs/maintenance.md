@@ -12,7 +12,7 @@ for provenance and licensing.
 - `_layouts/`, `_includes/`: single-page layouts and shared markup.
 - `_sass/`, `assets/css/main.scss`: al-folio styles.
 - `stylesheet.css`: local styling and responsive layout.
-- `script/site.js`: navigation, publication filters, and other section rendering.
+- `script/site.js`: navigation, Recent/All publication filters, and other section rendering.
 - `data/publications.bib`: publication source.
 - `data/authors.json`: shared author profiles and links.
 - Other `data/*.json` files: awards, talks, service, and hidden news.
@@ -48,8 +48,7 @@ Replace the example DOI with the actual DOI, or omit it if none exists.
   `url` is used. Without either field, the title is displayed without a link.
 - `abstract` retains the paper summary in the data. The compact homepage cards
   show titles, full author lists, venue, awards, and links.
-- `category` accepts `trajectory` (Trajectory Modeling) or `operations`
-  (Air Transportation). Without it, the paper appears only under Recent and All.
+- `category` retains research-topic metadata. The homepage offers Recent and All filters only.
 - `image` is a repository-relative image path. When omitted, a placeholder is shown.
 - `award` is optional. Separate multiple awards with semicolons.
 - `venue_short` controls the visible venue badge and venue line (e.g. T-ITS, DASC, ATRS, ATRDS). Keep the full journal or conference name in the standard BibTeX field.
@@ -85,7 +84,7 @@ the name in bold. Only HTTP and HTTPS author links are accepted.
 
 Edit biography text in `index.html` and other lists in `data/*.json`.
 News is not rendered or loaded. Navigation links to sections of the same page.
-GW and NASA logo assets live in `images/logos/`; the KAU logo remains in `images/`.
+Education logo assets live in `images/logos/` and `images/`. The profile sidebar has no organization logos.
 
 ## Build and deployment
 
