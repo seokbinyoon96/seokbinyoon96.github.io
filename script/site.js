@@ -39,8 +39,8 @@ function authorLine(authors) {
 function renderPublications(pubs, mount) {
   const sorted = [...pubs].sort((a, b) => b.year - a.year);
   const filters = [
-    ["all", "All"],
     ["recent", "Recent"],
+    ["all", "All"],
   ];
   const controls = el(`<div class="publication-filters" role="group" aria-label="Filter publications">
     ${filters.map(([id, label]) => `<button type="button" data-filter="${id}"
@@ -82,7 +82,7 @@ function renderPublications(pubs, mount) {
     const button = event.target.closest("button[data-filter]");
     if (button) selectFilter(button.dataset.filter);
   });
-  selectFilter("all");
+  selectFilter("recent");
 }
 
 /* --------------------- awards, talks and service --------------------- */

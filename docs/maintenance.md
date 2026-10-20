@@ -56,7 +56,7 @@ Replace the example DOI with the actual DOI, or omit it if none exists.
 - Authors are displayed in full, in BibTeX order, without truncation.
 - Optional `volume` and `pages` remain available in the parsed metadata.
 - Papers are sorted by descending year, retaining file order within a year.
-  All is the default filter; Recent shows the first five papers.
+  Recent is the default filter and shows the first five papers; All shows every paper.
 - Use UTF-8 text. Protective braces and common escapes such as `\&`, `\%`, and
   `\_` are supported. Arbitrary LaTeX commands, math rendering, `@string`
   expansion, and `crossref` inheritance are not supported; use literal values.
