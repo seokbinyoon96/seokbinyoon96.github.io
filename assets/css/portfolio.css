@@ -128,3 +128,6 @@ footer { border-top: 1px solid var(--border); margin-top: 40px; }
 .brand-linkedin { color: #0a66c2; --brand-icon: url('../../images/icons/linkedin.svg'); }
 .brand-github { color: var(--heading); --brand-icon: url('../../images/icons/github.svg'); }
 .brand-researchgate { color: #00ccbb; --brand-icon: url('../../images/icons/researchgate.svg'); }
+
+.education-logo-kau { overflow: hidden; }
+.education-logo-kau img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.2); }
