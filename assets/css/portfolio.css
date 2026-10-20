@@ -68,7 +68,7 @@ p { margin: 0 0 15px; }
 .publication h3 a { color: inherit; }
 .publication h3 a:hover { color: var(--link); }
 .publication-authors { font-size: .87rem; line-height: 1.65; margin-bottom: 5px; }
-.publication-authors a { color: var(--text); }
+.publication-authors a { color: var(--link); }
 .publication-authors a:hover { color: var(--link); }
 .publication-authors strong { color: var(--heading); font-weight: 650; }
 .publication-venue { font-size: .86rem; color: var(--muted); font-style: italic; margin-bottom: 8px; }

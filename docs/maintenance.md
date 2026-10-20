@@ -77,7 +77,7 @@ Register each author once in `data/authors.json`, keyed by their displayed name:
 ```
 
 Names and spacing must match the formatted BibTeX author names. Profiles apply
-across all papers. Unregistered authors appear as plain text. `me: true` displays
+across all papers. Unregistered authors link to Google Scholar author search until a verified profile is added. `me: true` displays
 the name in bold. Only HTTP and HTTPS author links are accepted.
 
 ## Other content

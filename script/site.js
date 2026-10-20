@@ -29,9 +29,9 @@ function authorLine(authors) {
   return authors
     .map((a) => {
       const name = escapeHtml(a.name);
-      if (a.me) return `<strong>${name}</strong>`;
-      if (a.url) return `<a href="${escapeHtml(a.url)}">${name}</a>`;
-      return name;
+      const url = a.url || `https://scholar.google.com/citations?view_op=search_authors&mauthors=${encodeURIComponent(a.name)}`;
+      const label = a.url ? `${a.name} on Google Scholar` : `Find ${a.name} on Google Scholar`;
+      return `<a href="${escapeHtml(url)}" title="${escapeHtml(label)}">${a.me ? `<strong>${name}</strong>` : name}</a>`;
     })
     .join(", ");
 }
