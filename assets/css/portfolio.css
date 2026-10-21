@@ -71,7 +71,7 @@ p { margin: 0 0 15px; }
 .publication-authors a { color: var(--link); }
 .publication-authors a:hover { color: var(--link); }
 .publication-authors strong { color: var(--heading); font-weight: 650; }
-.publication-venue { font-size: .81rem; color: var(--muted); font-style: italic; margin-bottom: 8px; }
+.publication-venue { font-size: .81rem; color: var(--muted); font-style: normal; margin-bottom: 8px; }
 .publication-notes { display: flex; flex-wrap: wrap; gap: 5px; margin: 8px 0; }
 .publication-note { color: var(--award); background: var(--award-bg); font-size: .71rem; font-weight: 600; padding: 2px 7px; border-radius: 4px; }
 .publication-links { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 9px; }
