@@ -135,3 +135,5 @@ footer { border-top: 1px solid var(--border); margin-top: 40px; }
 .education-logo-gwu { padding: 7px; }
 .education-logo-gwu img { width: 100%; height: 100%; object-fit: contain; }
 .education-logo-nasa img { width: auto; height: 100%; object-fit: contain; }
+
+.brand-orcid { color: #a6ce39; --brand-icon: url('../../images/icons/orcid.svg'); }
