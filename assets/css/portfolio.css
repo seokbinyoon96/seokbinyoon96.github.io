@@ -78,7 +78,7 @@ p { margin: 0 0 15px; }
 .publication-links a { font-size: .76rem; padding: 2px 9px; border: 1px solid var(--border); border-radius: 4px; color: var(--text); }
 .publication-links a:hover { text-decoration: none; color: var(--link); border-color: var(--link); }
 .education-entry { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 16px; align-items: center; margin: 18px 0; }
-.education-logo { height: 76px; padding: 6px; display: flex; align-items: center; justify-content: center; background: white; border-radius: 6px; border: 1px solid var(--border); }
+.education-logo { height: 76px; padding: 3px; display: flex; align-items: center; justify-content: center; background: white; border-radius: 6px; border: 1px solid var(--border); }
 .education-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
 .education-entry h3 { color: var(--heading); font-size: .95rem; line-height: 1.5; margin: 0 0 4px; font-weight: 600; }
 .education-entry p { font-size: .85rem; margin: 0; }
@@ -132,6 +132,6 @@ footer { border-top: 1px solid var(--border); margin-top: 40px; }
 .education-logo-kau { overflow: hidden; }
 .education-logo-kau img { width: auto; height: 100%; max-width: 100%; max-height: 100%; object-fit: contain; }
 
-.education-logo-gwu { padding: 4px; }
+.education-logo-gwu { padding: 3px; }
 .education-logo-gwu img { width: 100%; height: 100%; object-fit: contain; }
 .education-logo-nasa img { width: auto; height: 100%; object-fit: contain; }
