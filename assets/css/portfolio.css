@@ -132,6 +132,6 @@ footer { border-top: 1px solid var(--border); margin-top: 40px; }
 .education-logo-kau { overflow: hidden; }
 .education-logo-kau img { width: auto; height: 100%; max-width: 100%; max-height: 100%; object-fit: contain; }
 
-.education-logo-gwu { padding: 3px; }
+.education-logo-gwu { padding: 7px; }
 .education-logo-gwu img { width: 100%; height: 100%; object-fit: contain; }
 .education-logo-nasa img { width: auto; height: 100%; object-fit: contain; }
