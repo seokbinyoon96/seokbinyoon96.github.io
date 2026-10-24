@@ -37,7 +37,7 @@ test('real bibliography: full names, short venues, figures and publication links
   assert.equal(papers.filter(p => p.category === 'trajectory').length, 6);
   assert.equal(papers.filter(p => p.category === 'operations').length, 6);
   assert.deepEqual([...papers].sort((a,b) => b.year-a.year).slice(0,5).map(p => p.id),
-    ['ditsg','radar-vision','airport-queue','maiformer','radar-atrs']);
+    ['ditsg','radar-vision','airport-queue','maiformer','landing-time']);
   assert.equal(papers.find(p => p.id === 'maiformer').shortVenue, 'T-ITS');
   assert.equal(papers.find(p => p.id === 'learning-to-explain').shortVenue, 'ATRDS');
   assert.deepEqual(papers.find(p => p.id === 'ditsg').links.map(l => l.label), ['arXiv', 'Project', 'Code']);
@@ -49,4 +49,11 @@ test('real bibliography: full names, short venues, figures and publication links
     assert.ok(p.shortVenue.length > 0);
     assert.equal(p.authors.filter(a => a.me).length, 1);
   }
+});
+
+test('separate arXiv link beside Paper, URL safety and exact deduplication', () => {
+  const extra = 'doi={10.1234/test}, arxiv={https://arxiv.org/abs/2501.00001}';
+  assert.deepEqual(parse(entry(extra))[0].links.map(l => l.label), ['Paper', 'arXiv']);
+  assert.equal(parse(entry('arxiv={javascript:alert(1)}'))[0].links.length, 0);
+  assert.equal(parse(entry('url={https://arxiv.org/abs/2501.00001}, arxiv={https://arxiv.org/abs/2501.00001}'))[0].links.length, 1);
 });

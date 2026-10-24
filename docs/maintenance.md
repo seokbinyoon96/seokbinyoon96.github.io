@@ -52,6 +52,7 @@ Replace the example DOI with the actual DOI, or omit it if none exists.
 - `image` is a repository-relative image path. When omitted, a placeholder is shown.
 - `award` is optional. Separate multiple awards with semicolons.
 - `venue_short` controls the image badge (e.g. T-ITS, DASC, ATRS, ATRDS). The full journal or conference name in the standard BibTeX field appears beneath the author list.
+- Optional `arxiv` takes a full arXiv URL and adds an arXiv button after Paper. Keep the published DOI in `doi` (or publisher link in `url`) and put the preprint link in `arxiv`.
 - Optional `project` and `code` HTTP(S) URLs add publication buttons.
 - Authors are displayed in full, in BibTeX order, without truncation.
 - Optional `volume` and `pages` remain available in the parsed metadata.

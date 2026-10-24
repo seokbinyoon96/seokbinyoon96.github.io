@@ -55,6 +55,7 @@
       const doi = text(f.doi).replace(/^(?:https?:\/\/(?:dx\.)?doi\.org\/|doi:\s*)/i, "");
       if (doi && !/^10\.\d{4,9}\/\S+$/i.test(doi)) throw new Error(`${id}: invalid DOI`);
       const href = doi ? `https://doi.org/${doi}` : httpURL(text(f.url));
+      const arxiv = httpURL(text(f.arxiv));
       const venue = [text(f.journal || f.booktitle), text(f.volume), text(f.pages).replace(/--/g, "–")]
         .filter(Boolean).join(", ");
       return {
@@ -69,6 +70,7 @@
         notes: f.award ? text(f.award).split(/\s*;\s*/).filter(Boolean) : [],
         links: [
           ...(href ? [{ label: /(?:arxiv\.org|arxiv\.)/i.test(href) ? "arXiv" : "Paper", url: href }] : []),
+          ...(arxiv && arxiv !== href ? [{ label: "arXiv", url: arxiv }] : []),
           ...(httpURL(text(f.project)) ? [{ label: "Project", url: httpURL(text(f.project)) }] : []),
           ...(httpURL(text(f.code)) ? [{ label: "Code", url: httpURL(text(f.code)) }] : []),
         ],
