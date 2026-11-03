@@ -22,6 +22,9 @@ were retained from that reference at the site owner's request. These logos
 remain the marks of their respective organizations. No biography or research
 claims from the reference were copied.
 
-The social icons in `images/icons/` are from Simple Icons v13
+The social icons in `images/icons/`, except Hugging Face, are from Simple Icons v13
 (https://simpleicons.org/), distributed under CC0. Brand marks remain the
 property of their respective owners.
+
+The Hugging Face logo is sourced from https://huggingface.co/front/assets/huggingface_logo-noborder.svg
+and remains the mark of Hugging Face.

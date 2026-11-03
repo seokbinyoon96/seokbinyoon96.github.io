@@ -137,3 +137,5 @@ footer { border-top: 1px solid var(--border); margin-top: 40px; }
 .education-logo-nasa img { width: auto; height: 100%; object-fit: contain; }
 
 .brand-orcid { color: #a6ce39; --brand-icon: url('../../images/icons/orcid.svg'); }
+
+.brand-huggingface { background: url('../../images/icons/huggingface.svg') center / contain no-repeat; -webkit-mask: none; mask: none; }
